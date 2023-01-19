@@ -9,12 +9,12 @@ import shot4 from '../assets/shot4.png'
 
 const WhoIsFlo = () => {
   return (
-    <main className='px-6 pt-24 md:px-16  bg-darkShade text-lightShade'>
+    <main className='px-6 pt-24 md:px-16 bg-darkShade text-lightShade'>
       <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
-        <div className='w-[70%] md:w-[40%]'>
+        <div className='w-[70%] self-start md:w-[40%]'>
           <img src={heroImg} alt="" />
         </div>
-        <div className='mt-20 text-2xl md:text-3xl font-medium md:w-[60%]'>
+        <div className='mt-8 text-2xl md:text-3xl font-medium md:w-[60%]'>
           <h3 className='mb-2'>
             Inquisitive.
           </h3>
@@ -47,7 +47,7 @@ const WhoIsFlo = () => {
         <div className='w-[70%] self-end md:w-[90%]'>
           <img src={threeShoes} alt="" />
         </div>
-        <div className='mt-20 text-2xl md:text-3xl md:text-right md:w-[120%] font-medium'>
+        <div className='mt-8 text-2xl md:text-3xl md:text-right md:w-[120%] font-medium'>
           <h3 className='mb-2'>
             Creative.
           </h3>
@@ -65,10 +65,10 @@ const WhoIsFlo = () => {
         </div>
       </section>
       <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
-        <div className='w-[70%] md:w-[40%]'>
+        <div className='w-[70%] self-start md:w-[40%]'>
           <img src={seaWaves} alt="" />
         </div>
-        <div className='mt-20 text-2xl md:text-3xl font-medium md:w-[60%]'>
+        <div className='mt-8 text-2xl md:text-3xl font-medium md:w-[60%]'>
           <h3 className='mb-2'>
             Curious.
           </h3>
@@ -89,7 +89,7 @@ const WhoIsFlo = () => {
         <div className='w-[70%]'>
           <img src={seaWaves} alt="" />
         </div>
-        <div className='mt-20 text-2xl font-medium'>
+        <div className='mt-8 text-2xl font-medium'>
           <h3 className='mb-2'>
             Curious.
           </h3>
@@ -108,7 +108,7 @@ const WhoIsFlo = () => {
       </section> */}
       <section className=''>
         <p className='text-center mb-8'>Some of my shots.</p>
-        <div className='flex flex-wrap gap-6 [&>*]:w-[47%] sm:[&>*]:w-[48%] md:[&>*]:w-[48%]'>
+        <div className='flex flex-wrap gap-6 [&>*]:w-[46%] sm:[&>*]:w-[48%] md:[&>*]:w-[48%]'>
           <img src={shot1} alt="" />
           <img src={shot2} alt="" />
           <img src={shot3} alt="" />
