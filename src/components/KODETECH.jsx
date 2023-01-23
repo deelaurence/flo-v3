@@ -1,17 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
 import WorkWithFlo from './WorkWithFloForPortfolio'
-import kodeTechCofee from './images/kodetechCofee.png'
+import kodeTechCofee from '../assets/kodetech-mockup.png'
+import kodeTech1 from '../assets/kodetech1.png'
+import kodeTech2 from '../assets/kodetech2.png'
+import kodeTech3 from '../assets/kodetech3.png'
+
 import userPersona from './images/userpersona.png'
 import architecture from './images/architecture.png'
 import userFlow1 from './images/userflow1.png'
 import userFlow2 from './images/userflow2.png'
 import userFlow3 from './images/userflow3.png'
-import preview1 from './images/preview1.png'
-import preview2 from './images/preview2.png'
-import preview3 from './images/preview3.png'
-import preview4 from './images/preview4.png'
-import preview5 from './images/preview5.png'
+
 import prev from './images/prev.png'
 import next from './images/next.png'
 
@@ -88,7 +88,7 @@ const KODETECH = () => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            The challenge
+                            The Challenge.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
                             As a Nigerian-Tech brand, KodeTech is
@@ -104,55 +104,57 @@ const KODETECH = () => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            User Research
+                            Research
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
-                            To gain a general understanding of the
-                            target users that would be interested in
-                            interacting with the KodeTech brand,
-                            primary research was carried out to
-                            understand their pain points. The main
-                            aim was to connect with the users and
-                            discover a variety of opportunities for
-                            the product.
+                            To get started, primary research was carried out to understand the pain points of the target users
+                            and the main aim of this was to connect with the users and in turn discover a variety of opportunities
+                            for the product.
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
                             Findings
                         </h3>
-                        <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
-                            From the research, it was observed that the
-                            target users were inclined to carry out online
-                            purchases, however, they complained of
-                            certain difficulties which made them restrict
-                            their online transactions. These difficulties
-                            could be in the form of complex website
-                            interfaces, limited payment methods,
-                            constrained delivery options, and a lack of
-                            proper product description.
+                        <article className='text-[0.9rem] overflow-visible leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
+                            Target users are inclined to carry out online purchases, however, they complained of certain difficulties
+                            which made them restrict their online transactions.
+                            <br />
+                            <br />
+                            These difficulties were in the form of:
+                            <br />
+                            <br />
+                            <ul className='[&>*]:overflow-visible overflow-visible ml-4'>
+                                <li><span className='font-bold text-lightShade'>Complex</span> website interfaces.</li>
+                                <li><span className='font-bold text-lightShade'>Limited</span> payment methods.</li>
+                                <li><span className='font-bold text-lightShade'>Constrained</span> delivery options.</li>
+                                <li><span className='font-bold text-lightShade'>A lack</span> of proper product descriptions.</li>
+                            </ul>
+
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Solution: defining goals
+                            The Solution.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
-                            After understanding the challenges faced
-                            by the users and taking into consideration
-                            the core objective of the brand, goals were
-                            crafted to establish major points:
-                            <br /><br />
-                            User-friendliness <br />
-                            Easy navigation <br />
-                            A variety of payment methods <br />
-                            The availability of different delivery options <br />
-                            Detailed product description
+                            After understanding the challenges faced by the users and taking into consideration the core objective
+                            of the brand, goals were crafted to establish major points:
+                            <br />
+                            <br />
+
+                            <ul className='[&>*]:overflow-visible overflow-visible ml-4'>
+                                <li>Ensuring<span className='font-medium text-lightShade'> user-friendliness</span> on the website.</li>
+                                <li>Priortizing<span className='font-medium text-lightShade'> easy navigation</span></li>
+                                <li>Including a variety of<span className='font-medium text-lightShade'> payment methods.</span></li>
+                                <li>Making sure there are different<span className='font-medium text-lightShade'> delivery options</span> available</li>
+                                <li>Crafting detailed<span className='font-medium text-lightShade'> product descriptions.</span></li>
+                            </ul>
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Understanding the target audience: user persona
+                            User Persona.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
                             In the creation of this product, the
@@ -189,58 +191,33 @@ const KODETECH = () => {
                     </div>
 
                     <div>
-                        <div className='mt-14 font-semibold mb-8'>
-                            <h6>Task flows</h6>
+                        <div className='mt-14 font-semibold text-[1.5rem] mb-4'>
+                            <h3>Task flows.</h3>
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div>
+                                <h5 className='mb-4'>Sign Up/log In task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow1} alt="" />
                             </div>
                             <div>
+                                <h5 className='mb-4'>Order/Add to Cart task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow2} alt="" />
                             </div>
                             <div>
+                                <h5 className='mb-4'>Check Out task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow3} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Desktop design
+                            Screens.
                         </h3>
-                        <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
-                            The design of the platform was created to cater
-                            for the needs of the users, and for the purpose
-                            of proper management, the admin role was
-                            included in the design. With the aid of the
-                            dashboard, the admin has control over the
-                            operations of the product to ensure efficiency.
-                        </article>
                     </div>
-                    <div className='mt-14 font-semibold mb-8'>
-                        <h6>Kodetech interface</h6>
-                    </div>
-                    <div className='flex  items-start justify-between '>
-                        <div  >
-                            <img onClick={handleEnlarge} className='h-[28vh]' src={preview1} alt="" />
-                        </div>
-                        <div>
-                            <img onClick={handleEnlarge} className='h-[28vh]' src={preview2} alt="" />
-                        </div>
-                        <div>
-                            <img onClick={handleEnlarge} className='h-[28vh]' src={preview3} alt="" />
-                        </div>
-                    </div>
-                    <div className='mt-14 font-semibold mb-8'>
-                        <h6>Dashboard</h6>
-                    </div>
-                    <div className='flex  items-start justify-between '>
-                        <div  >
-                            <img onClick={handleEnlarge} className='w-[40vw]' src={preview4} alt="" />
-                        </div>
-                        <div>
-                            <img onClick={handleEnlarge} className='w-[40vw]' src={preview5} alt="" />
-                        </div>
+                    <div className='flex flex-col gap-12'>
+                        <div><img src={kodeTech1} alt="" /></div>
+                        <div><img src={kodeTech2} alt="" /></div>
+                        <div><img src={kodeTech3} alt="" /></div>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
@@ -252,13 +229,15 @@ const KODETECH = () => {
                         <p className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
                             View the admin prototype <span className='text-white font-[700]' >here</span>
                         </p>
-                        <p className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
-                            View the mobile prototype <span className='text-white font-[700]' >here</span>
-                        </p>
+
                         <p className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]'>
                             Explore live website <span className='text-white font-[700]' >here</span>
                         </p>
+                    </div>
 
+                    <div className='mt-10 text-lightShade'>
+                        <p>Owari da.</p>
+                        <p>Arigato. 😡</p>
                     </div>
                     <div className='flex gap-2 items-center mt-12 '>
                         <img className='h-4' src={prev} alt="" srcset="" />
@@ -273,7 +252,6 @@ const KODETECH = () => {
                         <img className='h-4' src={next} alt="" srcset="" />
                     </div>
                 </section>
-                <WorkWithFlo />
             </main>
 
         </>

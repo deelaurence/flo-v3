@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         darkShade: "#212121",
         lightShade: "#fafafa",
+        playground: "#E0E0E0",
+        transluscent: "rgba(255,255,255,0.05)",
         opaque: "#B8B8B8",
       },
     },

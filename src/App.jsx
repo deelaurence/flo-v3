@@ -8,6 +8,7 @@ import KODETECH from './components/KODETECH';
 import Navbar from './components/Navbar';
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
+import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
 function App() {
   // const { pathname } = useLocation();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<LANDING />} />
           <Route path="/portfolio" element={<WhoIsFlo />} />
           <Route path="/portfolio/kodetech" element={<KODETECH />} />
+          <Route path="/playground" element={<Playground />} />
         </Routes>
         <Footer />
       </div>

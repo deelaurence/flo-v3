@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
             <div className='flex font-medium gap-4'>
               <a href="">Notion</a>
-              <a href="">Dribble</a>
+              <a href="">Dribbble</a>
               <a href="">Twitter</a>
               <a href="">LinkedIn</a>
             </div>
