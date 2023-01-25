@@ -194,6 +194,10 @@ label {
 /* * {
     outline: red 1px solid;
 } */
+.popup {
+    position: fixed !important;
+}
+
 .grid-cont {
     display: grid;
     /* transform: scale(.5); */
