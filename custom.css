@@ -26,8 +26,7 @@
     list-style-type: disc;
     font-family: satoshi;
     box-sizing: border-box;
-    outline: 2px solid red;
-
+    /* outline: 1px solid red; */
 }
 
 .playground-cont>div>div>p {

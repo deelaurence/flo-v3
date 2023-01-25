@@ -40,7 +40,7 @@ const KODETECH = () => {
     }
     return (
         <>
-            <main className="px-6 md:px-16 pt-20   relative z-20 flex flex-col bg-darkShade text-lightShade md:min-h-[90vh] md:pb-10">
+            <main className="px-6 md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}

@@ -5,6 +5,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import LANDING from './components/LANDING';
 import PORTFOLIOPAGE from './components/PORTFOLIOPAGE';
 import KODETECH from './components/KODETECH';
+import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
@@ -20,7 +21,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<LANDING />} />
-          <Route path="/portfolio" element={<WhoIsFlo />} />
+          <Route path="/about" element={<WhoIsFlo />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/portfolio/kodetech" element={<KODETECH />} />
           <Route path="/playground" element={<Playground />} />
         </Routes>

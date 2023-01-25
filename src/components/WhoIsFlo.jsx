@@ -21,7 +21,7 @@ const WhoIsFlo = () => {
           <h3 className='mb-8'>
             Passionate.
           </h3>
-          <div className='text-sm [&>*]:mb-4 font-regular'>
+          <div className='text-xs [&>*]:mb-4 font-[400]'>
             <p className=''>
               Hi! My name is Flourish Ralph and I am a Product Designer
               from Nigeria.
@@ -54,7 +54,7 @@ const WhoIsFlo = () => {
           <h3 className='mb-8'>
             Perceptive.
           </h3>
-          <div className='text-sm [&>*]:mb-4 font-regular'>
+          <div className='text-xs [&>*]:mb-4 font-[400]'>
             <p className=''>
               My background in Nigeria has shaped my perspective and influenced
               my design approach. I am always looking for ways to collaborate with
@@ -75,7 +75,7 @@ const WhoIsFlo = () => {
           <h3 className='mb-8'>
             Detailed.
           </h3>
-          <div className='text-sm [&>*]:mb-4 font-regular'>
+          <div className='text-xs [&>*]:mb-4 font-[400]'>
             <p className=''>
               Whenever I am out and about, I like taking pictures of the things around
               me, photography feeds my curiosity but it also teaches me to be focused.

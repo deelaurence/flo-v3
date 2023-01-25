@@ -21,18 +21,16 @@ const LANDING = () => {
         {landingData.map((datum) => {
           console.log(datum.image);
           return (
-            <Link to="/portfolio/kodetech">
-              <div className="mb-8">
-                <img src={datum.image} alt={datum.name} />
-                <aside className='flex flex-col'>
-                  <div className='flex justify-between'>
-                    <h3 className='font-bold text-sm md:text-base mt-2'>{datum.name}</h3>
-                    <p className='text-xs mt-2 md:text-sm'>{datum.year}</p>
-                  </div>
-                  <p className='text-xs md:mb-8 md:text-sm'>{datum.details}</p>
-                </aside>
-              </div>
-            </Link>
+            <div className="mb-8">
+              <img src={datum.image} alt={datum.name} />
+              <aside className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <h3 className='font-bold text-sm md:text-base mt-2'>{datum.name}</h3>
+                  <p className='text-xs mt-2 md:text-sm'>{datum.year}</p>
+                </div>
+                <p className='text-xs md:mb-8 md:text-sm'>{datum.details}</p>
+              </aside>
+            </div>
           )
         })}
 
