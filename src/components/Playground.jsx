@@ -58,7 +58,7 @@ const Playground = () => {
                     I hope you get to enjoy interacting with my designs here.
                 </p>
             </section>
-            <section className='px-6 gap-4 grid-cont [&>*]:scale-[1]   overflow-scroll md:overflow-visible [&>*]:overflow-visible mt-32 mb-64 text-[8.2px] sm:px-16 justify-between  text-lightShade'>
+            <section className='py-64 px-6 gap-4 grid-cont [&>*]:scale-[1] playground-cont overflow-scroll md:overflow-visible [&>*]:overflow-visible mt-32 mb-64 text-[8.2px] sm:px-16 justify-between text-lightShade'>
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}

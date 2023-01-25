@@ -22,12 +22,19 @@
 
 * {
     /* transition: 1s; */
-    overflow: hidden;
+    /* overflow: hidden; */
     list-style-type: disc;
     font-family: satoshi;
     box-sizing: border-box;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 
+}
+
+.playground-cont>div>div>p {
+    /* background: blue; */
+    align-self: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .body {
@@ -194,9 +201,7 @@ label {
 /* * {
     outline: red 1px solid;
 } */
-.popup {
-    position: fixed !important;
-}
+
 
 .grid-cont {
     display: grid;
