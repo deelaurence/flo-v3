@@ -11,19 +11,24 @@ import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
 import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
+import { useEffect } from 'react';
 function App() {
   // const { pathname } = useLocation();
+  let toggle = document.querySelector(".toggle")
+  console.log(toggle);
+  console.log("joyyy" + toggle);
   return (
 
     <Router>
+      {/* <p onClick={handleLightMode}>light mode</p> */}
       <ScrollToTop />
-      <div>
-        <Navbar />
+      <div className='dark:bg-lightShade dark:text-darkShade absolute-parent'>
+        < Navbar />
         <Routes>
           <Route path="/" element={<LANDING />} />
           <Route path="/about" element={<WhoIsFlo />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/portfolio/kodetech" element={<KODETECH />} />
+          <Route path="/kodetech" element={<KODETECH />} />
           <Route path="/playground" element={<Playground />} />
         </Routes>
         <Footer />

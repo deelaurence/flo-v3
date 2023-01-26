@@ -23,10 +23,32 @@
 * {
     /* transition: 1s; */
     /* overflow: hidden; */
+
     list-style-type: disc;
     font-family: satoshi;
     box-sizing: border-box;
+    /* transition: 0s !important; */
+    /* background: #fafafa; */
+    /* color: black; */
     /* outline: 1px solid red; */
+}
+
+
+.absolute-parent,
+section,
+.absolute-nav,
+.show-menu {
+    transition: ease-in-out 0s !important;
+}
+
+.nav-menu {
+    transition: 1.5s;
+
+}
+
+.nav-menu-children {
+    transition: 3s;
+    /* background-color: red; */
 }
 
 .playground-cont>div>div>p {
@@ -474,4 +496,9 @@ body {
         transform: scale(1);
         /* width: 40px; */
     }
+}
+
+* {
+    /* background-color: #dadada; */
+    /* color: #212121 !important; */
 }

@@ -46,7 +46,7 @@ const Playground = () => {
     }
     return (
         <>
-            <section className='px-6 mt-12 sm:px-16 text-lightShade'>
+            <section className='px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade text-lightShade'>
 
                 <h3 className='text-xl  font-bold   sm:text-4xl  overflow-visible' >
                     Welcome to my playground.
@@ -58,7 +58,7 @@ const Playground = () => {
                     I hope you get to enjoy interacting with my designs here.
                 </p>
             </section>
-            <section className='py-32 px-6 gap-4 grid-cont [&>*]:scale-[1] playground-cont overflow-scroll md:overflow-visible [&>*]:overflow-visible mt-32 mb-64 text-[8.2px] sm:px-16 justify-between text-lightShade'>
+            <section className='dark:bg-lightShade dark:text-darkShade py-32 px-6 gap-4 grid-cont [&>*]:scale-[1] playground-cont overflow-scroll md:overflow-visible [&>*]:overflow-visible mt-32 mb-64 text-[8.2px] sm:px-16 justify-between text-lightShade'>
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
@@ -70,14 +70,14 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <div className='h-72 w-72 grid-1 rounded-xl bg-transluscent p-4'>
+                <div className='h-72 w-72 grid-1 rounded-xl bg-transluscent   p-4'>
                     <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                         <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />
                         <img className='self-center' src={bud2} onClick={handleEnlarge} alt="" />
                         <img className='self-end' src={bud3} onClick={handleEnlarge} alt="" />
                     </div>
                     <div className='flex justify-between py-4'>
-                        <p className='w-[60%] font-medium'>
+                        <p className='w-[60%] font-medium '>
                             Bud &mdash; An Online Diary Platform with Interactive AI.
                         </p>
                         <p className='self-center text-opaque border-opaque py-1 px-2 rounded-3xl border'>

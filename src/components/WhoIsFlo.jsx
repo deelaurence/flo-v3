@@ -9,7 +9,7 @@ import shot4 from '../assets/shot4.png'
 
 const WhoIsFlo = () => {
   return (
-    <main className='px-6 pt-24 md:px-16 bg-darkShade text-lightShade'>
+    <main className='px-6 pt-24 md:px-16  bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade'>
       <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
         <div className='w-[70%] self-start md:w-[40%]'>
           <img src={heroImg} alt="" />
@@ -108,7 +108,7 @@ const WhoIsFlo = () => {
       </section> */}
       <section className=''>
         <p className='text-center mb-8'>Some of my shots.</p>
-        <div className='flex flex-wrap gap-6 [&>*]:w-[46%] sm:[&>*]:w-[48%] md:[&>*]:w-[48%]'>
+        <div className='flex flex-wrap gap-6 [&>*]:w-[45%] sm:[&>*]:w-[48%] md:[&>*]:w-[48%]'>
           <img src={shot1} alt="" />
           <img src={shot2} alt="" />
           <img src={shot3} alt="" />
