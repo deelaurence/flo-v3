@@ -19,18 +19,14 @@ const Navbar = () => {
     setNight(!night)
     console.log('niiight');
   }
-  const mode = JSON.stringify(localStorage.getItem("mode"))
 
-
-  if (night || mode == "light") {
+  if (night) {
     html.classList.add("dark")
     toggle.src = moon
-    localStorage.setItem("mode", "dark")
 
   }
-  if (!night || mode == "dark") {
+  if (!night) {
     html.classList.remove("dark")
-    localStorage.setItem("mode", "light")
     toggle.src = sun
   }
   const [menu, setMenu] = useState(false)
