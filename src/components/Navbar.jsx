@@ -22,12 +22,12 @@ const Navbar = () => {
 
   if (night) {
     html.classList.add("dark")
-    toggle.src = moon
+    // toggle.src = moon
 
   }
   if (!night) {
     html.classList.remove("dark")
-    toggle.src = sun
+    // toggle.src = sun
   }
   const [menu, setMenu] = useState(false)
   const hideMenu = () => {
