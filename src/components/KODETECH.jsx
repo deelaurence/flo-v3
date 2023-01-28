@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import WorkWithFlo from './WorkWithFloForPortfolio'
 import kodeTechCofee from '../assets/kodetech-mockup.png'
 import kodeTech1 from '../assets/kodetech1.png'
@@ -15,7 +15,28 @@ import userFlow3 from './images/userflow3.png'
 import prev from './images/prev.png'
 import next from './images/next.png'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
+
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react'
+const squareVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 50 }
+};
+
+
 const KODETECH = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
+
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
     const [landscape, setLandscape] = useState(false)
@@ -54,14 +75,24 @@ const KODETECH = () => {
                 {/* popup */}
                 <section className='px-2 relative pb-10'>
                     <div>
-                        <h1 className="text-[1.6rem] font-semibold md:text-5xl">
+                        <motion.h1
+                            ref={ref}
+                            animate={controls}
+                            initial="hidden"
+                            variants={squareVariants}
+                            className="text-[1.6rem] font-semibold md:text-5xl">
                             KodeTech: An <br /> E-Commerce Website
-                        </h1>
+                        </motion.h1>
                     </div>
-                    <div className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
+                    <motion.div
+                        ref={ref}
+                        animate={controls}
+                        initial="hidden"
+                        variants={squareVariants}
+                        className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
                         <p>Role:</p>
                         <p className='font-[600] text-[1rem] '>Product Designer</p>
-                    </div>
+                    </motion.div>
                     <div className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-10'>
                         <p>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1rem]'>3 weeks</p>
@@ -83,8 +114,15 @@ const KODETECH = () => {
                             orders.
                         </article>
                     </div>
-                    <div className='mt-16'>
-                        <img src={kodeTechCofee} alt="" />
+                    <div
+                        className='mt-16 overflow-hidden'>
+                        <motion.img
+                            ref={ref}
+                            animate={controls}
+                            initial="hidden"
+                            variants={squareVariants}                        // variants={squareVariants}
+                            className='mt-16'
+                            src={kodeTechCofee} alt="" />
                     </div>
                     <div className='text-[1.5rem]  font-[600] mt-14'>
                         <h3 className='mb-8'>
@@ -240,7 +278,7 @@ const KODETECH = () => {
                         <p>Arigato. 😡</p>
                     </div>
                     <div className='flex gap-2 items-center mt-12 '>
-                        <img className='h-4' src={prev} alt="" srcset="" />
+                        <img className='h-4' src={prev} alt="" srcSet="" />
                         <p className='text-[1rem] leading-7 font-[500] max-w-[90%]  text-[#fafafab9]  dark:text-darkShade'>
                             Previous
                         </p>
@@ -249,7 +287,7 @@ const KODETECH = () => {
                         <p className='text-[1rem] leading-7 font-[500] max-w-[90%]  '>
                             Next
                         </p>
-                        <img className='h-4' src={next} alt="" srcset="" />
+                        <img className='h-4' src={next} alt="" srcSet="" />
                     </div>
                 </section>
             </main>

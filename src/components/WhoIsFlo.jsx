@@ -6,8 +6,44 @@ import shot1 from '../assets/shot1.png'
 import shot2 from '../assets/shot2.png'
 import shot3 from '../assets/shot3.png'
 import shot4 from '../assets/shot4.png'
-
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
+import { useRef, useEffect } from 'react'
 const WhoIsFlo = () => {
+  const creativeRef = useRef(null)
+  useEffect(() => {
+    const creative = creativeRef.current;
+    console.log(creative);
+    gsap.fromTo(creative, {
+      xPercent: 80,
+      skewX: "20deg",
+      // scrollTrigger: {
+      //   trigger: next,
+      //   start: "top 10%",
+      //   markers: true,
+      // }
+
+      // yoyo: true,
+      // repeat: -1,
+    },
+      {
+        xPercent: 0,
+        skewX: "0deg",
+        scrollTrigger: {
+          trigger: creative,
+          // scrub: true,
+          repeat: -1
+          // start: "top top",
+          // markers: true,
+        }
+        // yoyo: true,
+        // repeat: -1,
+      })
+
+
+  }, [creativeRef])
+
   return (
     <main className='px-6 pt-24 md:px-16  bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade'>
       <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
@@ -48,7 +84,7 @@ const WhoIsFlo = () => {
           <img src={threeShoes} alt="" />
         </div>
         <div className='mt-8 text-2xl md:text-3xl md:text-right md:w-[120%] font-medium'>
-          <h3 className='mb-2'>
+          <h3 ref={creativeRef} className='mb-2'>
             Creative.
           </h3>
           <h3 className='mb-8'>

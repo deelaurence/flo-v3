@@ -34,12 +34,7 @@
 }
 
 
-.absolute-parent,
-section,
-.absolute-nav,
-.show-menu {
-    transition: ease-in-out 0s !important;
-}
+
 
 .nav-menu {
     transition: 1.5s;
@@ -156,7 +151,6 @@ label {
 }
 
 * {
-    transition: .3s;
     /* outline: 1px solid white; */
 }
 

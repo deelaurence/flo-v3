@@ -6,6 +6,7 @@ import React from 'react'
 import Menu from './Menu'
 import { useState } from 'react'
 import logo from './images/680fe7a0a23e7b6c80c6547abf7eb43a-sticker 2.png'
+import { motion } from 'framer-motion'
 const Navbar = () => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
@@ -15,20 +16,20 @@ const Navbar = () => {
 
 
 
-  const handleNightMode = () => {
-    setNight(!night)
-    console.log('niiight');
-  }
+  // const handleNightMode = () => {
+  //   setNight(!night)
+  //   console.log('niiight');
+  // }
 
-  if (night) {
-    html.classList.add("dark")
-    // toggle.src = moon
+  // if (night) {
+  //   html.classList.add("dark")
+  //   // toggle.src = moon
 
-  }
-  if (!night) {
-    html.classList.remove("dark")
-    // toggle.src = sun
-  }
+  // }
+  // if (!night) {
+  //   html.classList.remove("dark")
+  //   // toggle.src = sun
+  // }
   const [menu, setMenu] = useState(false)
   const hideMenu = () => {
     setMenu(false)
@@ -43,16 +44,22 @@ const Navbar = () => {
       className="px-6 relative  z-10 flex py-5 items-center justify-between bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
     >
       <Link to="/">
-        <div className="flex gap-1 overflow-hidden">
-          <h3 className="self-end -mb-1 font-medium text-base ">Flourish.</h3>
-        </div>
+        <motion.div
+          initial={{ y: 10 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", stiffness: 100, duration: .5 }}
+          className="flex gap-1 overflow-hidden">
+          <motion.h3
+
+            className="self-end -mb-1 font-medium text-base ">Flourish.</motion.h3>
+        </motion.div>
       </Link>
       <div className={menu ? 'nav-menu  fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu menu={menu} hideMenu={hideMenu} />
       </div>
       <div className="sm:hidden flex  gap-1 self-end ">
-        <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" />
+        {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
         <p onClick={showMenu} className='text-sm font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade ' >menu</p>
       </div>
       <div className="hidden md:flex  gap-4 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
