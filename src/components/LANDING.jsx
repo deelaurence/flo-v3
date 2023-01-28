@@ -17,17 +17,18 @@ const LANDING = () => {
   console.log(hero);
   useEffect(() => {
     gsap.fromTo(hero, {
-      yPercent: 20,
+      yPercent: 80,
       opacity: 0,
     },
       {
         yPercent: 0,
         opacity: 1,
         duration: 1,
-        scrollTrigger: {
-          trigger: refs.current[0],
-          scrub: "true"
-        }
+
+        // scrollTrigger: {
+        //   trigger: refs.current[0],
+        //   scrub: "true"
+        // }
       })
     gsap.fromTo(refs.current[0], {
       yPercent: 20,
