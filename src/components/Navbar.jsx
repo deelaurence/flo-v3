@@ -54,7 +54,7 @@ const Navbar = () => {
             className="self-end -mb-1 font-medium text-lg">Flourish.</motion.h3>
         </motion.div>
       </Link>
-      <div className={menu ? 'nav-menu  fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
+      <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu menu={menu} hideMenu={hideMenu} />
       </div>

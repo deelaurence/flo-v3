@@ -46,9 +46,9 @@ const Menu = ({ hideMenu, menu }) => {
 
     return (
         <>
-            <p onClick={hideMenu} className='text-sm text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
-            <nav className={menu ? 'dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[5s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-xl' :
-                'dark:bg-lightShade dark:text-darkShade [&>*]:scale-75 transition-[5s] [&>*]:translate-y-[150px] flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-xl'}>
+            <p onClick={hideMenu} className='text-base text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
+            <nav className={menu ? 'nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
+                'nav1-animate dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
                 <Link to='/'>
                     <p onClick={handleActiveWork} className={activeWork ? 'line-through' : ''}>Work</p>
                 </Link>

@@ -141,6 +141,10 @@ label {
 
 }
 
+.nav-animate {
+    transition: 1s ease-in-out;
+}
+
 .largest {
     grid-area: largest;
     /* transition: 1s; */
