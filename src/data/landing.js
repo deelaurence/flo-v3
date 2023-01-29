@@ -36,7 +36,7 @@ let data = [
         link: "/kodetech"
     },
     {
-        name: 'Femminna',
+        name: 'Femmina',
         image: `${landingFemmina}`,
         details: 'A FemTech Application.',
         year: 'Coming Soon',

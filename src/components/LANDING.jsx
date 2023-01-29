@@ -227,7 +227,7 @@ const LANDING = () => {
                 <aside ref={(element) => refs2.current[index] = element} className='flex flex-col mt-3'>
                   <div className='flex justify-between'>
                     <h3 className='font-bold text-[17px] md:text-base mt-2'>{datum.name}</h3>
-                    <p className='text-[11px] text-medium mt-2 md:text-sm'>{datum.year}</p>
+                    <p className='text-[11px] font-medium mt-2 md:text-sm'>{datum.year}</p>
                   </div>
                   <p className='text-[12px] mt-1 md:mb-8 md:text-sm'>{datum.details}</p>
                 </aside>
