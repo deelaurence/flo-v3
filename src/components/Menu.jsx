@@ -46,20 +46,20 @@ const Menu = ({ hideMenu, menu }) => {
 
     return (
         <>
-            <p onClick={hideMenu} className='text-base text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
+            <p onClick={hideMenu} className='text-lg tracking-[0.5px] text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
             <nav className={menu ? 'nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
                 'nav1-animate dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
                 <Link to='/'>
-                    <p onClick={handleActiveWork} className={activeWork ? 'line-through' : ''}>Work</p>
+                    <p onClick={handleActiveWork} className={activeWork ? 'line-through' : 'text-opaque'}>Work</p>
                 </Link>
                 <Link to="/playground">
-                    <p onClick={handleActivePlayground} className={activePlayground ? 'line-through' : ''}>Playground</p>
+                    <p onClick={handleActivePlayground} className={activePlayground ? 'line-through' : 'text-opaque '}>Playground</p>
                 </Link>
                 <Link to="/about">
-                    <p onClick={handleActiveAbout} className={activeAbout ? 'line-through' : ''} >About</p>
+                    <p onClick={handleActiveAbout} className={activeAbout ? 'line-through' : 'text-opaque'} >About</p>
                 </Link>
                 <Link to="/resume">
-                    <p onClick={handleActiveResume} className={activeResume ? 'line-through' : ''}>Résumé</p>
+                    <p onClick={handleActiveResume} className={activeResume ? 'line-through' : 'text-opaque'}>Résumé</p>
                 </Link>
             </nav>
         </>
