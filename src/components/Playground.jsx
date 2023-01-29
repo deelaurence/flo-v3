@@ -51,10 +51,10 @@ const Playground = () => {
                 <h3 className='text-xl  font-medium   sm:text-4xl  overflow-visible' >
                     Welcome to my playground.
                 </h3>
-                <p className='mt-5 w-72 sm:w-full text-sm sm:text-base '>
+                <p className='mt-5  sm:w-full text-sm sm:text-base '>
                     This is an archive collection of projects I have worked on over time.
                 </p>
-                <p className='mt-3 w-72 sm:w-full text-sm sm:text-base  '>
+                <p className='mt-3  sm:w-full text-sm sm:text-base  '>
                     I hope you get to enjoy interacting with my designs here.
                 </p>
             </section>
