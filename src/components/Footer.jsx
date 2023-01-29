@@ -2,9 +2,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer
-      className="pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
+      className="tracking-[1px] pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
     >
-      <div className='bg-lightShade dark:bg-darkShade h-[1px] w-full'>
+      <div className='bg-opaque dark:bg-darkShade h-[1px] w-full'>
       </div>
       <div className='mt-14'>
         <h3 className='text-xl ml-16 text-right '>
