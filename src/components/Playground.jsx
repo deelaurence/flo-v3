@@ -48,13 +48,13 @@ const Playground = () => {
         <>
             <section className='px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade text-lightShade'>
 
-                <h3 className='text-xl  font-bold   sm:text-4xl  overflow-visible' >
+                <h3 className='text-xl  font-medium   sm:text-4xl  overflow-visible' >
                     Welcome to my playground.
                 </h3>
-                <p className='mt-5 w-72 sm:w-full text-xs sm:text-base '>
+                <p className='mt-5 w-72 sm:w-full text-sm sm:text-base '>
                     This is an archive collection of projects I have worked on over time.
                 </p>
-                <p className='mt-3 w-72 sm:w-full text-xs sm:text-base  '>
+                <p className='mt-3 w-72 sm:w-full text-sm sm:text-base  '>
                     I hope you get to enjoy interacting with my designs here.
                 </p>
             </section>
