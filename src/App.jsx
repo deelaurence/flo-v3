@@ -13,23 +13,21 @@ import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
 function App() {
-  // const { pathname } = useLocation();
-  let toggle = document.querySelector(".toggle")
-  console.log(toggle);
-  console.log("joyyy" + toggle);
+  // const location = useLocation();
+
   return (
 
     <Router>
       {/* <p onClick={handleLightMode}>light mode</p> */}
       <ScrollToTop />
-      <div className='dark:bg-lightShade dark:text-darkShade absolute-parent'>
-        < Navbar />
+      <div className='dark:bg-lightShade  absolute-parent'>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<LANDING />} />
-          <Route path="/about" element={<WhoIsFlo />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/kodetech" element={<KODETECH />} />
-          <Route path="/playground" element={<Playground />} />
+          <Route path="/" key={document.location.href} element={<LANDING />} />
+          <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
+          <Route path="/menu" key={document.location.href} element={<Menu />} />
+          <Route path="/kodetech" key={document.location.href} element={<KODETECH />} />
+          <Route path="/playground" key={document.location.href} element={<Playground />} />
         </Routes>
         <Footer />
       </div>

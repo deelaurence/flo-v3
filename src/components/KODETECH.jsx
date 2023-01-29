@@ -22,10 +22,6 @@ gsap.registerPlugin(ScrollTrigger)
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from 'react'
-const squareVariants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: 50 }
-};
 
 
 const KODETECH = () => {
@@ -73,26 +69,18 @@ const KODETECH = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='px-2 relative pb-10'>
+                <section className=' relative pb-10'>
                     <div>
-                        <motion.h1
-                            ref={ref}
-                            animate={controls}
-                            initial="hidden"
-                            variants={squareVariants}
+                        <h1
                             className="text-[1.6rem] font-semibold md:text-5xl">
-                            KodeTech: An <br /> E-Commerce Website
-                        </motion.h1>
+                            KodeTech: <span className='font-medium'> An <br /> E-Commerce Website</span>
+                        </h1>
                     </div>
-                    <motion.div
-                        ref={ref}
-                        animate={controls}
-                        initial="hidden"
-                        variants={squareVariants}
+                    <div
                         className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
                         <p>Role:</p>
-                        <p className='font-[600] text-[1rem] '>Product Designer</p>
-                    </motion.div>
+                        <p className='font-[600] text-[1rem] text-lightShade '>Product Designer</p>
+                    </div>
                     <div className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-10'>
                         <p>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1rem]'>3 weeks</p>
@@ -116,11 +104,7 @@ const KODETECH = () => {
                     </div>
                     <div
                         className='mt-16 overflow-hidden'>
-                        <motion.img
-                            ref={ref}
-                            animate={controls}
-                            initial="hidden"
-                            variants={squareVariants}                        // variants={squareVariants}
+                        <img
                             className='mt-16'
                             src={kodeTechCofee} alt="" />
                     </div>
@@ -142,7 +126,7 @@ const KODETECH = () => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Research
+                            Research.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
                             To get started, primary research was carried out to understand the pain points of the target users
@@ -152,7 +136,7 @@ const KODETECH = () => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Findings
+                            Findings.
                         </h3>
                         <article className='text-[0.9rem] overflow-visible leading-7 font-[500] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
                             Target users are inclined to carry out online purchases, however, they complained of certain difficulties
@@ -215,7 +199,7 @@ const KODETECH = () => {
                     </article>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
-                            Information architecture
+                            Information architecture.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[500] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
                             For a product such as this, it was imperative

@@ -112,8 +112,29 @@ label {
     margin-left: 6px;
 }
 
+section::-webkit-scrollbar {
+    display: none;
+
+
+}
+
 * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition-timing-function: ease-in-out;
+}
+
+html {
+    /* scrollbar-width: 10px; */
     /* outline: 1px solid white; */
+
+}
+
+.popup {
+    position: fixed !important;
+    top: 0 !important;
+    overflow: hidden;
+    /* height: 500px !important; */
 }
 
 /* * {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
 const Menu = ({ hideMenu, menu }) => {
-    console.log(hideMenu);
+
     const [activeWork, setActiveWork] = useState(true);
     const [activePlayground, setActivePlayground] = useState(false);
     const [activeAbout, setActiveAbout] = useState(false);
