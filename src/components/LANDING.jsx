@@ -203,7 +203,7 @@ const LANDING = () => {
   }, [])
   return (
     <>
-      <section ref={heroRef} className='px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
+      <section ref={heroRef} className='tracking-[0.8px] px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
           <img className='h-12 sm:h-20' src={displayPicture} alt="" />
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
@@ -227,7 +227,7 @@ const LANDING = () => {
                 <aside ref={(element) => refs2.current[index] = element} className='flex flex-col mt-3'>
                   <div className='flex justify-between'>
                     <h3 className='font-bold text-[17px] md:text-base mt-2'>{datum.name}</h3>
-                    <p className='text-[11px] mt-2 md:text-sm'>{datum.year}</p>
+                    <p className='text-[11px] text-medium mt-2 md:text-sm'>{datum.year}</p>
                   </div>
                   <p className='text-[12px] mt-1 md:mb-8 md:text-sm'>{datum.details}</p>
                 </aside>

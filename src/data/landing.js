@@ -29,14 +29,14 @@ let data = [
         link: '/guild'
     },
     {
-        name: 'Kodetech',
+        name: 'KodeTech',
         image: `${landingKodetech}`,
         details: 'An E-Commerce Website.',
         year: '2022',
         link: "/kodetech"
     },
     {
-        name: 'Femtech',
+        name: 'Femminna',
         image: `${landingFemmina}`,
         details: 'A FemTech Application.',
         year: 'Coming Soon',
