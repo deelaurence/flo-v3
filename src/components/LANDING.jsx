@@ -203,7 +203,7 @@ const LANDING = () => {
   }, [])
   return (
     <>
-      <section ref={heroRef} className='tracking-[0.8px] px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
+      <section ref={heroRef} className=' px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
           <img className='h-12 sm:h-20' src={displayPicture} alt="" />
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
