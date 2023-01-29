@@ -48,7 +48,7 @@ const Playground = () => {
         <>
             <section className='px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade text-lightShade'>
 
-                <h3 className='text-xl  font-medium   sm:text-4xl  overflow-visible' >
+                <h3 className='text-2xl  font-medium   sm:text-4xl  overflow-visible' >
                     Welcome to my playground.
                 </h3>
                 <p className='mt-5  sm:w-full text-sm sm:text-base '>
