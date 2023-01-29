@@ -207,7 +207,7 @@ const LANDING = () => {
         <div className='flex items-center flex-wrap  my-20'>
           <img className='h-12 sm:h-20' src={displayPicture} alt="" />
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
-          <p className='mt-4  sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
+          <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
         </div>
       </section>
       <section className=' px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
