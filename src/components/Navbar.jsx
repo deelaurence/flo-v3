@@ -51,7 +51,7 @@ const Navbar = () => {
           className="flex gap-1 overflow-hidden">
           <motion.h3
 
-            className="self-end -mb-1 font-medium text-base ">Flourish.</motion.h3>
+            className="self-end -mb-1 font-medium text-lg">Flourish.</motion.h3>
         </motion.div>
       </Link>
       <div className={menu ? 'nav-menu  fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
       <div className="sm:hidden flex  gap-1 self-end ">
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
-        <p onClick={showMenu} className='text-sm font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade ' >menu</p>
+        <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
       <div className="hidden md:flex  gap-4 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
         <p className='text-sm font-regular text-lightShade ' ><Link to='/'>Work</Link></p>
