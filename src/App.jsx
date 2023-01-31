@@ -13,8 +13,12 @@ import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
 function App() {
-  // const location = useLocation();
-
+  const location = document.location;
+  console.log(location);
+  const [currentLocation, setCurrentLocation] = useState('')
+  useEffect(() => {
+    setCurrentLocation(location)
+  }, [currentLocation])
   return (
 
     <Router>
@@ -26,10 +30,10 @@ function App() {
           <Route path="/" key={document.location.href} element={<LANDING />} />
           <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
           <Route path="/menu" key={document.location.href} element={<Menu />} />
-          <Route path="/kodetech" key={document.location.href} element={<KODETECH />} />
+          <Route locationProps={location} path="/kodetech" key={document.location.href} element={<KODETECH />} />
           <Route path="/playground" key={document.location.href} element={<Playground />} />
         </Routes>
-        <Footer />
+        < Footer locationProps={location} />
       </div>
     </Router>
   )

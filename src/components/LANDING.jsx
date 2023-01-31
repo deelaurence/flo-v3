@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import displayPicture from '../assets/display-picture.png'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -9,38 +9,51 @@ import { useInView } from 'react-intersection-observer';
 import landingAlertz from '../assets/landing-alertz.png'
 import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
+import { useLocation } from 'react-router-dom'
+
 const LANDING = () => {
+  const location = useLocation()
+  const [currentLocation, setCurrentLocation] = useState("")
   const refs = useRef([])
   const refs2 = useRef([])
   const heroRef = useRef(null)
   const hero = heroRef.current
   console.log(hero);
   useEffect(() => {
+    console.log("run effect")
+    setCurrentLocation(location)
     gsap.fromTo(hero, {
-      yPercent: 80,
+      yPercent: -80,
       opacity: 0,
+      skewX: "4deg"
     },
       {
+        skewX: "0deg",
         yPercent: 0,
         opacity: 1,
         duration: 1,
+        delay: 2,
+        // ease: "Bounce.easeOut"
 
         // scrollTrigger: {
         //   trigger: refs.current[0],
-        //   scrub: "true"
+        //   // scrub: "true"
         // }
       })
     gsap.fromTo(refs.current[0], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
     },
       {
         yPercent: 0,
-
+        skewX: "0deg",
         opacity: 1,
         duration: 1,
+        delay: 2,
+        // ease: "Bounce.easeOut",
         scrollTrigger: {
-          trigger: refs.current[0],
+          trigger: hero,
         }
       })
     gsap.fromTo(refs2.current[0], {
@@ -51,7 +64,7 @@ const LANDING = () => {
         yPercent: 0,
         duration: 1.2,
         opacity: 1,
-        delay: .5,
+        delay: 3,
         scrollTrigger: {
           trigger: refs.current[0],
         }
@@ -61,15 +74,18 @@ const LANDING = () => {
     gsap.fromTo(refs.current[1], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
 
     },
       {
         yPercent: 0,
+        skewX: "0deg",
 
         opacity: 1,
         duration: 1,
+        delay: 2.5,
         scrollTrigger: {
-          trigger: refs.current[1],
+          trigger: refs.current[0],
         }
       })
     gsap.fromTo(refs2.current[1], {
@@ -82,17 +98,19 @@ const LANDING = () => {
         opacity: 1,
         delay: .5,
         scrollTrigger: {
-          trigger: refs.current[2],
+          trigger: refs.current[0],
         }
       }
     )
     gsap.fromTo(refs.current[2], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
 
     },
       {
         yPercent: 0,
+        skewX: "0deg",
 
         opacity: 1,
         duration: 1,
@@ -117,10 +135,12 @@ const LANDING = () => {
     gsap.fromTo(refs.current[3], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
 
     },
       {
         yPercent: 0,
+        skewX: "0deg",
 
         opacity: 1,
         duration: 1,
@@ -145,11 +165,13 @@ const LANDING = () => {
     gsap.fromTo(refs.current[4], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
 
     },
       {
         yPercent: 0,
 
+        skewX: "0deg",
         opacity: 1,
         duration: 1,
         scrollTrigger: {
@@ -173,10 +195,12 @@ const LANDING = () => {
     gsap.fromTo(refs.current[5], {
       yPercent: 20,
       opacity: 0,
+      skewX: "4deg"
 
     },
       {
         yPercent: 0,
+        skewX: "0deg",
 
         opacity: 1,
         duration: 1,
@@ -200,10 +224,10 @@ const LANDING = () => {
     )
 
 
-  }, [])
+  }, [currentLocation])
   return (
     <>
-      <section ref={heroRef} className=' px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
+      <section ref={heroRef} className='opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
           <img className='h-12 sm:h-20' src={displayPicture} alt="" />
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
@@ -224,7 +248,7 @@ const LANDING = () => {
                   ref={(element) => refs.current[index] = element}
                   src={datum.image}
                   alt={datum.name} />
-                <aside ref={(element) => refs2.current[index] = element} className='flex flex-col mt-3'>
+                <aside ref={(element) => refs2.current[index] = element} className='opacity-0 flex flex-col mt-3'>
                   <div className='flex justify-between'>
                     <h3 className='font-bold text-[17px] md:text-base mt-2'>{datum.name}</h3>
                     <p className='text-[11px] font-medium mt-2 md:text-sm'>{datum.year}</p>

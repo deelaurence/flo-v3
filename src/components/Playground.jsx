@@ -89,8 +89,8 @@ const Playground = () => {
         },
             {
                 opacity: 0,
-                delay: 5,
-                duration: 1,
+                delay: 4,
+                duration: 1.5,
                 y: -120,
                 x: 0
 
@@ -114,7 +114,7 @@ const Playground = () => {
             scale: .3,
             // opacity: 0,
             y: "-1400px",
-            x: "-100px",
+            // x: "-100px",
             filter: "blur(8px)"
 
         },
@@ -125,7 +125,7 @@ const Playground = () => {
                 duration: 1,
                 y: -300,
                 filter: "blur(0px)",
-                x: 0
+                ease: "easeOut"
 
                 // scrollTrigger: {
                 //     trigger: refs.current[0],
@@ -138,16 +138,16 @@ const Playground = () => {
         },
             {
                 overflow: "scroll",
-                delay: 13,
+                delay: 10,
             })
-        gsap.fromTo(popupr, {
-            position: "relative"
+        // gsap.fromTo(popupr, {
+        //     position: "relative"
 
-        },
-            {
-                position: "fixed",
-                delay: 15,
-            })
+        // },
+        //     {
+        //         position: "fixed",
+        //         delay: 15,
+        //     })
     }, [count])
     return (
         <>
@@ -184,10 +184,10 @@ const Playground = () => {
                             <img className='self-end' src={bud3} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium '>
+                            <p className='w-[80%] font-medium '>
                                 Bud &mdash; An Online Diary Platform with Interactive AI.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
                                 Design
                             </p>
                         </div>
@@ -199,10 +199,10 @@ const Playground = () => {
                             <img className='self-start' src={flo3} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
+                            <p className='w-[80%] font-medium'>
                                 Flo &mdash; An app that gives users praise.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
                                 Design
                             </p>
                         </div>
@@ -214,11 +214,11 @@ const Playground = () => {
                             <img className='self-start' src={craiglist3} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Craiglist &mdash; An online advertisement website.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
-                                Design
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
+                                Redesign
                             </p>
                         </div>
                     </div>
@@ -227,11 +227,11 @@ const Playground = () => {
                             <img className='self-center' src={winniamp} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Winamp &mdash; A desktop media app.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
-                                Design
+                            <p className='leading-[14px] self-center text-lightShade font-normal border-opaque  border-[1px]  h-5 px-3 rounded-3xl '>
+                                Redesign
                             </p>
                         </div>
                     </div>
@@ -244,10 +244,10 @@ const Playground = () => {
                             <img className='self-center' src={shoptacle2} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Shoptacle &mdash; A luxury clothing webshop.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
+                            <p className='leading-[14px] self-center text-lightShade font-normal border-opaque  border-[1px]  h-5 px-3 rounded-3xl '>
                                 Design
                             </p>
                         </div>
@@ -259,10 +259,10 @@ const Playground = () => {
                             <img className='self-start' src={dribbble3} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Dribbble &mdash; An event exploring app.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
                                 Design
                             </p>
                         </div>
@@ -274,10 +274,10 @@ const Playground = () => {
                             <img className='self-start mt-6' src={buonnisimo3} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Buonissimo &mdash; A food recipe app.
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
                                 Design
                             </p>
                         </div>
@@ -287,11 +287,11 @@ const Playground = () => {
                             <img className='self-center' src={casual} onClick={handleEnlarge} alt="" />
                         </div>
                         <div className='h-12 flex justify-between py-2'>
-                            <p className='w-[70%] font-medium'>
-                                Flo &mdash; An app that gives users praise.
+                            <p className='w-[80%] font-medium'>
+                                Inspiration from dribbble
                             </p>
-                            <p className='self-center text-opaque border-opaque h-6 px-2 rounded-3xl border'>
-                                Design
+                            <p className='self-center text-lightShade font-normal border-opaque  border-[1px] leading-3 h-5 px-3 rounded-3xl '>
+                                Redesign
                             </p>
                         </div>
                     </div>

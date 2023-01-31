@@ -27,6 +27,7 @@
     list-style-type: disc;
     font-family: satoshi;
     box-sizing: border-box;
+    transform-origin: left;
     /* transition: 0s !important; */
     /* background: #fafafa; */
     /* color: black; */
