@@ -98,7 +98,7 @@ function App() {
           console.log("completed")
           setTimeout(() => {
             setImageLoaded(true)
-          }, 10000);
+          }, 40000);
         }
       })
     })
@@ -106,7 +106,7 @@ function App() {
   setTimeout(() => {
 
     setImageLoaded(true)
-  }, 40000);
+  }, 60000);
   const bar = barRef.current
   const bar2 = bar2Ref.current
   if (bar && bar2) {
@@ -270,7 +270,8 @@ function App() {
           <p className='absolute text-xl text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
           <p className='absolute text-xl bottom-[166px] text-neutral-400'>02:00:35 pm</p>
           <h1 className='absolute bottom-8' >
-            {status ? ` ${pseudoStatus}%` : "0%"}
+            {status ? ` ${progress} ${domImages.length}%` : "0%"}
+            {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
           </h1>
           <img className='three-shoes' src={threeShoe} alt="" />
           <p ref={preloadTextRef} className='opacity-0 preload-text [&>*]:overflow-visible flex flex-col absolute overflow-visible top-4 text-white text-5xl' >
