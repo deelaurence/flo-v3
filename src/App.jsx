@@ -112,7 +112,8 @@ function App() {
   if (bar && bar2) {
     // setTimeout(() => {
     bar.style.width = `${status / domImages.length * 94}%`
-    bar2.style.width = `${pseudoStatus / 99 * 94}%`
+    // bar2.style.width = `${pseudoStatus / 99 * 94}%`
+    bar2.style.width = `${status / domImages.length * 94}%`
 
     // }, 1000);
   }
@@ -270,7 +271,7 @@ function App() {
           <p className='absolute text-xl text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
           <p className='absolute text-xl bottom-[166px] text-neutral-400'>02:00:35 pm</p>
           <h1 className='absolute bottom-8' >
-            {status ? ` ${progress} ${domImages.length}%` : "0%"}
+            {status ? ` ${Math.floor(progress / domImages.length * 100)}%` : "0%"}
             {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
           </h1>
           <img className='three-shoes' src={threeShoe} alt="" />
