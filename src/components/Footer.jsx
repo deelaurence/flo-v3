@@ -18,7 +18,6 @@ const Footer = ({ locationProps }) => {
 
 
   useEffect(() => {
-    console.log(locationProps);
     useCurrentLocation(locationProps)
     gsap.fromTo(footerLine, {
       width: 0,

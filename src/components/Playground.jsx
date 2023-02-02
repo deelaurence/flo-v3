@@ -37,19 +37,16 @@ const Playground = () => {
         setLandscape(false)
         setPop(!pop)
         setPopupImg(e.target.src)
-        console.log(e.target.src)
     }
     const handleEnlargeLandscape = (e) => {
         // setPopupImg("")
         setLandscape(true)
         setPop(!pop)
         setPopupImg(e.target.src)
-        console.log(e.target.src)
     }
     const handleDecrease = (e) => {
         // setPopupImg("")
         setPop(!pop)
-        console.log(e.target)
     }
     const playgroundRef = useRef()
     const playgroundInfoRef = useRef()
@@ -64,9 +61,8 @@ const Playground = () => {
     // }, 5000);
     // setCount(location.pathname)
     useEffect(() => {
-        console.log("run effect");
+        console.log("run playground effect");
         setCount(location)
-        console.log(location);
         gsap.fromTo(playgroundInfo, {
             // scale: .2,
             opacity: 0,

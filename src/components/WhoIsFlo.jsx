@@ -60,7 +60,6 @@ const WhoIsFlo = () => {
     console.log("run about effect");
     setCurrentLocation(location)
     const creative = creativeRef.current;
-    console.log(floImgRef);
     gsap.fromTo(floImg, {
       yPercent: 80,
       opacity: 0,
@@ -348,7 +347,7 @@ const WhoIsFlo = () => {
     <main className='px-6 pt-24 md:px-16 tracking-[0.3px]  bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade'>
       <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
         <div ref={floImgRef} className='w-[70%] self-start md:w-[40%]'>
-          <img src={heroImg} alt="" />
+          <img rel="preload" src={heroImg} alt="" />
         </div>
         <div className='mt-8 text-3xl md:text-4xl font-medium md:w-[60%]'>
           <h3 ref={inquisitiveRef} className='mb-2'>

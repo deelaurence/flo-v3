@@ -2,7 +2,6 @@ import React from 'react'
 import { GiClick } from 'react-icons/gi'
 import { useState } from 'react'
 const ClickIcon = ({ enlarge }) => {
-    console.log(enlarge)
     const [showIcon, setShowIcon] = useState(true)
     const hideIcon = () => {
         setShowIcon(false)

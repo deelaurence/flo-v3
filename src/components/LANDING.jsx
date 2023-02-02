@@ -18,20 +18,21 @@ const LANDING = () => {
   const refs2 = useRef([])
   const heroRef = useRef(null)
   const hero = heroRef.current
-  console.log(hero);
   useEffect(() => {
-    console.log("run effect")
+    console.log("run effect landing")
     setCurrentLocation(location)
     gsap.fromTo(hero, {
-      yPercent: -80,
+      yPercent: 40,
       opacity: 0,
-      skewX: "4deg"
+      skewX: "9deg",
+      // scale: 5,
     },
       {
         skewX: "0deg",
+        // scale: 1,
         yPercent: 0,
         opacity: 1,
-        duration: 1,
+        duration: 1.5,
         delay: 2,
         // ease: "Bounce.easeOut"
 
@@ -227,18 +228,17 @@ const LANDING = () => {
   }, [currentLocation])
   return (
     <>
-      <section ref={heroRef} className='opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
+      <section ref={heroRef} className='overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
           <img className='h-12 sm:h-20' src={displayPicture} alt="" />
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
           <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
         </div>
       </section>
-      <section className=' px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
+      <section className='overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
 
 
         {landingData.map((datum, index) => {
-          console.log(datum.image);
           return (
             <Link key={datum.name} to={datum.link}>
               <div

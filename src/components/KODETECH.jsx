@@ -33,7 +33,6 @@ const KODETECH = ({ locationProps }) => {
     const finding = findingsRef.current
     const articles = document.querySelectorAll("article")
     const span = document.querySelectorAll("span")
-    console.log(articles);
     const [location, setLocation] = useState("")
     useEffect(() => {
         setLocation(locationProps)
@@ -116,19 +115,16 @@ const KODETECH = ({ locationProps }) => {
         setLandscape(false)
         setPop(!pop)
         setPopupImg(e.target.src)
-        console.log(e.target.src)
     }
     const handleEnlargeLandscape = (e) => {
         // setPopupImg("")
         setLandscape(true)
         setPop(!pop)
         setPopupImg(e.target.src)
-        console.log(e.target.src)
     }
     const handleDecrease = (e) => {
         // setPopupImg("")
         setPop(!pop)
-        console.log(e.target)
     }
     return (
         <>

@@ -10,8 +10,6 @@ import { motion } from 'framer-motion'
 const Navbar = () => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
-  console.log(html);
-  console.log(toggle);
   const [night, setNight] = useState(false)
 
 
@@ -33,7 +31,6 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false)
   const hideMenu = () => {
     setMenu(false)
-    console.log("hide")
   }
   const showMenu = () => {
     setMenu(true)

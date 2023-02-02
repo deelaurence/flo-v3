@@ -37,7 +37,6 @@ const PORTFOLIOPAGE = () => {
         // setPopupImg("")
         setPop(!pop)
         setPopupImg(e.target.src)
-        console.log(e.target.src)
     }
     const handleDecrease = (e) => {
         // setPopupImg("")
