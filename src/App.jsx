@@ -96,7 +96,7 @@ function App() {
         if (progress.length == domImages.length) {
           console.log("completed")
           setTimeout(() => {
-            setImageLoaded(true)
+            // setImageLoaded(true)
           }, 40000);
         }
       })
@@ -104,7 +104,7 @@ function App() {
   }
   setTimeout(() => {
 
-    setImageLoaded(true)
+    // setImageLoaded(true)
   }, 60000);
   const bar = barRef.current
   const bar2 = bar2Ref.current
@@ -153,7 +153,8 @@ function App() {
         filter: "contrast(200%)",
         // scale: 4,
       }, {
-        filter: "blur(0px)",
+        filter: "contrast(190%)",
+        filter: "blur(120px)",
         duration: 20,
         // scale: 1,
         delay: 0,
