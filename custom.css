@@ -42,6 +42,30 @@
     /* outline: 1px solid red; */
 }
 
+.bg-playground>img:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    transition: ease-in-out .5s;
+    transform-origin: bottom;
+}
+
+.bg-playground>img {
+    transition: .5s;
+
+
+}
+
+.shots-cont>img {
+    /* border: 1px solid rgb(174, 174, 174); */
+    border-radius: 0px;
+    /* background: linear-gradient(145deg, #898989, #737373); */
+    box-shadow: 5px 5px 9px #050505,
+        -5px -5px 9px #252525;
+    /* border-bottom: 10px solid rgb(173, 173, 173); */
+}
+
+
+
 .nav-menu {
     transition: 1.5s;
 

@@ -19,6 +19,7 @@ const Footer = ({ locationProps }) => {
 
   useEffect(() => {
     useCurrentLocation(locationProps)
+    console.log("footer use effect");
     gsap.fromTo(footerLine, {
       width: 0,
     }, {
@@ -76,15 +77,15 @@ const Footer = ({ locationProps }) => {
 
     })
 
-  }, [currentLocation])
+  }, [currentLocation, location])
   return (
     <footer
       className="tracking-[0.5px] pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
     >
       <div ref={footerLineRef} className='bg-opaque dark:bg-darkShade h-[1px] w-full'>
       </div>
-      <div className='mt-14'>
-        <h3 ref={gotProjectRef} className='text-xl ml-16 text-right '>
+      <div className='mt-14 overflow-visible'>
+        <h3 ref={gotProjectRef} className='text-xl overflow-visible ml-16 text-right '>
           Got an interesting project you’d
           like to discuss?
         </h3>

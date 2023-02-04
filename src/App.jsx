@@ -32,7 +32,6 @@ import buanissimo3 from "../src/assets/buonnisimo3.png"
 import casual from "../src/assets/casual.png"
 import winniamp from "../src/assets/winniamp.png"
 
-// import flo3 from "../src/assets/flo3.png"
 import shot1 from "../src/assets/shot1.png"
 import shot2 from "../src/assets/shot2.png"
 import shot3 from "../src/assets/shot3.png"

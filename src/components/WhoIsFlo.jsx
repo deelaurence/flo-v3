@@ -13,7 +13,6 @@ gsap.registerPlugin(ScrollTrigger)
 import { useRef, useEffect, useState } from 'react'
 const WhoIsFlo = () => {
   const location = useLocation()
-
   const floImgRef = useRef(null)
   const inquisitiveRef = useRef(null)
   const passionateRef = useRef(null)
@@ -21,6 +20,7 @@ const WhoIsFlo = () => {
   const intro2Ref = useRef(null)
   const intro3Ref = useRef(null)
   const intro4Ref = useRef(null)
+  const subtitlesRef = useRef(null)
 
   const creativeRef = useRef(null)
   const perceptiveRef = useRef(null)
@@ -35,7 +35,7 @@ const WhoIsFlo = () => {
   const perceptive = perceptiveRef.current
   const threeShoe = threeShoesRef.current
   const background = backgroundRef.current
-
+  const subtitles = subtitlesRef.current
 
   const curious = curiousRef.current
   const detailed = detailedRef.current
@@ -52,7 +52,284 @@ const WhoIsFlo = () => {
   const intro4 = intro4Ref.current
 
   const shotsRef = useRef(null)
+  const shot1Ref = useRef(null)
+  const shot2Ref = useRef(null)
+  const shot3Ref = useRef(null)
+  const shot4Ref = useRef(null)
   const shot = shotsRef.current
+  const shot1r = shot1Ref.current
+  const shot2r = shot2Ref.current
+  const shot3r = shot3Ref.current
+  const shot4r = shot4Ref.current
+  const handleHover = (e) => {
+    console.log(shot1r);
+    if (e.detail === 2) {
+      console.log(e.detail);
+      subtitles.style.opacity = "0"
+      subtitles.style.top = "30%"
+      subtitles.style.transform = "skewX(10deg)"
+      e.target.style.transform = "translate(-0%, -0%)"
+
+      e.target.style.top = "0"
+      shot2r.style.top = "0"
+      shot2r.style.left = "50%"
+      shot3r.style.top = "50%"
+      shot3r.style.left = "0"
+      shot4r.style.bottom = "0"
+      shot4r.style.top = "50%"
+      shot4r.style.left = "50%"
+      shot2r.style.transform = "scale(1)"
+
+
+      shot2r.style.filter = "brightness(100%)"
+      shot3r.style.filter = "brightness(100%)"
+      shot4r.style.filter = "brightness(100%)"
+      shot3r.style.transform = "scale(1)"
+      shot4r.style.transform = "scale(1)"
+      // shot4r.style.bottom = "0"
+      e.target.style.left = "0"
+      // e.target.style.transformOrigin = "left"
+      e.target.style.zIndex = "10"
+      e.target.style.transition = ".5s ease-out"
+      return
+    }
+    e.target.style.transform = "translate(-50%, -50%) scale(1.5)"
+    // e.target.style.width = "0vw"
+    // shot2r.style.transform = "rotate(-50deg)"
+    e.target.style.top = "50%"
+    e.target.style.left = "37%"
+    shot2r.style.top = "30%"
+    shot2r.style.left = "58%"
+    shot2r.style.zIndex = "8"
+    shot2r.style.transform = "scale(0.8) rotate(20deg)"
+    shot2r.style.filter = "brightness(20%)"
+    shot3r.style.top = "40%"
+    shot3r.style.left = "-10%"
+    shot3r.style.zIndex = "8"
+    shot3r.style.filter = "brightness(20%)"
+    shot3r.style.transform = "scale(.65) rotate(-20deg)"
+    shot3r.style.transformOrigin = "bottom bottom"
+    // shot3r.style.opacity = "0.3"
+    shot4r.style.top = "30%"
+    shot4r.style.zIndex = "8"
+    shot4r.style.left = "90%"
+    shot4r.style.transform = "scale(0.5) rotate(30deg)"
+    shot4r.style.zIndex = "6"
+    shot4r.style.filter = "brightness(20%)"
+    subtitles.innerHTML = "Shot One."
+    subtitles.style.opacity = "1"
+    subtitles.style.transition = "1s"
+    subtitles.style.top = "70%"
+    subtitles.style.transform = "skewX(0deg)"
+    // shot4r.style.opacity = "0.3"
+    // shot3r.style.opacity = "0"
+    // shot4r.style.opacity = "0"
+    e.target.style.transformOrigin = "left left"
+    e.target.style.zIndex = "10"
+    e.target.style.transition = "1s ease-out"
+
+  }
+
+  const handleHover2 = (e) => {
+    console.log(shot1r);
+    if (e.detail === 2) {
+      console.log(shot1r);
+      subtitles.style.opacity = "0"
+      subtitles.style.top = "30%"
+
+      e.target.style.transform = "translate(-0%, -0%)"
+
+      e.target.style.top = "0"
+      shot1r.style.top = "0"
+      shot3r.style.top = "50%"
+      shot3r.style.left = "0"
+      shot2r.style.left = "55%"
+      shot4r.style.bottom = "0"
+      shot4r.style.top = "50%"
+      shot4r.style.left = "50%"
+      shot1r.style.transform = "scale(1)"
+      shot1r.style.left = "0"
+
+      shot1r.style.filter = "brightness(100%)"
+      shot3r.style.filter = "brightness(100%)"
+      shot4r.style.filter = "brightness(100%)"
+      shot3r.style.transform = "scale(1)"
+      shot4r.style.transform = "scale(1)"
+      // shot4r.style.bottom = "0"
+      e.target.style.left = "50%"
+      // e.target.style.transformOrigin = "left"
+      e.target.style.zIndex = "10"
+      e.target.style.transition = ".5s ease-out"
+      return
+    }
+    e.target.style.transform = "translate(-50%, -50%) scale(1.5)"
+    // e.target.style.width = "0vw"
+
+    e.target.style.top = "50%"
+    e.target.style.left = "37%"
+
+    shot1r.style.top = "30%"
+    shot1r.style.left = "-20%"
+    shot1r.style.zIndex = "8"
+    shot1r.style.transform = "scale(0.4)"
+    shot1r.style.filter = "brightness(30%)"
+    shot3r.style.top = "30%"
+    shot3r.style.zIndex = "8"
+    shot3r.style.filter = "brightness(30%)"
+    shot3r.style.transform = "scale(.65)"
+    // shot3r.style.opacity = "0.3"
+    shot4r.style.top = "30%"
+    shot4r.style.zIndex = "8"
+    shot4r.style.left = "80%"
+    shot4r.style.transform = "scale(0.5)"
+    shot4r.style.zIndex = "6"
+    shot4r.style.filter = "brightness(30%)"
+    subtitles.innerHTML = "Shot Two."
+    subtitles.style.opacity = "1"
+    subtitles.style.transition = "1s"
+    subtitles.style.top = "40%"
+    // shot4r.style.opacity = "0.3"
+    // shot3r.style.opacity = "0"
+    // shot4r.style.opacity = "0"
+    e.target.style.transformOrigin = "left left"
+    e.target.style.zIndex = "10"
+    e.target.style.transition = "1s ease-out"
+
+  }
+
+  const handleHover3 = (e) => {
+    console.log(shot1r);
+    if (e.detail === 2) {
+      console.log(shot1r);
+      subtitles.style.opacity = "0"
+      subtitles.style.top = "30%"
+
+      // shot1r.target.style.transform = "translate(-0%, -0%)"
+
+      e.target.style.bottom = "0"
+      shot2r.style.top = "0"
+      shot1r.style.top = "0%"
+      shot1r.style.left = "0%"
+      shot4r.style.bottom = "0"
+      shot4r.style.top = "50%"
+      shot4r.style.left = "50%"
+      shot2r.style.transform = "scale(1)"
+
+      shot2r.style.filter = "brightness(100%)"
+      shot1r.style.filter = "brightness(100%)"
+      shot4r.style.filter = "brightness(100%)"
+      shot1r.style.transform = "scale(1)"
+      shot4r.style.transform = "scale(1)"
+      // shot4r.style.bottom = "0"
+      e.target.style.left = "0%"
+      e.target.style.transform = "scale(1)"
+      // e.target.style.transformOrigin = "left"
+      e.target.style.zIndex = "10"
+      e.target.style.transition = ".5s ease-out"
+      return
+    }
+    e.target.style.transform = "translate(-50%, -50%) scale(1.5)"
+    // e.target.style.width = "0vw"
+
+    e.target.style.top = "50%"
+    e.target.style.left = "37%"
+
+    shot2r.style.top = "30%"
+    shot2r.style.zIndex = "8"
+    shot2r.style.transform = "scale(0.8)"
+    shot2r.style.filter = "brightness(30%)"
+    shot1r.style.top = "30%"
+    shot1r.style.zIndex = "8"
+    shot1r.style.filter = "brightness(30%)"
+    shot1r.style.transform = "scale(.65)"
+    // shot3r.style.opacity = "0.3"
+    shot4r.style.top = "30%"
+    shot4r.style.zIndex = "8"
+    shot4r.style.left = "80%"
+    shot4r.style.transform = "scale(0.5)"
+    shot4r.style.zIndex = "6"
+    shot4r.style.filter = "brightness(30%)"
+    subtitles.innerHTML = "Shot One."
+    subtitles.style.opacity = "1"
+    subtitles.style.transition = "1s"
+    subtitles.style.top = "40%"
+    // shot4r.style.opacity = "0.3"
+    // shot3r.style.opacity = "0"
+    // shot4r.style.opacity = "0"
+    e.target.style.transformOrigin = "left left"
+    e.target.style.zIndex = "10"
+    e.target.style.transition = "1s ease-out"
+
+  }
+  const handleLeave3 = (e) => {
+
+  }
+  const handleHover4 = (e) => {
+    console.log(shot1r);
+    if (e.detail === 2) {
+      subtitles.style.opacity = "0"
+      subtitles.style.top = "30%"
+
+      e.target.style.transform = "translate(-0%, -0%)"
+
+      e.target.style.bottom = "0"
+      shot2r.style.top = "0"
+      shot3r.style.top = "50%"
+      shot3r.style.left = "0"
+      shot1r.style.top = "0"
+      shot1r.style.left = "0"
+      shot2r.style.transform = "scale(1)"
+
+      shot2r.style.filter = "brightness(100%)"
+      shot3r.style.filter = "brightness(100%)"
+      shot1r.style.filter = "brightness(100%)"
+      shot3r.style.transform = "scale(1)"
+      shot1r.style.transform = "scale(1)"
+      // shot4r.style.bottom = "0"
+      e.target.style.left = "50%"
+      // e.target.style.transformOrigin = "left"
+      e.target.style.zIndex = "10"
+      e.target.style.transition = ".5s ease-out"
+      return
+    }
+    e.target.style.transform = "translate(-50%, -50%) scale(1.5)"
+    // e.target.style.width = "0vw"
+
+    e.target.style.top = "50%"
+    e.target.style.left = "37%"
+
+    shot2r.style.top = "30%"
+    shot2r.style.zIndex = "8"
+    shot2r.style.transform = "scale(0.8)"
+    shot2r.style.filter = "brightness(30%)"
+    shot3r.style.top = "30%"
+    shot3r.style.zIndex = "8"
+    shot3r.style.filter = "brightness(30%)"
+    shot3r.style.transform = "scale(.65)"
+    // shot3r.style.opacity = "0.3"
+    shot1r.style.top = "30%"
+    shot1r.style.zIndex = "8"
+    shot1r.style.left = "80%"
+    shot1r.style.transform = "scale(0.5)"
+    shot1r.style.zIndex = "6"
+    shot1r.style.filter = "brightness(30%)"
+    subtitles.innerHTML = "Shot One."
+    subtitles.style.opacity = "1"
+    subtitles.style.transition = "1s"
+    subtitles.style.top = "40%"
+    // shot4r.style.opacity = "0.3"
+    // shot3r.style.opacity = "0"
+    // shot4r.style.opacity = "0"
+    e.target.style.transformOrigin = "left left"
+    e.target.style.zIndex = "10"
+    e.target.style.transition = "1s ease-out"
+
+  }
+  const handleLeave4 = (e) => {
+    console.log(shot1r);
+
+
+  }
 
   const [currentLocation, setCurrentLocation] = useState("")
 
@@ -420,34 +697,15 @@ const WhoIsFlo = () => {
           </div>
         </div>
       </section>
-      {/* <section className='mb-24 flex flex-col'>
-        <div className='w-[70%]'>
-          <img src={seaWaves} alt="" />
-        </div>
-        <div className='mt-8 text-2xl font-medium'>
-          <h3 className='mb-2'>
-            Curious.
-          </h3>
-          <h3 className='mb-8'>
-            Detailed.
-          </h3>
-          <div className='text-sm [&>*]:mb-4 font-regular'>
-            <p className=''>
-              Whenever I am out and about, I like taking pictures of the things around
-              me, photography feeds my curiosity but it also teaches me to be focused.
-              It reminds me to stay grounded and to appreciate the experiences I get to
-              have in my environment.
-            </p>
-          </div>
-        </div>
-      </section> */}
-      <section ref={shotsRef} className=''>
-        <p className='text-center mb-8'>Some of my shots.</p>
-        <div className='flex flex-wrap gap-6 [&>*]:w-[45%] sm:[&>*]:w-[48%] md:[&>*]:w-[48%]'>
-          <img src={shot1} alt="" />
-          <img src={shot2} alt="" />
-          <img src={shot3} alt="" />
-          <img src={shot4} alt="" />
+
+      <section ref={shotsRef} className='overflow-visible'>
+        <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
+        <div className='[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[60vw] [&>*]:absolute gap-6 '>
+          <img draggable="true" onClick={handleHover} ref={shot1Ref} className=' top-0 ' src={shot1} alt="" />
+          <img onClick={handleHover2} ref={shot2Ref} className='top-0  right-0' src={shot2} alt="" />
+          <img onClick={handleHover3} ref={shot3Ref} className='bottom-0 left-0' src={shot3} alt="" />
+          <img onClick={handleHover4} ref={shot4Ref} className='bottom-0  right-0' src={shot4} alt="" />
+          <p ref={subtitlesRef} className='opacity-0 absolute top-[30%]  left-[30%] z-[11] font-bold text-2xl'>Subtitles</p>
         </div>
       </section>
     </main>

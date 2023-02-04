@@ -50,9 +50,11 @@ const Playground = () => {
     }
     const playgroundRef = useRef()
     const playgroundInfoRef = useRef()
+    const playgroundInfo2Ref = useRef()
     const popupRef = useRef()
     const playground = playgroundRef.current
     const playgroundInfo = playgroundInfoRef.current
+    const playgroundInfo2 = playgroundInfo2Ref.current
     const popupr = popupRef.current
     let [count, setCount] = useState("")
     // setInterval(() => {
@@ -65,8 +67,8 @@ const Playground = () => {
         setCount(location)
         gsap.fromTo(playgroundInfo, {
             // scale: .2,
-            opacity: 0,
-            y: -120,
+            // opacity: 0,
+            y: -70,
             // transform: "skewY(30deg)"
         },
             {
@@ -75,6 +77,20 @@ const Playground = () => {
                 duration: 1,
                 y: 0,
                 ease: "Bounce.easeOut",
+                // transform: "skewY(0deg)"
+            })
+        gsap.fromTo(playgroundInfo2, {
+            // scale: .2,
+            opacity: 0,
+            y: -50,
+            // transform: "skewY(30deg)"
+        },
+            {
+                opacity: 1,
+                delay: 2,
+                duration: 1,
+                y: 0,
+                // ease: "Bounce.easeOut",
                 // transform: "skewY(0deg)"
             })
         gsap.fromTo(playgroundInfo, {
@@ -91,6 +107,20 @@ const Playground = () => {
                 x: 0
 
             })
+        gsap.fromTo(playgroundInfo2, {
+            // scale: .2,
+            opacity: 1,
+            // y: 0,
+
+        },
+            {
+                opacity: 0,
+                delay: 4.2,
+                duration: 1,
+                y: -120,
+                x: 0
+
+            })
         gsap.fromTo(playground, {
             // scale: .2,
             opacity: 0,
@@ -100,7 +130,6 @@ const Playground = () => {
                 opacity: 1,
                 delay: 5,
                 duration: 2,
-
                 // scrollTrigger: {
                 //     trigger: refs.current[0],
                 //     scrub: "true"
@@ -111,7 +140,7 @@ const Playground = () => {
             // opacity: 0,
             y: "-1400px",
             // x: "-100px",
-            filter: "blur(8px)"
+            // filter: "blur(8px)"
 
         },
             {
@@ -120,7 +149,7 @@ const Playground = () => {
                 delay: 7.5,
                 duration: 1,
                 y: -300,
-                filter: "blur(0px)",
+                // filter: "blur(0px)",
                 ease: "easeOut"
 
                 // scrollTrigger: {
@@ -149,12 +178,11 @@ const Playground = () => {
         <>
             <main>
 
-                <section ref={playgroundInfoRef} className='opacity-0 px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade text-lightShade'>
-
-                    <h3 className='text-2xl  font-medium   sm:text-4xl  overflow-visible' >
+                <section className=' px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade overflow-visible text-lightShade'>
+                    <h3 ref={playgroundInfoRef} className='opacity-0 text-2xl  font-medium sm:text-4xl  overflow-visible' >
                         Welcome to my playground.
                     </h3>
-                    <p className='mt-5 leading-[25px] sm:w-full text-sm sm:text-base '>
+                    <p ref={playgroundInfo2Ref} className='opacity-0 mt-5 leading-[25px] sm:w-full text-sm sm:text-base '>
                         This is an archive collection of projects I have worked on over time.
                     </p>
                     {/* <p className='mt-3 leading-[25px] sm:w-full text-sm sm:text-base  '>
