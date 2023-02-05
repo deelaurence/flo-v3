@@ -68,6 +68,7 @@ function App() {
   let [words, setWords] = useState("")
   let [animation, setAnimation] = useState(false)
   let [status, setStatus] = useState(0)
+  let [time, setTime] = useState('')
   let [pseudoStatus, setPseudoStatus] = useState(0)
 
   const domImages = document.querySelectorAll("img")
@@ -96,15 +97,15 @@ function App() {
         if (progress.length == domImages.length) {
           console.log("completed")
           setTimeout(() => {
-            // setImageLoaded(true)
-          }, 40000);
+            setImageLoaded(true)
+          }, 20000);
         }
       })
     })
   }
   setTimeout(() => {
 
-    // setImageLoaded(true)
+    setImageLoaded(true)
   }, 60000);
   const bar = barRef.current
   const bar2 = bar2Ref.current
@@ -209,7 +210,40 @@ function App() {
   }, [animation])
 
   // console.log(preloadText);
+  const clockRef = useRef(null)
+  const clock = clockRef.current
+  useEffect(() => {
 
+
+    const currentTime = new Date()
+    const hours = currentTime.getHours()
+    const minutes = currentTime.getMinutes()
+    const seconds = currentTime.getSeconds()
+    const day = currentTime.getDay()
+    const weekdays = ["Sn", "Mn", "Tu", "Wd", "Th", "Fr", "St"]
+    // console.log(seconds)
+
+    let newHour;
+    let newSeconds;
+    let newMinute
+    let amPm;
+
+    hours > 12 ? newHour = hours % 12 : newHour = hours
+    hours > 12 ? amPm = "pm" : amPm = "am"
+    seconds < 10 ? newSeconds = `0${seconds}` : newSeconds = seconds
+    minutes < 10 ? newMinute = `0${minutes}` : newMinute = minutes
+    const fullTime = `${weekdays[day]}/${newHour}:${newMinute}:${newSeconds} ${amPm}`
+
+
+    const clockUpdate = setInterval(() => {
+      setTime(fullTime)
+
+
+    }, 1000)
+    return () =>
+      clearInterval(clockUpdate)
+
+  }, [time])
   return (
     <Router>
       <div className={imgLoaded ? "h-0 [&>*]:h-0 transition-[1s]" : "h-0 [&>*]:h-0 transition-[1s] "}>
@@ -266,15 +300,15 @@ function App() {
           < Footer locationProps={location} />
         </div>
         : <div className=' px-2  text-neutral-700 text-8xl font-bold h-screen w-screen bg-lightShade'>
-          <div ref={barRef} className='h-1   absolute bottom-4 bar bg-white'></div>
-          <div ref={bar2Ref} className='h-1    absolute bottom-4 bar bg-neutral-400'></div>
-          <p className='absolute text-xl text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
-          <p className='absolute text-xl bottom-[166px] text-neutral-400'>02:00:35 pm</p>
+          <div ref={barRef} className='h-1 absolute bottom-4 bar bg-white rounded-full'></div>
+          <div ref={bar2Ref} className='h-1 absolute bottom-4 bar bg-neutral-400 rounded-full'></div>
+          <p className='absolute text-base text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
+          <p ref={clockRef} className='absolute text-base bottom-[162px] text-neutral-400'>{time.toUpperCase()}</p>
           <h1 className='absolute bottom-8' >
             {status ? ` ${Math.floor(progress / domImages.length * 100)}%` : "0%"}
             {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
           </h1>
-          <img className='three-shoes' src={threeShoe} alt="" />
+          <img className='three-shoes blur-[100px]' src={threeShoe} alt="" />
           <p ref={preloadTextRef} className='opacity-0 preload-text [&>*]:overflow-visible flex flex-col absolute overflow-visible top-4 text-white text-5xl' >
             <span> Just </span>
             <span> Do</span>

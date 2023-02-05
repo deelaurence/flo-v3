@@ -596,7 +596,7 @@ const WhoIsFlo = () => {
         // delay: 1,
         scrollTrigger: {
           trigger: background2,
-          start: "bottom 90%"
+          start: "bottom bottom"
         }
       })
     gsap.fromTo(shot, {
@@ -626,19 +626,19 @@ const WhoIsFlo = () => {
         <div ref={floImgRef} className='w-[70%] self-start md:w-[40%]'>
           <img rel="preload" src={heroImg} alt="" />
         </div>
-        <div className='mt-8 text-3xl md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
           <h3 ref={inquisitiveRef} className='mb-2'>
             Inquisitive.
           </h3>
           <h3 ref={passionateRef} className='mb-8'>
             Passionate.
           </h3>
-          <div className='text-sm [&>*]:mb-4 font-[400]'>
-            <p ref={intro1Ref} className=''>
+          <div className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+            <p ref={intro1Ref} className='overflow-visible'>
               Hi! My name is Flourish Ralph and I am a Product Designer
               from Nigeria.
             </p>
-            <p ref={intro2Ref} className=''>
+            <p ref={intro2Ref} className='overflow-visible'>
               I am constantly inspired by the world around me and driven to create
               meaningful and innovative designs.
             </p>
@@ -647,7 +647,7 @@ const WhoIsFlo = () => {
               always looking for ways to improve and enhance the way people interact
               with the products I design.
             </p>
-            <p ref={intro4Ref}>
+            <p className='overflow-visible' ref={intro4Ref}>
               I believe that good design has the power to change the
               world, and I am dedicated to using my skills and talents to
               make a positive impact on the lives of others.
@@ -659,15 +659,15 @@ const WhoIsFlo = () => {
         <div ref={threeShoesRef} className='w-[70%] self-end md:w-[90%]'>
           <img src={threeShoes} alt="" />
         </div>
-        <div className='mt-8 text-3xl md:text-4xl md:text-right md:w-[120%] font-medium'>
+        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl md:text-right md:w-[120%] font-medium'>
           <h3 ref={creativeRef} className='mb-2'>
             Creative.
           </h3>
           <h3 ref={perceptiveRef} className='mb-8'>
             Perceptive.
           </h3>
-          <div ref={backgroundRef} className='text-sm [&>*]:mb-4 font-[400]'>
-            <p className=''>
+          <div ref={backgroundRef} className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+            <p className='overflow-visible'>
               My background in Nigeria has shaped my perspective and influenced
               my design approach. I am always looking for ways to collaborate with
               people and infuse my work with a sense of cultural identity in order to
@@ -680,15 +680,15 @@ const WhoIsFlo = () => {
         <div ref={seaWavesRef} className='w-[70%] self-start md:w-[40%]'>
           <img src={seaWaves} alt="" />
         </div>
-        <div className='mt-8 text-3xl md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
           <h3 ref={curiousRef} className='mb-2'>
             Curious.
           </h3>
           <h3 ref={detailedRef} className='mb-8'>
             Detailed.
           </h3>
-          <div className='text-sm [&>*]:mb-4 font-[400]'>
-            <p ref={background2Ref} className=''>
+          <div className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+            <p ref={background2Ref} className='overflow-visible'>
               Whenever I am out and about, I like taking pictures of the things around
               me, photography feeds my curiosity but it also teaches me to be focused.
               It reminds me to stay grounded and to appreciate the experiences I get to
