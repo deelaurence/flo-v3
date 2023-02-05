@@ -126,7 +126,7 @@ const WhoIsFlo = () => {
     // shot4r.style.opacity = "0"
     e.target.style.transformOrigin = "left left"
     e.target.style.zIndex = "10"
-    e.target.style.transition = "1s ease-out"
+    e.target.style.transition = ".5s ease-out"
 
   }
 
@@ -136,6 +136,7 @@ const WhoIsFlo = () => {
       console.log(shot1r);
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
+      subtitles.style.transform = "skewX(0deg)"
 
       e.target.style.transform = "translate(-0%, -0%)"
 
@@ -193,7 +194,7 @@ const WhoIsFlo = () => {
     // shot4r.style.opacity = "0"
     e.target.style.transformOrigin = "left left"
     e.target.style.zIndex = "10"
-    e.target.style.transition = "1s ease-out"
+    e.target.style.transition = ".5s ease-out"
 
   }
 
@@ -203,6 +204,7 @@ const WhoIsFlo = () => {
       console.log(shot1r);
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
+      subtitles.style.transform = "skewX(0deg)"
 
       // shot1r.target.style.transform = "translate(-0%, -0%)"
 
@@ -249,7 +251,7 @@ const WhoIsFlo = () => {
     shot4r.style.transform = "scale(0.5)"
     shot4r.style.zIndex = "6"
     shot4r.style.filter = "brightness(30%)"
-    subtitles.innerHTML = "Shot One."
+    subtitles.innerHTML = "Shot Three."
     subtitles.style.opacity = "1"
     subtitles.style.transition = "1s"
     subtitles.style.top = "40%"
@@ -258,7 +260,7 @@ const WhoIsFlo = () => {
     // shot4r.style.opacity = "0"
     e.target.style.transformOrigin = "left left"
     e.target.style.zIndex = "10"
-    e.target.style.transition = "1s ease-out"
+    e.target.style.transition = ".5s ease-out"
 
   }
   const handleLeave3 = (e) => {
@@ -269,6 +271,7 @@ const WhoIsFlo = () => {
     if (e.detail === 2) {
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
+      subtitles.style.transform = "skewX(0deg)"
 
       e.target.style.transform = "translate(-0%, -0%)"
 
@@ -313,7 +316,7 @@ const WhoIsFlo = () => {
     shot1r.style.transform = "scale(0.5)"
     shot1r.style.zIndex = "6"
     shot1r.style.filter = "brightness(30%)"
-    subtitles.innerHTML = "Shot One."
+    subtitles.innerHTML = "Shot Four."
     subtitles.style.opacity = "1"
     subtitles.style.transition = "1s"
     subtitles.style.top = "40%"
@@ -322,7 +325,7 @@ const WhoIsFlo = () => {
     // shot4r.style.opacity = "0"
     e.target.style.transformOrigin = "left left"
     e.target.style.zIndex = "10"
-    e.target.style.transition = "1s ease-out"
+    e.target.style.transition = ".5s ease-out"
 
   }
   const handleLeave4 = (e) => {
@@ -633,7 +636,7 @@ const WhoIsFlo = () => {
           <h3 ref={passionateRef} className='mb-8'>
             Passionate.
           </h3>
-          <div className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+          <div className='text-sm [&>*]:leading-6 [&>*]:mb-4 overflow-visible font-[400]'>
             <p ref={intro1Ref} className='overflow-visible'>
               Hi! My name is Flourish Ralph and I am a Product Designer
               from Nigeria.
@@ -666,7 +669,7 @@ const WhoIsFlo = () => {
           <h3 ref={perceptiveRef} className='mb-8'>
             Perceptive.
           </h3>
-          <div ref={backgroundRef} className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+          <div ref={backgroundRef} className='[&>*]:leading-6 text-sm [&>*]:mb-4 overflow-visible font-[400]'>
             <p className='overflow-visible'>
               My background in Nigeria has shaped my perspective and influenced
               my design approach. I am always looking for ways to collaborate with
@@ -687,7 +690,7 @@ const WhoIsFlo = () => {
           <h3 ref={detailedRef} className='mb-8'>
             Detailed.
           </h3>
-          <div className='text-sm [&>*]:mb-4 overflow-visible font-[400]'>
+          <div className='[&>*]:leading-6 text-sm [&>*]:mb-4 overflow-visible font-[400]'>
             <p ref={background2Ref} className='overflow-visible'>
               Whenever I am out and about, I like taking pictures of the things around
               me, photography feeds my curiosity but it also teaches me to be focused.
