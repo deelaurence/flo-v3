@@ -261,10 +261,10 @@ const KODETECH = ({ locationProps }) => {
                             to form a single user persona.
                         </article>
                     </div>
-                    <div className='mt-16'>
+                    <div className='mt-10'>
                         <img src={userPersona} alt="" />
                     </div>
-                    <article className='text-[0.9re1mt-6 leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                    <article className='text-[1rem] mt-10 leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
                         After this, the information architecture and
                         task flows were designed.
                     </article>
