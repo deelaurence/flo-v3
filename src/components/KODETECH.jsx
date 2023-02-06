@@ -157,7 +157,7 @@ const KODETECH = ({ locationProps }) => {
                         <p className='font-[600] text-white  dark:text-darkShade text-[1.1rem]'>3 weeks</p>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-16'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-7 font-[400]  dark:text-darkShade max-w-[90%] text-[#fafafab9]'>
@@ -174,13 +174,13 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div
-                        className='mt-16 overflow-hidden'>
+                        className='mt-10 overflow-hidden'>
                         <img
-                            className='mt-16'
+                            className='mt-14'
                             src={kodeTechCofee} alt="" />
                     </div>
-                    <div className='text-[1.5rem]  font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                    <div className='text-[1.5rem]  font-[600] mt-20'>
+                        <h3 className='mb-5'>
                             The Challenge.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -196,7 +196,7 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Research.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -206,7 +206,7 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Findings.
                         </h3>
                         <article className='text-[0.9rem] overflow-visible leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -227,7 +227,7 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             The Solution.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -246,7 +246,7 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             User Persona.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -269,7 +269,7 @@ const KODETECH = ({ locationProps }) => {
                         task flows were designed.
                     </article>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Information Architecture.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
@@ -289,21 +289,21 @@ const KODETECH = ({ locationProps }) => {
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div>
-                                <h5 className='mb-4'>Sign Up/log In task flow.</h5>
+                                <h5 className='mb-5'>Sign Up/log In task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow1} alt="" />
                             </div>
                             <div>
-                                <h5 className='mb-4'>Order/Add to Cart task flow.</h5>
+                                <h5 className='mb-5'>Order/Add to Cart task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow2} alt="" />
                             </div>
                             <div>
-                                <h5 className='mb-4'>Check Out task flow.</h5>
+                                <h5 className='mb-5'>Check Out task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow3} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Screens.
                         </h3>
                     </div>
@@ -313,7 +313,7 @@ const KODETECH = ({ locationProps }) => {
                         <div><img src={kodeTech3} alt="" /></div>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
-                        <h3 className='mb-4'>
+                        <h3 className='mb-5'>
                             Have a go!
                         </h3>
                         <p className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
