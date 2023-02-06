@@ -213,15 +213,15 @@ const KODETECH = ({ locationProps }) => {
                             Target users are inclined to carry out online purchases, however, they complained of certain difficulties
                             which made them restrict their online transactions.
                             <br />
+
+                            <span className='block mt-4 mb-2'> These difficulties were in the form of:</span>
                             <br />
-                            These difficulties were in the form of:
-                            <br />
-                            <br />
+
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li><span className='font-bold text-lightShade  dark:text-darkShade'>Complex</span> website interfaces.</li>
-                                <li><span className='font-bold text-lightShade  dark:text-darkShade'>Limited</span> payment methods.</li>
-                                <li><span className='font-bold text-lightShade  dark:text-darkShade'>Constrained</span> delivery options.</li>
-                                <li><span className='font-bold text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li>
+                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Complex</span> website interfaces.</li>
+                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Limited</span> payment methods.</li>
+                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Constrained</span> delivery options.</li>
+                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li>
                             </ul>
 
                         </article>
@@ -238,9 +238,9 @@ const KODETECH = ({ locationProps }) => {
 
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li>Ensuring<span className='font-medium text-lightShade  dark:text-darkShade'> user-friendliness</span> on the website.</li>
-                                <li>Priortizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation</span></li>
+                                <li>Priortizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation.</span></li>
                                 <li>Including a variety of<span className='font-medium text-lightShade  dark:text-darkShade'> payment methods.</span></li>
-                                <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available</li>
+                                <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options.</span> available</li>
                                 <li>Crafting detailed<span className='font-medium text-lightShade  dark:text-darkShade'> product descriptions.</span></li>
                             </ul>
                         </article>
