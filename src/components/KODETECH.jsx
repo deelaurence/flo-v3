@@ -270,7 +270,7 @@ const KODETECH = ({ locationProps }) => {
                     </article>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-4'>
-                            Information architecture.
+                            Information Architecture.
                         </h3>
                         <article className='text-[0.9rem] leading-7 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
                             For a product such as this, it was imperative
@@ -285,7 +285,7 @@ const KODETECH = ({ locationProps }) => {
 
                     <div>
                         <div className='mt-14 font-semibold text-[1.5rem] mb-4'>
-                            <h3>Task flows.</h3>
+                            <h3>Task Flows.</h3>
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div>
