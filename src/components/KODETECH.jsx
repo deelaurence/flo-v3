@@ -128,7 +128,7 @@ const KODETECH = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="px-6 md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="px-6 tracking-[0.5px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
