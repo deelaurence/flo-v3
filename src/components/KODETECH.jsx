@@ -34,78 +34,78 @@ const KODETECH = ({ locationProps }) => {
     const articles = document.querySelectorAll("article")
     const span = document.querySelectorAll("span")
     const [location, setLocation] = useState("")
-    useEffect(() => {
-        setLocation(locationProps)
-        console.log("kodetech effect");
-        gsap.fromTo(parent, {
-            background: "#212121",
-            color: "#fafafa"
-        },
-            {
-                // background: "#d9dddc",
-                background: "#fefbe9",
-                // color: "#212121",
-                color: "#183a1d",
-                duration: 1,
-                scrollTrigger: {
-                    trigger: finding,
-                    toggleActions: "play reverse play reverse"
-                    // scrub: true
-                }
-            })
-        gsap.fromTo(articles, {
-            background: "#212121",
-            color: "#fafafab9"
+    // useEffect(() => {
+    //     setLocation(locationProps)
+    //     console.log("kodetech effect");
+    //     gsap.fromTo(parent, {
+    //         background: "#212121",
+    //         color: "#fafafa"
+    //     },
+    //         {
+    //             // background: "#d9dddc",
+    //             background: "#212121",
+    //             // color: "#212121",
+    //             color: "rgb(100,100,100)",
+    //             duration: 1,
+    //             scrollTrigger: {
+    //                 trigger: finding,
+    //                 toggleActions: "play reverse play reverse"
+    //                 // scrub: true
+    //             }
+    //         })
+    //     gsap.fromTo(articles, {
+    //         background: "#212121",
+    //         color: "#fafafab9"
 
-        },
-            {
-                // background: "#d9dddc",
-                background: "#fefbe9",
-                // color: "#212121",
-                color: "#183a1d",
-                duration: 1,
-                scrollTrigger: {
-                    // scrub: true,
-                    trigger: finding,
-                    toggleActions: "play reverse play reverse"
-                }
+    //     },
+    //         {
+    //             // background: "#d9dddc",
+    //             background: "#212121",
+    //             // color: "#212121",
+    //             color: "rgb(100,100,100)",
+    //             duration: 1,
+    //             scrollTrigger: {
+    //                 // scrub: true,
+    //                 trigger: finding,
+    //                 toggleActions: "play reverse play reverse"
+    //             }
 
-            })
-        gsap.fromTo(span, {
-            background: "#212121",
-            color: "#fafafa"
+    //         })
+    //     gsap.fromTo(span, {
+    //         background: "#212121",
+    //         color: "#fafafa"
 
 
-        },
-            {
-                // background: "#d9dddc",
-                background: "#e1eedd",
-                // color: "#212121",
-                color: "#183a1d",
-                duration: 1,
-                scrollTrigger: {
-                    // scrub: true,
-                    toggleActions: "play reverse play reverse",
-                    trigger: finding
-                }
-            })
-        // gsap.fromTo(articles, {
-        //     y: 30,
-        //     // opacity: 0
+    //     },
+    //         {
+    //             // background: "#d9dddc",
+    //             background: "#212121",
+    //             // color: "#212121",
+    //             color: "white",
+    //             duration: 1,
+    //             scrollTrigger: {
+    //                 // scrub: true,
+    //                 toggleActions: "play reverse play reverse",
+    //                 trigger: finding
+    //             }
+    //         })
+    //     // gsap.fromTo(articles, {
+    //     //     y: 30,
+    //     //     // opacity: 0
 
-        // },
-        //     {
-        //         y: 0,
-        //         // opacity: 1,
-        //         scrollTrigger: {
-        //             duration: 2,
-        //             // scrub: true,
-        //             trigger: articles,
-        //             toggleActions: "play reverse play reverse"
-        //         }
+    //     // },
+    //     //     {
+    //     //         y: 0,
+    //     //         // opacity: 1,
+    //     //         scrollTrigger: {
+    //     //             duration: 2,
+    //     //             // scrub: true,
+    //     //             trigger: articles,
+    //     //             toggleActions: "play reverse play reverse"
+    //     //         }
 
-        //     })
-    }, [location]);
+    //     //     })
+    // }, [location]);
 
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
@@ -143,16 +143,16 @@ const KODETECH = ({ locationProps }) => {
                 <section className='  relative pb-10'>
                     <div>
                         <h1
-                            className="text-[1.6rem] font-semibold md:text-5xl">
+                            className="text-[1.8rem] font-semibold md:text-5xl">
                             KodeTech: <span className='font-medium'> An <br /> E-Commerce Website</span>
                         </h1>
                     </div>
                     <div
-                        className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
+                        className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
                         <p>Role:</p>
                         <p className='font-[600] text-[1rem] text-lightShade '>Product Designer</p>
                     </div>
-                    <div className='text-[0.9rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-10'>
+                    <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-10'>
                         <p>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1rem]'>3 weeks</p>
                     </div>
@@ -330,7 +330,7 @@ const KODETECH = ({ locationProps }) => {
 
                     <div className='mt-10 text-lightShade  dark:text-darkShade'>
                         <p>Owari da.</p>
-                        <p>Arigato. 😡</p>
+                        <p className=''>Arigato. <span className='text-lg'>😡</span> </p>
                     </div>
                     <div className='flex gap-2 items-center mt-12 '>
                         <img className='h-4' src={prev} alt="" srcSet="" />
