@@ -160,7 +160,7 @@ const KODETECH = ({ locationProps }) => {
                         <h3 className='mb-4'>
                             Overview
                         </h3>
-                        <article className='text-[0.9rem] leading-7 font-[400]  dark:text-darkShade max-w-[90%] text-[#fafafab9]'>
+                        <article className='text-[1rem] leading-7 font-[400]  dark:text-darkShade max-w-[90%] text-[#fafafab9]'>
                             KodeTech is an e-commerce website that
                             was created to help the company expand
                             their brand while allowing them connect

@@ -62,7 +62,7 @@ function App() {
   const sear = seaRef.current
   const location = document.location;
   const [currentLocation, setCurrentLocation] = useState('')
-  const [imgLoaded, setImageLoaded] = useState(false)
+  const [imgLoaded, setImageLoaded] = useState(true)
   let [progress, setProgress] = useState([])
   let wordsArray = ["Maya", " Dodo"]
   let [words, setWords] = useState("")
