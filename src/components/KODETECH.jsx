@@ -328,13 +328,13 @@ const KODETECH = ({ locationProps }) => {
                         </p>
                     </div>
 
-                    <div className='mt-10 text-lightShade  dark:text-darkShade'>
-                        <p>Owari da.</p>
-                        <p className=''>Arigato. <span className='text-lg'>😡</span> </p>
+                    <div className='mt-20 text-lightShade  dark:text-darkShade'>
+                        <p className='mb-4'>Owari da.</p>
+                        <p className=''>Arigato. <span className='text-base'>😡</span> </p>
                     </div>
-                    <div className='flex gap-2 items-center mt-12 '>
-                        <img className='h-4' src={prev} alt="" srcSet="" />
-                        <p className='text-[1rem] leading-8 font-[400]   text-[#fafafab9]  dark:text-darkShade'>
+                    <div className='flex gap-2 items-center mt-20 '>
+                        <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
+                        <p className='text-[1rem] leading-8 font-[400] -ml-4 text-[#fafafa]  dark:text-darkShade'>
                             Previous
                         </p>
                     </div>
@@ -342,7 +342,7 @@ const KODETECH = ({ locationProps }) => {
                         <p className='text1rem] leading-8 font-[400]   '>
                             Next
                         </p>
-                        <img className='h-4' src={next} alt="" srcSet="" />
+                        <img className='h-3' src={next} alt="" srcSet="" />
                     </div>
                 </section>
             </main>
