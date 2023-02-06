@@ -284,10 +284,10 @@ const KODETECH = ({ locationProps }) => {
                     </div>
 
                     <div>
-                        <div className='mt-14 font-semibold text-[1.5rem] mb-4'>
+                        <div className='mt-14 font-semibold text-[1.5rem] mb-6'>
                             <h3>Task Flows.</h3>
                         </div>
-                        <div className='flex flex-col gap-4'>
+                        <div className='flex flex-col gap-4 text-opaque'>
                             <div>
                                 <h5 className='mb-5'>Sign Up/log In task flow.</h5>
                                 <img onClick={handleEnlargeLandscape} src={userFlow1} alt="" />
