@@ -148,13 +148,13 @@ const KODETECH = ({ locationProps }) => {
                         </h1>
                     </div>
                     <div
-                        className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
-                        <p>Role:</p>
-                        <p className='font-[600] text-[1rem] text-lightShade '>Product Designer</p>
+                        className=' text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-16'>
+                        <p className='mb-2'>Role:</p>
+                        <p className='font-[600] text-[1.1rem] text-lightShade '>Product Designer</p>
                     </div>
                     <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-darkShade leading-7 mt-10'>
-                        <p>Length:</p>
-                        <p className='font-[600] text-white  dark:text-darkShade text-[1rem]'>3 weeks</p>
+                        <p className='mb-2'>Length:</p>
+                        <p className='font-[600] text-white  dark:text-darkShade text-[1.1rem]'>3 weeks</p>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-14'>
                         <h3 className='mb-8'>
