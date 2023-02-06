@@ -160,7 +160,7 @@ const KODETECH = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Overview
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade max-w-[90%] text-[#fafafab9]'>
+                        <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                             KodeTech is an e-commerce website that
                             was created to help the company expand
                             their brand while allowing them connect
@@ -183,7 +183,7 @@ const KODETECH = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             The Challenge.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             As a Nigerian-Tech brand, KodeTech is
                             interested in bridging the communication
                             gap through the utilization of technology
@@ -195,21 +195,21 @@ const KODETECH = ({ locationProps }) => {
                             quality products.
                         </article>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Research.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To get started, primary research was carried out to understand the pain points of the target users
                             and the main aim of this was to connect with the users and in turn discover a variety of opportunities
                             for the product.
                         </article>
                     </div>
-                    <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-14'>
+                    <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Findings.
                         </h3>
-                        <article className='text-[1rem] overflow-1ible leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Target users are inclined to carry out online purchases, however, they complained of certain difficulties
                             which made them restrict their online transactions.
                             <br />
@@ -226,11 +226,11 @@ const KODETECH = ({ locationProps }) => {
 
                         </article>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             The Solution.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             After understanding the challenges faced by the users and taking into consideration the core objective
                             of the brand, goals were crafted to establish major points:
                             <br />
@@ -245,11 +245,11 @@ const KODETECH = ({ locationProps }) => {
                             </ul>
                         </article>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             User Persona.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             In the creation of this product, the
                             target group that was focused on made
                             up the majority of the KodeTech product
@@ -264,15 +264,15 @@ const KODETECH = ({ locationProps }) => {
                     <div className='mt-10'>
                         <img src={userPersona} alt="" />
                     </div>
-                    <article className='text-[1rem] mt-10 leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                    <article className='text-[1rem] mt-10 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                         After this, the information architecture and
                         task flows were designed.
                     </article>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Information Architecture.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             For a product such as this, it was imperative
                             that every action taken by the users would be
                             seamless as a result of the presence of an
@@ -302,7 +302,7 @@ const KODETECH = ({ locationProps }) => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Screens.
                         </h3>
@@ -312,18 +312,18 @@ const KODETECH = ({ locationProps }) => {
                         <div><img src={kodeTech2} alt="" /></div>
                         <div><img src={kodeTech3} alt="" /></div>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-14'>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Have a go!
                         </h3>
-                        <p className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the users' prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
                         </p>
-                        <p className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the admin prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
                         </p>
 
-                        <p className='text-[1rem] leading-8 font-[400] max-w-[90%] text-[#fafafab9]  dark:text-darkShade'>
+                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Explore live website <span className='text-white font-[700]  dark:text-darkShade' >here</span>
                         </p>
                     </div>
@@ -334,12 +334,12 @@ const KODETECH = ({ locationProps }) => {
                     </div>
                     <div className='flex gap-2 items-center mt-12 '>
                         <img className='h-4' src={prev} alt="" srcSet="" />
-                        <p className='text-[1rem] leading-8 font-[400] max-w-[90%]  text-[#fafafab9]  dark:text-darkShade'>
+                        <p className='text-[1rem] leading-8 font-[400]   text-[#fafafab9]  dark:text-darkShade'>
                             Previous
                         </p>
                     </div>
                     <div className='flex gap-2 items-center justify-end '>
-                        <p className='text1rem] leading-8 font-[400] max-w-[90%]  '>
+                        <p className='text1rem] leading-8 font-[400]   '>
                             Next
                         </p>
                         <img className='h-4' src={next} alt="" srcSet="" />
