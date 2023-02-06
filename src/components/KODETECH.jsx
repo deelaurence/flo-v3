@@ -174,12 +174,12 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div
-                        className='mt-10 overflow-hidden'>
+                        className='mt-12 overflow-hidden'>
                         <img
                             className='mt-14'
                             src={kodeTechCofee} alt="" />
                     </div>
-                    <div className='text-[1.5rem]  font-[600] mt-20'>
+                    <div className='text-[1.5rem]  font-[600] mt-[88px]'>
                         <h3 className='mb-5'>
                             The Challenge.
                         </h3>
