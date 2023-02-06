@@ -240,7 +240,7 @@ const KODETECH = ({ locationProps }) => {
                                 <li>Ensuring<span className='font-medium text-lightShade  dark:text-darkShade'> user-friendliness</span> on the website.</li>
                                 <li>Priortizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation.</span></li>
                                 <li>Including a variety of<span className='font-medium text-lightShade  dark:text-darkShade'> payment methods.</span></li>
-                                <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options.</span> available</li>
+                                <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available.</li>
                                 <li>Crafting detailed<span className='font-medium text-lightShade  dark:text-darkShade'> product descriptions.</span></li>
                             </ul>
                         </article>
