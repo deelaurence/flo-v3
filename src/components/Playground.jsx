@@ -27,12 +27,34 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 // import {Scroll}
 const Playground = () => {
-
+    const playgroundRef = useRef()
+    const playgroundInfoRef = useRef()
+    const playgroundInfo2Ref = useRef()
+    const popupRef = useRef()
+    const playground = playgroundRef.current
+    const playgroundInfo = playgroundInfoRef.current
+    const playgroundInfo2 = playgroundInfo2Ref.current
+    const popupr = popupRef.current
+    let [count, setCount] = useState("")
     const location = useLocation()
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
     const [landscape, setLandscape] = useState(false)
     const html = document.querySelector("html")
+    const grids = document.querySelectorAll(".grids")
+    // console.log(grids);
+    const playgroundStart = (() => {
+        grids.forEach(grid => {
+            grid.style.transform = "scale(0.95) rotate(1deg)"
+        });
+        console.log('scrolling');
+    })
+    const playgroundEnd = (() => {
+        grids.forEach(grid => {
+            grid.style.transform = "scale(1) rotate(0deg)"
+        });
+        console.log('stop');
+    })
     const handleEnlarge = (e) => {
         console.log(html);
         // setPopupImg("")
@@ -52,15 +74,7 @@ const Playground = () => {
         setPop(!pop)
         html.classList.remove("hidden-overflow")
     }
-    const playgroundRef = useRef()
-    const playgroundInfoRef = useRef()
-    const playgroundInfo2Ref = useRef()
-    const popupRef = useRef()
-    const playground = playgroundRef.current
-    const playgroundInfo = playgroundInfoRef.current
-    const playgroundInfo2 = playgroundInfo2Ref.current
-    const popupr = popupRef.current
-    let [count, setCount] = useState("")
+
     // setInterval(() => {
     //     setCount(count++)
     //     console.log(count);
@@ -142,9 +156,9 @@ const Playground = () => {
                 // }
             })
         gsap.fromTo(playground, {
-            scale: .3,
+            scale: .4,
             // opacity: 0,
-            y: "-1200px",
+            y: "-1000px",
             // x: "-100px",
             // filter: "blur(8px)"
 
@@ -207,8 +221,8 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section ref={playgroundRef} className='  overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4 grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10 mb-64 text-[10px] sm:px-16 justify-between text-lightShade'>
-                    <div className='h-72 w-72 grid-1 rounded-xl bg-transluscent p-4'>
+                <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10 mb-64 text-[10px] sm:px-16 justify-between text-lightShade'>
+                    <div className='h-72 w-72  grids grid-1 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />
                             <img className='self-center' src={bud2} onClick={handleEnlarge} alt="" />
@@ -223,7 +237,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-2 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-2 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-end' src={flo1} onClick={handleEnlarge} alt="" />
                             <img className='self-center' src={flo2} onClick={handleEnlarge} alt="" />
@@ -238,7 +252,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-3 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-3 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[60%] flex justify-around h-56 w-64'>
                             <img className='self-end' src={craiglist1} onClick={handleEnlarge} alt="" />
                             <img className='self-center' src={craiglist2} onClick={handleEnlarge} alt="" />
@@ -253,7 +267,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-4 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-4 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground  rounded-lg flex justify-center p-2 [&>*]:h-[60%]  h-56 w-64'>
                             <img className='self-center' src={winniamp} onClick={handleEnlarge} alt="" />
                         </div>
@@ -266,7 +280,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-5 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-5 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:w-[40%] flex justify-around h-56 w-64'>
                             <div className='flex flex-col overflow-visible justify-between '>
                                 <img className='shoptacle' src={shoptacle1} onClick={handleEnlarge} alt="" />
@@ -283,7 +297,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-6 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-6 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[60%] flex justify-around h-56 w-64'>
                             <img className='self-end' src={dribbble1} onClick={handleEnlarge} alt="" />
                             <img className='self-center' src={dribbble2} onClick={handleEnlarge} alt="" />
@@ -298,7 +312,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-7 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-7 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground  rounded-lg p-2 [&>*]:h-[60%] flex justify-around h-56 w-64'>
                             <img className='self-start mt-6' src={buonnisimo1} onClick={handleEnlarge} alt="" />
                             <img className='self-center mt-6' src={buonnisimo2} onClick={handleEnlarge} alt="" />
@@ -313,7 +327,7 @@ const Playground = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-72 w-72 grid-8 rounded-xl bg-transluscent p-4'>
+                    <div className='h-72 w-72 grids grid-8 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[60%] flex justify-around h-56 w-64'>
                             <img className='self-center' src={casual} onClick={handleEnlarge} alt="" />
                         </div>

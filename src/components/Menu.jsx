@@ -1,12 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react'
-const Menu = ({ hideMenu, menu }) => {
+import { useState, useEffect } from 'react'
+const Menu = ({ hideMenu, menu, locationProps }) => {
 
     const [activeWork, setActiveWork] = useState(true);
     const [activePlayground, setActivePlayground] = useState(false);
     const [activeAbout, setActiveAbout] = useState(false);
     const [activeResume, setActiveResume] = useState(false);
+
+    useEffect(() => {
+        if (locationProps.href.includes('about')) {
+            // console.log('about');
+            setActiveAbout(true)
+            setActiveWork(false)
+        }
+        if (locationProps.href.includes('playground')) {
+            // console.log('about');
+            setActivePlayground(true)
+            setActiveWork(false)
+        }
+    }, [locationProps])
     const handleActiveWork = () => {
         setActiveWork(true)
         setActivePlayground(false)
@@ -46,6 +59,7 @@ const Menu = ({ hideMenu, menu }) => {
 
     return (
         <>
+
             <p onClick={hideMenu} className='text-lg tracking-[0.5px] text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
             <nav className={menu ? 'nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
                 'nav1-animate dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>

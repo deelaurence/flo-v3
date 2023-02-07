@@ -230,11 +230,11 @@ const LANDING = () => {
     <>
       <section ref={heroRef} className='overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
-          <div className='object-cover h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
+          <div className='object-cover dp-cont h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
             <img className='' src={displayPicture} alt="" />
           </div>
-          <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
-          <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
+          <h3 className='ml-4 text-[28px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
+          <p className='mt-4  sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
         </div>
       </section>
       <section className='overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >

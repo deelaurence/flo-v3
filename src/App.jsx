@@ -290,7 +290,7 @@ function App() {
       <ScrollToTop />
       {imgLoaded ?
         <div className='dark:bg-lightShade  absolute-parent'>
-          <Navbar />
+          <Navbar locationProps={location} />
           <Routes>
             <Route path="/" key={document.location.href} element={<LANDING />} />
             <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />

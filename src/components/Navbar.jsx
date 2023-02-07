@@ -9,12 +9,12 @@ import logo from './images/680fe7a0a23e7b6c80c6547abf7eb43a-sticker 2.png'
 import { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 
-const Navbar = () => {
+const Navbar = ({ locationProps }) => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
   const [night, setNight] = useState(false)
 
-
+  // console.log(locationProps);
   // const handleNightMode = () => {
   //   setNight(!night)
   //   console.log('niiight');
@@ -51,7 +51,7 @@ const Navbar = () => {
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
-        <Menu menu={menu} hideMenu={hideMenu} />
+        <Menu locationProps={locationProps} menu={menu} hideMenu={hideMenu} />
       </div>
       <div className="sm:hidden flex  gap-1 self-end ">
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
