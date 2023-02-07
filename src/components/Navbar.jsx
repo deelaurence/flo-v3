@@ -2,16 +2,17 @@ import { Link } from 'react-router-dom'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
 import flo1 from '../assets/flo1.png'
+
 import React from 'react'
 import Menu from './Menu'
-import { useState } from 'react'
 import logo from './images/680fe7a0a23e7b6c80c6547abf7eb43a-sticker 2.png'
-import { motion } from 'framer-motion'
+import { useState, useRef, useEffect } from 'react'
+import gsap from 'gsap'
+
 const Navbar = () => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
   const [night, setNight] = useState(false)
-
 
 
   // const handleNightMode = () => {
@@ -38,18 +39,15 @@ const Navbar = () => {
   let test = false;
   return (
     <nav
-      className="px-6 relative  z-10 flex py-5 items-center justify-between bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
+      className="px-6 relative nav z-10 flex py-5 items-center justify-between bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
     >
       <Link to="/">
-        <motion.div
-          initial={{ y: 10 }}
-          animate={{ y: 0 }}
-          transition={{ type: "spring", stiffness: 100, duration: .5 }}
+        <div
           className="flex gap-1 overflow-hidden">
-          <motion.h3
+          <h3
 
-            className="self-end -mb-1 font-medium text-lg">Flourish.</motion.h3>
-        </motion.div>
+            className="self-end -mb-1 font-medium text-lg">Flourish.</h3>
+        </div>
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>

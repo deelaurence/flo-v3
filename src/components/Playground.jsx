@@ -32,11 +32,14 @@ const Playground = () => {
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
     const [landscape, setLandscape] = useState(false)
+    const html = document.querySelector("html")
     const handleEnlarge = (e) => {
+        console.log(html);
         // setPopupImg("")
         setLandscape(false)
         setPop(!pop)
         setPopupImg(e.target.src)
+        html.classList.add("hidden-overflow")
     }
     const handleEnlargeLandscape = (e) => {
         // setPopupImg("")
@@ -47,6 +50,7 @@ const Playground = () => {
     const handleDecrease = (e) => {
         // setPopupImg("")
         setPop(!pop)
+        html.classList.remove("hidden-overflow")
     }
     const playgroundRef = useRef()
     const playgroundInfoRef = useRef()
@@ -82,13 +86,13 @@ const Playground = () => {
         gsap.fromTo(playgroundInfo2, {
             // scale: .2,
             opacity: 0,
-            y: -50,
+            y: -400,
             // transform: "skewY(30deg)"
         },
             {
                 opacity: 1,
-                delay: 2,
-                duration: 1,
+                delay: 1,
+                duration: 1.5,
                 y: 0,
                 // ease: "Bounce.easeOut",
                 // transform: "skewY(0deg)"
@@ -124,12 +128,14 @@ const Playground = () => {
         gsap.fromTo(playground, {
             // scale: .2,
             opacity: 0,
+            filter: "blur(4px)"
 
         },
             {
                 opacity: 1,
-                delay: 5,
+                delay: 4.7,
                 duration: 2,
+                filter: "blur(0px)",
                 // scrollTrigger: {
                 //     trigger: refs.current[0],
                 //     scrub: "true"
@@ -138,7 +144,7 @@ const Playground = () => {
         gsap.fromTo(playground, {
             scale: .3,
             // opacity: 0,
-            y: "-1400px",
+            y: "-1200px",
             // x: "-100px",
             // filter: "blur(8px)"
 
@@ -174,9 +180,10 @@ const Playground = () => {
         //         delay: 15,
         //     })
     }, [count])
+
     return (
         <>
-            <main>
+            <main className='playground-main'>
 
                 <section className=' px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade overflow-visible text-lightShade'>
                     <h3 ref={playgroundInfoRef} className='opacity-0 text-2xl  font-medium sm:text-4xl  overflow-visible' >
@@ -261,9 +268,9 @@ const Playground = () => {
                     </div>
                     <div className='h-72 w-72 grid-5 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:w-[40%] flex justify-around h-56 w-64'>
-                            <div className='flex flex-col justify-between '>
-                                <img className='' src={shoptacle1} onClick={handleEnlarge} alt="" />
-                                <img className='' src={shoptacle3} onClick={handleEnlarge} alt="" />
+                            <div className='flex flex-col overflow-visible justify-between '>
+                                <img className='shoptacle' src={shoptacle1} onClick={handleEnlarge} alt="" />
+                                <img className='shoptacle' src={shoptacle3} onClick={handleEnlarge} alt="" />
                             </div>
                             <img className='self-center' src={shoptacle2} onClick={handleEnlarge} alt="" />
                         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState, useRef } from 'react';
-import displayPicture from '../assets/display-picture.png'
+import displayPicture from '../assets/display-picture.gif'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
@@ -230,7 +230,9 @@ const LANDING = () => {
     <>
       <section ref={heroRef} className='overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
-          <img className='h-12 sm:h-20' src={displayPicture} alt="" />
+          <div className='object-cover h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
+            <img className='' src={displayPicture} alt="" />
+          </div>
           <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
           <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '>Interested in building accessible and sustainable products.</p>
         </div>

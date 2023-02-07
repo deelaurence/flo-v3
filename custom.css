@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+
+
 @font-face {
     font-family: satoshi;
     src: url(./src/fonts/Satoshi-Medium.ttf) format("truetype");
@@ -42,11 +44,23 @@
     /* outline: 1px solid red; */
 }
 
+.intro-cont {
+    overflow: visible !important;
+    /* background: blue; */
+}
+
 .bg-playground>img:hover {
     transform: scale(1.2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
     transition: ease-in-out .5s;
     transform-origin: bottom;
+}
+
+.shoptacle:hover {
+    transform: scale(1.2) !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    transition: ease-in-out .5s !important;
+    transform-origin: bottom !important;
 }
 
 .bg-playground>img {
@@ -550,4 +564,9 @@ body {
 * {
     /* background-color: #dadada; */
     /* color: #212121 !important; */
+}
+
+.hidden-overflow {
+    overflow: hidden !important;
+
 }

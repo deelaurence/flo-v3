@@ -101,23 +101,23 @@ const WhoIsFlo = () => {
     shot2r.style.top = "30%"
     shot2r.style.left = "58%"
     shot2r.style.zIndex = "8"
-    shot2r.style.transform = "scale(0.8) rotate(20deg)"
+    shot2r.style.transform = "scale(0.8) "
     shot2r.style.filter = "brightness(20%)"
-    shot3r.style.top = "40%"
+    shot3r.style.top = "30%"
     shot3r.style.left = "-10%"
     shot3r.style.zIndex = "8"
     shot3r.style.filter = "brightness(20%)"
-    shot3r.style.transform = "scale(.65) rotate(-20deg)"
+    shot3r.style.transform = "scale(.65) "
     shot3r.style.transformOrigin = "bottom bottom"
     // shot3r.style.opacity = "0.3"
     shot4r.style.top = "30%"
     shot4r.style.zIndex = "8"
     shot4r.style.left = "90%"
-    shot4r.style.transform = "scale(0.5) rotate(30deg)"
+    shot4r.style.transform = "scale(0.5) "
     shot4r.style.zIndex = "6"
     shot4r.style.filter = "brightness(20%)"
     subtitles.innerHTML = "Shot One."
-    subtitles.style.opacity = "1"
+
     subtitles.style.transition = "1s"
     subtitles.style.top = "70%"
     subtitles.style.transform = "skewX(0deg)"
@@ -186,7 +186,7 @@ const WhoIsFlo = () => {
     shot4r.style.zIndex = "6"
     shot4r.style.filter = "brightness(30%)"
     subtitles.innerHTML = "Shot Two."
-    subtitles.style.opacity = "1"
+
     subtitles.style.transition = "1s"
     subtitles.style.top = "40%"
     // shot4r.style.opacity = "0.3"
@@ -252,7 +252,7 @@ const WhoIsFlo = () => {
     shot4r.style.zIndex = "6"
     shot4r.style.filter = "brightness(30%)"
     subtitles.innerHTML = "Shot Three."
-    subtitles.style.opacity = "1"
+
     subtitles.style.transition = "1s"
     subtitles.style.top = "40%"
     // shot4r.style.opacity = "0.3"
@@ -317,7 +317,7 @@ const WhoIsFlo = () => {
     shot1r.style.zIndex = "6"
     shot1r.style.filter = "brightness(30%)"
     subtitles.innerHTML = "Shot Four."
-    subtitles.style.opacity = "1"
+
     subtitles.style.transition = "1s"
     subtitles.style.top = "40%"
     // shot4r.style.opacity = "0.3"
@@ -618,25 +618,25 @@ const WhoIsFlo = () => {
         scrollTrigger: {
           trigger: shot,
           // markers: true,
-          start: "top bottom"
+          start: "top 70%"
         }
       })
   }, [currentLocation])
 
   return (
     <main className='px-6 pt-24 md:px-16 tracking-[0.3px]  bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade'>
-      <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
+      <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse overflow-visible'>
         <div ref={floImgRef} className='w-[70%] self-start md:w-[40%]'>
           <img rel="preload" src={heroImg} alt="" />
         </div>
-        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl intro-cont [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
           <h3 ref={inquisitiveRef} className='mb-2'>
             Inquisitive.
           </h3>
           <h3 ref={passionateRef} className='mb-8'>
             Passionate.
           </h3>
-          <div className='text-sm [&>*]:leading-6 [&>*]:mb-4 overflow-visible font-[400]'>
+          <div className='text-sm intro-cont [&>*]:leading-6 [&>*]:mb-4 overflow-visible font-[400] '>
             <p ref={intro1Ref} className='overflow-visible'>
               Hi! My name is Flourish Ralph and I am a Product Designer
               from Nigeria.
@@ -658,11 +658,11 @@ const WhoIsFlo = () => {
           </div>
         </div>
       </section>
-      <section className='mb-24 flex flex-col gap-20 items-end md:flex-row'>
+      <section className='mb-24 overflow-visible flex flex-col gap-20 items-end md:flex-row'>
         <div ref={threeShoesRef} className='w-[70%] self-end md:w-[90%]'>
           <img src={threeShoes} alt="" />
         </div>
-        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl md:text-right md:w-[120%] font-medium'>
+        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-4xl md:text-right md:w-[120%] font-medium'>
           <h3 ref={creativeRef} className='mb-2'>
             Creative.
           </h3>
@@ -679,11 +679,11 @@ const WhoIsFlo = () => {
           </div>
         </div>
       </section>
-      <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse'>
+      <section className='mb-24 flex overflow-visible flex-col gap-20 items-end md:flex-row-reverse'>
         <div ref={seaWavesRef} className='w-[70%] self-start md:w-[40%]'>
           <img src={seaWaves} alt="" />
         </div>
-        <div className='mt-7 text-3xl  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
           <h3 ref={curiousRef} className='mb-2'>
             Curious.
           </h3>
@@ -703,7 +703,7 @@ const WhoIsFlo = () => {
 
       <section ref={shotsRef} className='overflow-visible'>
         <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
-        <div className='[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[60vw] [&>*]:absolute gap-6 '>
+        <div className='[&>*]:w-[38vw] md:[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] [&>*]:absolute gap-6 '>
           <img draggable="true" onClick={handleHover} ref={shot1Ref} className=' top-0 ' src={shot1} alt="" />
           <img onClick={handleHover2} ref={shot2Ref} className='top-0  right-0' src={shot2} alt="" />
           <img onClick={handleHover3} ref={shot3Ref} className='bottom-0 left-0' src={shot3} alt="" />

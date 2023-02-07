@@ -43,6 +43,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import LANDING from './components/LANDING';
 import PORTFOLIOPAGE from './components/PORTFOLIOPAGE';
 import KODETECH from './components/KODETECH';
+import Alertz from './components/Alertz';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import WhoIsFlo from './components/WhoIsFlo';
@@ -295,6 +296,7 @@ function App() {
             <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
             <Route path="/menu" key={document.location.href} element={<Menu />} />
             <Route locationProps={location} path="/kodetech" key={document.location.href} element={<KODETECH />} />
+            <Route locationProps={location} path="/alertz" key={document.location.href} element={<Alertz />} />
             <Route path="/playground" key={document.location.href} element={<Playground />} />
           </Routes>
           < Footer locationProps={location} />
