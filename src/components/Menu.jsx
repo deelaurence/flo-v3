@@ -61,8 +61,8 @@ const Menu = ({ hideMenu, menu, locationProps }) => {
         <>
 
             <p onClick={hideMenu} className='text-lg tracking-[0.5px] text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
-            <nav className={menu ? 'nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
-                'nav1-animate dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
+            <nav className={menu ? 'mix-blend-normal nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
+                'nav1-animate mix-blend-normal dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
                 <Link to='/'>
                     <p onClick={handleActiveWork} className={activeWork ? 'line-through' : 'text-opaque'}>Work</p>
                 </Link>

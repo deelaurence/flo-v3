@@ -306,12 +306,21 @@ html {
 
 
 nav {
-    mix-blend-mode: difference;
+    transition: 3s;
+
+}
+
+.blend-bar {
+    /* mix-blend-mode: difference; */
     /* color: #fafafa; */
     /* background-color: #212121; */
     /* z-index: 1; */
     /* filter: invert(100%); */
     /* background-image: url(./src/assets/buonnisimo1.png); */
+}
+
+.product-designer {
+    font-family: 'space grotesk', sans-serif;
 }
 
 section {

@@ -39,11 +39,11 @@ const Navbar = ({ locationProps }) => {
   let test = false;
   return (
     <nav
-      className="px-6 fixed nav z-10 flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
+      className={menu ? "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade mix-blend-normal dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 mix-blend-difference absolute-nav"}
     >
       <Link to="/">
         <div
-          className="flex gap-1 overflow-hidden">
+          className="flex gap-1 blend-bar-child overflow-hidden">
           <h3
 
             className="self-end flourish  -mb-1 font-medium text-lg">Flourish.</h3>
