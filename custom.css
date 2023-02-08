@@ -295,16 +295,16 @@ html {
     /* min-height: 2rem; */
 }
 
-/* * {
-    outline: red 1px solid;
-} */
+* {
+    /* outline: red 1px solid; */
+}
 
 
 .grid-cont {
     display: grid;
     /* transform: scale(.5); */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 2fr .2fr 2fr .5fr 2fr .2fr 2fr .2fr 2fr;
     grid-template-areas:
         "grid1 . grid2"
         ". . ."

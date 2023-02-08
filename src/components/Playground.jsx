@@ -197,7 +197,7 @@ const Playground = () => {
 
     return (
         <>
-            <main className='playground-main'>
+            <main className=' playground-main '>
 
                 <section className=' px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade overflow-visible text-lightShade'>
                     <h3 ref={playgroundInfoRef} className='opacity-0 text-2xl  font-medium sm:text-4xl  overflow-visible' >
@@ -221,7 +221,16 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10 mb-64 text-[10px] sm:px-16 justify-between text-lightShade'>
+                <section className='z-[0] fixed flex gap-3 top-[30vh] flex-col justify-center items-center w-screen h-[30vh]  text-orange-200'>
+                    <h3 className='opacity-[.2] font-bold text-3xl text-center'>
+                        My Archives.
+                    </h3>
+                    {/* <p className='text-orange-200 opacity-[0.5]'>Swipe to move around</p> */}
+                    <p className='opacity-[0.3]'> Touch images to enlarge</p>
+
+                </section>
+
+                <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px] sm:px-16 justify-between text-lightShade'>
                     <div className='h-72 w-72  grids grid-1 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />
