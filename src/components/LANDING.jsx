@@ -233,7 +233,7 @@ const LANDING = () => {
           <div className='object-cover dp-cont h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
             <img className='' src={displayPicture} alt="" />
           </div>
-          <h3 className='ml-4 text-[22px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
+          <h3 className='ml-4 text-[26px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
           <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '> Designing with a dash of imagination and a pinch of perfection, turning pixels into magic and products into must-haves.</p>
         </div>
       </section>

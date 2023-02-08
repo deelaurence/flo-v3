@@ -39,14 +39,14 @@ const Navbar = ({ locationProps }) => {
   let test = false;
   return (
     <nav
-      className="px-6 relative nav z-10 flex py-5 items-center justify-between bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
+      className="px-6 fixed nav z-10 flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav"
     >
       <Link to="/">
         <div
           className="flex gap-1 overflow-hidden">
           <h3
 
-            className="self-end -mb-1 font-medium text-lg">Flourish.</h3>
+            className="self-end flourish  -mb-1 font-medium text-lg">Flourish.</h3>
         </div>
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :

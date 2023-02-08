@@ -299,6 +299,24 @@ html {
     /* outline: red 1px solid; */
 }
 
+.back-text {
+    transition: 2s;
+}
+
+
+
+nav {
+    mix-blend-mode: difference;
+    /* color: #fafafa; */
+    /* background-color: #212121; */
+    /* z-index: 1; */
+    /* filter: invert(100%); */
+    /* background-image: url(./src/assets/buonnisimo1.png); */
+}
+
+section {
+    /* background-color: #212121; */
+}
 
 .grid-cont {
     display: grid;

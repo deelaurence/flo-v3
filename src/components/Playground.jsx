@@ -31,6 +31,8 @@ const Playground = () => {
     const playgroundInfoRef = useRef()
     const playgroundInfo2Ref = useRef()
     const popupRef = useRef()
+    const backTextRef = useRef()
+    const backText = backTextRef.current
     const playground = playgroundRef.current
     const playgroundInfo = playgroundInfoRef.current
     const playgroundInfo2 = playgroundInfo2Ref.current
@@ -48,9 +50,12 @@ const Playground = () => {
             grid.style.transform = "scale(0.95) rotate(1deg)"
         });
         console.log('scrolling');
+        backText.style.opacity = "1"
+        backText.style.transform = " translateY(100px)"
     })
     const playgroundEnd = (() => {
         grids.forEach(grid => {
+            backText.style.transform = "translateY(80px) rotate(0deg)"
             grid.style.transform = "scale(1) rotate(0deg)"
         });
         console.log('stop');
@@ -221,13 +226,19 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='z-[0] fixed flex gap-3 top-[30vh] flex-col justify-center items-center w-screen h-[30vh]  text-orange-200'>
-                    <h3 className='opacity-[.2] font-bold text-3xl text-center'>
-                        My Archives.
+                <section ref={backTextRef} className='z-[0] fixed flex gap-3 top-[30vh] flex-col justify-center items-center w-screen h-[30vh] back-text text-neutral-200 opacity-0 md:opacity-1'>
+                    <h3 className='opacity-[.1] font-bold text-3xl text-center'>
+                        Archives.
+                    </h3>
+                    <h3 className='opacity-[.1] font-bold text-3xl text-center'>
+                        Designs.
                     </h3>
                     {/* <p className='text-orange-200 opacity-[0.5]'>Swipe to move around</p> */}
-                    <p className='opacity-[0.3]'> Touch images to enlarge</p>
+                    <p className='opacity-[0.15] '> Touch images to enlarge</p>
 
+                    <h3 className='opacity-[.1]  font-medium text-[10px] text-center'>
+                        2022 &mdash; 2023.
+                    </h3>
                 </section>
 
                 <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px] sm:px-16 justify-between text-lightShade'>

@@ -80,7 +80,7 @@ const Footer = ({ locationProps }) => {
   }, [currentLocation, location])
   return (
     <footer
-      className="tracking-[0.5px] pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
+      className="tracking-[0.5px]  pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
     >
       <div ref={footerLineRef} className='bg-opaque dark:bg-darkShade h-[1px] w-full'>
       </div>
