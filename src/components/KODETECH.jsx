@@ -140,7 +140,7 @@ const KODETECH = ({ locationProps }) => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='  relative pb-10'>
+                <section className='mt-20  relative pb-10'>
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">

@@ -9,7 +9,7 @@ import threeShoe from "../src/assets/three-shoes.png"
 import guild from "../src/assets/landing-guild.png"
 import kodetech from "../src/assets/landing-kodetech.png"
 import sea from "../src/assets/sea-waves.png"
-import displayPicture from "../src/assets/display-picture.png"
+import displayPicture from "../src/assets/display-picture.gif"
 import dx from "../src/assets/landing-dexchange.png"
 import flo1 from "../src/assets/flo1.png"
 import flo2 from "../src/assets/flo2.png"
@@ -44,6 +44,7 @@ import LANDING from './components/LANDING';
 import PORTFOLIOPAGE from './components/PORTFOLIOPAGE';
 import KODETECH from './components/KODETECH';
 import Alertz from './components/Alertz';
+import MixedR from './components/MixedR';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import WhoIsFlo from './components/WhoIsFlo';
@@ -297,6 +298,7 @@ function App() {
             <Route path="/menu" key={document.location.href} element={<Menu />} />
             <Route locationProps={location} path="/kodetech" key={document.location.href} element={<KODETECH />} />
             <Route locationProps={location} path="/alertz" key={document.location.href} element={<Alertz />} />
+            <Route locationProps={location} path="/mr" key={document.location.href} element={<MixedR />} />
             <Route path="/playground" key={document.location.href} element={<Playground />} />
           </Routes>
           < Footer locationProps={location} />

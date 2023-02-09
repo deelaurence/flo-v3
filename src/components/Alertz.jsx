@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import WorkWithFlo from './WorkWithFloForPortfolio'
+import alertzMockup from '../assets/landing-alertz.png'
 import kodeTechCofee from '../assets/kodetech-mockup.png'
 import kodeTech1 from '../assets/kodetech1.png'
 import kodeTech2 from '../assets/kodetech2.png'
@@ -30,7 +31,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from 'react'
 
 
-const KODETECH = ({ locationProps }) => {
+const Alertz = ({ locationProps }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
     const parentRef = useRef(null)
@@ -146,7 +147,7 @@ const KODETECH = ({ locationProps }) => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='  relative pb-10'>
+                <section className='mt-20  relative pb-10'>
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
@@ -168,9 +169,7 @@ const KODETECH = ({ locationProps }) => {
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                             Alertz is a mobile application that notifies users of crime alerts within their close proximity with a feature of allowing the users send help to the person in need (who created the emergency report) by dialing an emergency contact number.<br />
-
-                            This project was designed by a team of talented designers: Obiekea Jennifer ([LinkedIn](https://www.linkedin.com/in/jenny-anthony-48721a185)) and [myself](https://www.linkedin.com/in/flourish-ralph-469162203).<br />
-
+                            This project was designed by a team of talented designers: <a className='text-purple-300' href="https://www.linkedin.com/in/jenny-anthony-48721a185">Obiekea Jennifer</a> and <a href="https://www.linkedin.com/in/flourish-ralph-469162203" className='text-orange-200'>myself.</a> <br />
                             I served as a Product Designer.
                         </article>
                     </div>
@@ -178,7 +177,7 @@ const KODETECH = ({ locationProps }) => {
                         className='mt-12 overflow-hidden'>
                         <img
                             className='mt-14'
-                            src={kodeTechCofee} alt="" />
+                            src={alertzMockup} alt="" />
                     </div>
                     <div className='text-[1.5rem]  font-[600] mt-[88px]'>
                         <h3 className='mb-5'>
@@ -186,9 +185,7 @@ const KODETECH = ({ locationProps }) => {
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Crime is a phenomenon that is now largely being recognized as a social vice that occurs naturally  and at any given point. This in itself is an issue, but a greater problem is an information gap.<br />
-
                             How do people know when and where a crime has taken place?<br />
-
                             If they are aware, then, what can they do about it?
                         </article>
                     </div>
@@ -199,7 +196,7 @@ const KODETECH = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To get started, we identified our target users and sought them out in order to carry out a survey. This helped us to understand the challenges they have faced in relation to the problem (pain points) and to gain insight into their thought processes as regards a solution.
                         </article>
-                        <p className='text-[.8rem] leading-8 font-[400] mt-8  text-red-200'>Here is some data from their responses:</p>
+                        <p className='text-[1rem] leading-8 font-[400] mt-8  text-red-200'>Here is some data from their responses:</p>
                     </div>
                     <div className='mt-10'>
                         <img src={response1} alt="" />
@@ -238,11 +235,11 @@ const KODETECH = ({ locationProps }) => {
                             <br />
 
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li>Have a feature where the users can have an overview of emergency reports daily for a constant inflow of information.</li>
-                                <li>Create a feature where users can create their own emergency reports if they are in ddanger and need help.</li>
-                                <li>Include a map feature where users can search for locations in order to see emergency reports that have been made per location at a particular time.</li>
+                                <li>Have a feature where the users can <span className='font-medium text-lightShade'> have an overview of emergency reports </span> daily for a constant inflow of information.</li>
+                                <li>Create a feature where users can  <span className='font-medium text-lightShade'> create their own emergency reports if they are in danger </span> and need help.</li>
+                                <li>Include a map feature where <span className='text-lightShade font-medium'> users can search for locations </span> in order to see emergency reports that have been made per location at a particular time.</li>
                                 {/* <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available.</li> */}
-                                <li>Place an emergency contact number that users can reach out to for help (for other users who have made emergency reports or for themselves).</li>
+                                <li>Place <span className='text-lightShade font-medium'> an emergency contact number that users can reach out to for help </span> (for other users who have made emergency reports or for themselves).</li>
                             </ul>
                         </article>
                     </div>
@@ -328,15 +325,12 @@ const KODETECH = ({ locationProps }) => {
                             Have a go!
                         </h3>
                         <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            View the users' prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
+                            Pitch Deck <span className='text-white font-[700]  dark:text-darkShade' >here</span>
                         </p>
                         <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            View the admin prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
+                            View the prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
                         </p>
 
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Explore live website <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
                     </div>
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>
@@ -362,4 +356,4 @@ const KODETECH = ({ locationProps }) => {
     )
 }
 
-export default KODETECH
+export default Alertz
