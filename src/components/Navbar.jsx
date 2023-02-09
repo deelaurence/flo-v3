@@ -45,13 +45,13 @@ const Navbar = ({ locationProps }) => {
     setTimeout(() => {
 
       blendBar.style.mixBlendMode = "difference"
-    }, 700);
+    }, 1000);
   }
   const showMenu = () => {
     setTimeout(() => {
 
       blendBar.style.mixBlendMode = "normal"
-    }, 300);
+    }, 100);
     setMenu(true)
 
   }
