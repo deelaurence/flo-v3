@@ -19,7 +19,7 @@ import mrScreen3 from '../assets/mr-screen3.png'
 import mrScreen4 from '../assets/mr-screen4.jpg'
 
 
-import vrGif from "../assets/vr.gif"
+import vrGif from "../assets/headset.png"
 import prev from './images/prev.png'
 import next from './images/next.png'
 
@@ -42,78 +42,99 @@ const MixedR = ({ locationProps }) => {
     const articles = document.querySelectorAll("article")
     const span = document.querySelectorAll("span")
     const [location, setLocation] = useState("")
-    // useEffect(() => {
-    //     setLocation(locationProps)
-    //     console.log("kodetech effect");
-    //     gsap.fromTo(parent, {
-    //         background: "#212121",
-    //         color: "#fafafa"
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "rgb(100,100,100)",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 trigger: finding,
-    //                 toggleActions: "play reverse play reverse"
-    //                 // scrub: true
-    //             }
-    //         })
-    //     gsap.fromTo(articles, {
-    //         background: "#212121",
-    //         color: "#fafafab9"
+    const oculus = document.querySelector('.headset')
+    const solution = document.querySelector('.solution')
+    const overview = document.querySelector('.overview')
 
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "rgb(100,100,100)",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 // scrub: true,
-    //                 trigger: finding,
-    //                 toggleActions: "play reverse play reverse"
-    //             }
+    const touchStart = () => {
+        console.log("start");
+        // oculus.style.transform = "rotateY(0deg) translateY(5px)"
+        oculus.style.transform = "scale(1.1)"
+        // oculus.style.zIndex = "0"
+        // // gsap.to(oculus, {
+        //     yPercent: -10,
+        //     duration: 2,
+        //     rotateY: "0deg",
+        //     // delay: 2,
+        //     opacity: 1,
+        //     zIndex: 1000,
+        //     // repeat: -1,
+        //     // yoyo: true,
+        // })
+    }
+    const touchEnd = () => {
+        console.log("end");
+        oculus.style.transform = "scale(1) "
+        // // oculus.style.opacity = ".1"
+        // oculus.style.zIndex = "0"
+        // gsap.to(oculus, {
+        //     yPercent: 0,
+        //     duration: 1,
+        //     rotateY: "20deg",
+        //     // delay: 2,
+        //     opacity: .1,
+        //     zIndex: 0,
+        //     // repeat: -1,
+        //     // yoyo: true,
+        // })
+    }
+    useEffect(() => {
+        setLocation(locationProps)
+        console.log("kodetech effect");
+        console.log(oculus);
+        gsap.to(oculus, {
+            yPercent: 20,
+            duration: 2,
+            // rotate: "60deg",
+            // delay: 2,
+            opacity: 1,
+            zIndex: 10,
 
-    //         })
-    //     gsap.fromTo(span, {
-    //         background: "#212121",
-    //         color: "#fafafa"
+            scrollTrigger: {
+                trigger: overview,
+                scrub: true,
+                start: "bottom bottom",
+                end: "=+10px"
+            }
+            // repeat: -1,
+            // yoyo: true,
+        })
+        gsap.to(oculus, {
+            yPercent: 0,
+            duration: 2,
+            // rotate: "60deg",
+            // delay: 2,
+            opacity: .1,
+            zIndex: 10,
 
+            scrollTrigger: {
+                trigger: overview,
+                scrub: true,
+                start: "bottom top",
+                end: "=+10px"
+            }
+            // repeat: -1,
+            // yoyo: true,
+        })
+        gsap.to(oculus, {
+            yPercent: 0,
+            duration: 1,
+            rotate: "60deg",
+            // delay: 2,
+            opacity: 1,
+            zIndex: 10,
 
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "white",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 // scrub: true,
-    //                 toggleActions: "play reverse play reverse",
-    //                 trigger: finding
-    //             }
-    //         })
-    //     // gsap.fromTo(articles, {
-    //     //     y: 30,
-    //     //     // opacity: 0
+            scrollTrigger: {
+                trigger: solution,
+                scrub: true,
+                start: "bottom bottom",
+                end: "=+10px"
+            }
+            // repeat: -1,
+            // yoyo: true,
+        })
 
-    //     // },
-    //     //     {
-    //     //         y: 0,
-    //     //         // opacity: 1,
-    //     //         scrollTrigger: {
-    //     //             duration: 2,
-    //     //             // scrub: true,
-    //     //             trigger: articles,
-    //     //             toggleActions: "play reverse play reverse"
-    //     //         }
-
-    //     //     })
-    // }, [location]);
+    }, [location]);
 
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
@@ -148,10 +169,10 @@ const MixedR = ({ locationProps }) => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                {/* <section className='h-screen overflow-hidden opacity-[.05] w-screen fixed'>
-                    <img className='h-screen ' src={vrGif} alt="" />
-                </section> */}
-                <section className='mt-20 relative pb-10'>
+                <section className='headset h-screen overflow-hidden opacity-[.1] w-screen fixed'>
+                    <img className='' src={vrGif} alt="" />
+                </section>
+                <section onTouchEnd={touchEnd} onTouchStart={touchStart} className=' mt-20 relative pb-10'>
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
@@ -167,7 +188,7 @@ const MixedR = ({ locationProps }) => {
                         <p className='mb-2'>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1.1rem]'>3 weeks</p>
                     </div>
-                    <div className='text-[1.5rem] font-[600] mt-16'>
+                    <div className='overview text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
                             Overview
                         </h3>
@@ -246,7 +267,7 @@ const MixedR = ({ locationProps }) => {
 
                         </article>
                     </div> */}
-                    <div className='text-[1.5rem] font-[600] mt-20'>
+                    <div className=' text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             The Solution.
                         </h3>
@@ -324,7 +345,7 @@ const MixedR = ({ locationProps }) => {
                             Screens.
                         </h3>
                     </div>
-                    <div className='flex flex-col gap-12'>
+                    <div className='solution flex flex-col gap-12'>
                         <div><img src={mrScreen1} alt="" /></div>
                         <div><img src={mrScreen2} alt="" /></div>
                         <div><img src={mrScreen3} alt="" /></div>

@@ -310,6 +310,10 @@ nav {
 
 }
 
+.headset {
+    transition: 1s;
+}
+
 .blend-bar {
     /* mix-blend-mode: difference; */
     /* color: #fafafa; */

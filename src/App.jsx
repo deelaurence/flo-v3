@@ -47,6 +47,7 @@ import Alertz from './components/Alertz';
 import MixedR from './components/MixedR';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
+import Sphere from './components/Shere'
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
 import Playground from './components/Playground';
@@ -293,7 +294,9 @@ function App() {
         <div className='dark:bg-lightShade  absolute-parent'>
           <Navbar locationProps={location} />
           <Routes>
+
             <Route path="/" key={document.location.href} element={<LANDING />} />
+            <Route path="/d" key={document.location.href} element={<Sphere />} />
             <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
             <Route path="/menu" key={document.location.href} element={<Menu />} />
             <Route locationProps={location} path="/kodetech" key={document.location.href} element={<KODETECH />} />
