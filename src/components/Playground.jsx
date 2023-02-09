@@ -202,7 +202,7 @@ const Playground = () => {
 
     return (
         <>
-            <main className=' playground-main '>
+            <main className=' playground-main mt-20'>
 
                 <section className=' px-6 mt-12 sm:px-16 dark:bg-lightShade dark:text-darkShade overflow-visible text-lightShade'>
                     <h3 ref={playgroundInfoRef} className='opacity-0 text-2xl  font-medium sm:text-4xl  overflow-visible' >
@@ -218,10 +218,10 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <div ref={popupRef} onClick={handleDecrease} className={pop ? "popup fixed bg-[rgba(0,0,0,.95)] top-0 left-0 z-10  h-screen w-screen " : " hidden"}>
+                <div ref={popupRef} onClick={handleDecrease} className={pop ? "popup fixed bg-[rgba(0,0,0,.95)] top-0 left-0 z-[20000]  h-screen w-screen " : " hidden"}>
                     <img src={popupImg} className={landscape ?
-                        'relative  rotate-90 min-w-[100vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
-                        : 'relative top-1/2 left-1/2 max-h-[95%] min-h-[30%] -translate-x-1/2 -translate-y-1/2'} alt="popup" />
+                        'relative z-[200] rotate-90 min-w-[100vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                        : 'relative z-[200] top-1/2 left-1/2 max-h-[95%] min-h-[30%] -translate-x-1/2 -translate-y-1/2'} alt="popup" />
                 </div>
                 {/* popup */}
                 {/* popup */}

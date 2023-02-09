@@ -228,7 +228,7 @@ const LANDING = () => {
   }, [currentLocation])
   return (
     <>
-      <section ref={heroRef} className='overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
+      <section ref={heroRef} className='mt-20 overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
         <div className='flex items-center flex-wrap  my-20'>
           <div className='object-cover dp-cont h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
             <img className='' src={displayPicture} alt="" />

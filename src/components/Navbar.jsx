@@ -13,6 +13,9 @@ const Navbar = ({ locationProps }) => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
   const [night, setNight] = useState(false)
+  let blendBar = document.querySelector('.blend-bar')
+  // console.log(blendBar);
+
 
   // console.log(locationProps);
   // const handleNightMode = () => {
@@ -32,14 +35,23 @@ const Navbar = ({ locationProps }) => {
   const [menu, setMenu] = useState(false)
   const hideMenu = () => {
     setMenu(false)
+    setTimeout(() => {
+
+      blendBar.style.mixBlendMode = "difference"
+    }, 500);
   }
   const showMenu = () => {
+    setTimeout(() => {
+
+      blendBar.style.mixBlendMode = "normal"
+    }, 300);
     setMenu(true)
+
   }
   let test = false;
   return (
     <nav
-      className={menu ? "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade mix-blend-normal dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16 mix-blend-difference absolute-nav"}
+      className={menu ? "px-6  blend-bar fixed nav z-[1] flex py-5 items-center justify-between w-screen text-lightShade mix-blend-normal dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16  absolute-nav"}
     >
       <Link to="/">
         <div
