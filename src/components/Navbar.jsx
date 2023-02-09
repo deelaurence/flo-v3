@@ -32,13 +32,20 @@ const Navbar = ({ locationProps }) => {
   //   html.classList.remove("dark")
   //   // toggle.src = sun
   // }
+
   const [menu, setMenu] = useState(false)
+  // useEffect(() => {
+  //   if (blendBar) {
+
+  //     blendBar.style.mixBlendMode = "difference"
+  //   }
+  // }, [])
   const hideMenu = () => {
     setMenu(false)
     setTimeout(() => {
 
       blendBar.style.mixBlendMode = "difference"
-    }, 500);
+    }, 700);
   }
   const showMenu = () => {
     setTimeout(() => {
@@ -51,7 +58,7 @@ const Navbar = ({ locationProps }) => {
   let test = false;
   return (
     <nav
-      className={menu ? "px-6  blend-bar fixed nav z-[1] flex py-5 items-center justify-between w-screen text-lightShade mix-blend-normal dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16  absolute-nav"}
+      className={menu ? "px-6  blend-bar fixed nav z-[1] flex py-5 items-center justify-between w-screen text-lightShade  dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16  absolute-nav mix-blend-difference"}
     >
       <Link to="/">
         <div
