@@ -87,8 +87,8 @@ const MixedR = ({ locationProps }) => {
             duration: 2,
             // rotate: "60deg",
             // delay: 2,
-            opacity: 1,
-            zIndex: 10,
+            opacity: .05,
+            // zIndex: 10,
 
             scrollTrigger: {
                 trigger: overview,
@@ -105,7 +105,7 @@ const MixedR = ({ locationProps }) => {
             // rotate: "60deg",
             // delay: 2,
             opacity: .1,
-            zIndex: 10,
+            // zIndex: 10,
 
             scrollTrigger: {
                 trigger: overview,
