@@ -5,6 +5,7 @@ import kodeTechCofee from '../assets/kodetech-mockup.png'
 import kodeTech1 from '../assets/kodetech1.png'
 import kodeTech2 from '../assets/kodetech2.png'
 import kodeTech3 from '../assets/kodetech3.png'
+import guildLanding from '../assets/landing-guild.png'
 
 import userFlow from '../assets/guild-userflow.png'
 import userPersona from '../assets/guild-userpersona.png'
@@ -19,6 +20,8 @@ import architecture from '../assets/kodetech-flow1.png'
 import userFlow1 from '../assets/kodetech-flow2.png'
 import userFlow2 from '../assets/kodetech-flow3.png'
 import userFlow3 from '../assets/kodetech-flow4.png'
+
+
 
 import prev from './images/prev.png'
 import next from './images/next.png'

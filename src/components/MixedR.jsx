@@ -102,16 +102,17 @@ const MixedR = ({ locationProps }) => {
         gsap.to(oculus, {
             yPercent: 0,
             duration: 2,
-            // rotate: "60deg",
+            rotate: "60deg",
             // delay: 2,
-            opacity: .1,
+            opacity: .05,
             // zIndex: 10,
 
             scrollTrigger: {
                 trigger: overview,
                 scrub: true,
                 start: "bottom top",
-                end: "=+10px"
+                // end: "top top/",
+                // markers: true
             }
             // repeat: -1,
             // yoyo: true,
@@ -126,9 +127,9 @@ const MixedR = ({ locationProps }) => {
 
             scrollTrigger: {
                 trigger: solution,
-                scrub: true,
+                scrub: 2,
                 start: "bottom bottom",
-                end: "=+10px"
+                end: "+=10px"
             }
             // repeat: -1,
             // yoyo: true,
@@ -169,7 +170,7 @@ const MixedR = ({ locationProps }) => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='headset h-screen overflow-hidden opacity-[.1] w-screen fixed'>
+                <section className='headset overflow-hidden opacity-[.07]  fixed'>
                     <img className='' src={vrGif} alt="" />
                 </section>
                 <section onTouchEnd={touchEnd} onTouchStart={touchStart} className=' mt-20 relative pb-10'>
