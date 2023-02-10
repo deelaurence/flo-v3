@@ -65,7 +65,7 @@ const Navbar = ({ locationProps }) => {
           className="flex gap-1 blend-bar-child overflow-hidden">
           <h3
 
-            className="self-end flourish  -mb-1 font-medium text-lg">Flourish.</h3>
+            className="self-end flourish -mb-1 font-medium text-lg">Flourish.</h3>
         </div>
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :

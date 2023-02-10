@@ -62,7 +62,8 @@ const WhoIsFlo = () => {
   const shot3r = shot3Ref.current
   const shot4r = shot4Ref.current
   const handleHover = (e) => {
-    console.log(shot1r);
+
+    return
     if (e.detail === 2) {
       console.log(e.detail);
       subtitles.style.opacity = "0"
@@ -131,9 +132,11 @@ const WhoIsFlo = () => {
   }
 
   const handleHover2 = (e) => {
-    console.log(shot1r);
+
+    return
     if (e.detail === 2) {
-      console.log(shot1r);
+
+      return
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
       subtitles.style.transform = "skewX(0deg)"
@@ -199,9 +202,11 @@ const WhoIsFlo = () => {
   }
 
   const handleHover3 = (e) => {
-    console.log(shot1r);
+
+    return
     if (e.detail === 2) {
-      console.log(shot1r);
+
+      return
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
       subtitles.style.transform = "skewX(0deg)"
@@ -267,7 +272,8 @@ const WhoIsFlo = () => {
 
   }
   const handleHover4 = (e) => {
-    console.log(shot1r);
+
+    return
     if (e.detail === 2) {
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
@@ -329,7 +335,8 @@ const WhoIsFlo = () => {
 
   }
   const handleLeave4 = (e) => {
-    console.log(shot1r);
+
+    return
 
 
   }
@@ -703,7 +710,7 @@ const WhoIsFlo = () => {
 
       <section ref={shotsRef} className='overflow-visible'>
         <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
-        <div className='[&>*]:w-[38vw] md:[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] [&>*]:absolute gap-6 '>
+        <div className='[&>*]:w-[42vw] md:[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] [&>*]:absolute gap-6 '>
           <img draggable="true" onClick={handleHover} ref={shot1Ref} className=' top-0 ' src={shot1} alt="" />
           <img onClick={handleHover2} ref={shot2Ref} className='top-0  right-0' src={shot2} alt="" />
           <img onClick={handleHover3} ref={shot3Ref} className='bottom-0 left-0' src={shot3} alt="" />
