@@ -104,13 +104,13 @@ const Playground = () => {
             })
         gsap.fromTo(playgroundInfo2, {
             // scale: .2,
-            opacity: 0,
-            y: -400,
+            // opacity: 0,
+            y: -150,
             // transform: "skewY(30deg)"
         },
             {
                 opacity: 1,
-                delay: 1,
+                delay: 1.5,
                 duration: 1.5,
                 y: 0,
                 // ease: "Bounce.easeOut",
@@ -152,7 +152,7 @@ const Playground = () => {
         },
             {
                 opacity: 1,
-                delay: 4.7,
+                delay: 5,
                 duration: 2,
                 filter: "blur(0px)",
                 // scrollTrigger: {
@@ -163,7 +163,7 @@ const Playground = () => {
         gsap.fromTo(playground, {
             scale: .4,
             // opacity: 0,
-            y: "-1000px",
+            y: "-800px",
             // x: "-100px",
             // filter: "blur(8px)"
 

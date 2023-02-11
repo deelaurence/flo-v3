@@ -348,7 +348,7 @@ const WhoIsFlo = () => {
     setCurrentLocation(location)
     const creative = creativeRef.current;
     gsap.fromTo(floImg, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
       skewX: "6deg",
 
@@ -357,14 +357,14 @@ const WhoIsFlo = () => {
         yPercent: 0,
         opacity: 1,
         skewX: "0deg",
-        duration: 2,
+        duration: 1,
         delay: 1,
         // scrollTrigger: {
         //   trigger: floImg,
         // }
       })
     gsap.fromTo(Inquisitive, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -374,7 +374,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: Inquisitive,
@@ -382,7 +382,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(passionate, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -392,7 +392,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: passionate,
@@ -400,7 +400,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(intro1, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -410,7 +410,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: intro1,
@@ -418,7 +418,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(intro2, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -428,7 +428,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: intro2,
@@ -436,7 +436,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(intro3, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -446,7 +446,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: intro3,
@@ -454,7 +454,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(intro4, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -464,7 +464,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: intro4,
@@ -472,7 +472,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(threeShoe, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
       skewX: "6deg",
 
@@ -481,14 +481,14 @@ const WhoIsFlo = () => {
         yPercent: 0,
         opacity: 1,
         skewX: "0deg",
-        duration: 2,
+        duration: 1,
         delay: 1,
         scrollTrigger: {
           trigger: threeShoe,
         }
       })
     gsap.fromTo(creative, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
     },
       {
@@ -496,14 +496,14 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         scrollTrigger: {
           trigger: creative,
           start: "bottom 90%"
         }
       })
     gsap.fromTo(perceptive, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -513,7 +513,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         delay: .3,
         // delay: 1,
         scrollTrigger: {
@@ -522,7 +522,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(background, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -532,7 +532,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: background,
@@ -540,7 +540,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(seaWave, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
       skewX: "6deg",
 
@@ -549,14 +549,14 @@ const WhoIsFlo = () => {
         yPercent: 0,
         opacity: 1,
         skewX: "0deg",
-        duration: 2,
+        duration: 1,
         delay: 1,
         scrollTrigger: {
           trigger: seaWave,
         }
       })
     gsap.fromTo(curious, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -566,7 +566,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: curious,
@@ -574,7 +574,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(detailed, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -584,7 +584,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: detailed,
@@ -592,7 +592,7 @@ const WhoIsFlo = () => {
         }
       })
     gsap.fromTo(background2, {
-      yPercent: 80,
+      yPercent: 40,
       opacity: 0,
 
 
@@ -602,7 +602,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewX: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: background2,
@@ -620,7 +620,7 @@ const WhoIsFlo = () => {
         opacity: 1,
         skewY: "0deg",
         rotate: "0deg",
-        duration: 2,
+        duration: 1,
         // delay: 1,
         scrollTrigger: {
           trigger: shot,

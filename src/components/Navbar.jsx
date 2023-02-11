@@ -12,7 +12,18 @@ import gsap from 'gsap'
 const Navbar = ({ locationProps }) => {
   let html = document.querySelector("html")
   let toggle = document.querySelector('.toggle')
-  const [night, setNight] = useState(false)
+
+  const [refreshBlendBar, setRefreshBlendBar] = useState(false)
+  useEffect(() => {
+    let updateNavbar = setTimeout(() => {
+      setRefreshBlendBar(true)
+    }, 1000);
+    return () =>
+      clearTimeout(updateNavbar)
+
+  })
+
+
   let blendBar = document.querySelector('.blend-bar')
   // console.log(blendBar);
 
@@ -43,18 +54,20 @@ const Navbar = ({ locationProps }) => {
   const hideMenu = () => {
     setMenu(false)
     setTimeout(() => {
-
       blendBar.style.mixBlendMode = "difference"
     }, 1000);
   }
+
   const showMenu = () => {
     setTimeout(() => {
-
       blendBar.style.mixBlendMode = "normal"
     }, 100);
-    setMenu(true)
 
+    if (blendBar) {
+      setMenu(true)
+    }
   }
+
   let test = false;
   return (
     <nav

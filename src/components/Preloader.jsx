@@ -84,7 +84,8 @@ const Preloader = ({ pullData }) => {
     let [imgLoaded, setImageLoaded] = useState(false)
     let [animation, setAnimation] = useState(false)
     let [status, setStatus] = useState(0)
-    let [time, setTime] = useState('')
+    // let [time, setTime] = useState('')
+    let time;
     let [pseudoStatus, setPseudoStatus] = useState(0)
     pullData(imgLoaded)
     const domImages = document.querySelectorAll("img")
@@ -114,13 +115,12 @@ const Preloader = ({ pullData }) => {
                     console.log("completed")
                     setTimeout(() => {
                         setImageLoaded(true)
-                    }, 1000);
+                    }, 15000);
                 }
             })
         })
     }
     setTimeout(() => {
-
         setImageLoaded(true)
     }, 60000);
     const bar = barRef.current
@@ -225,47 +225,45 @@ const Preloader = ({ pullData }) => {
         }, 1000)
     }, [animation])
 
-    // console.log(preloadText);
     const clockRef = useRef(null)
     const clock = clockRef.current
-    useEffect(() => {
+    // let fullTime;
+    // useEffect(() => {
+    const currentTime = new Date()
+    const hours = currentTime.getHours()
+    const minutes = currentTime.getMinutes()
+    const seconds = currentTime.getSeconds()
+    const day = currentTime.getDay()
+    const weekdays = ["Sn", "Mn", "Tu", "Wd", "Th", "Fr", "St"]
+    // console.log(seconds)
+    let newHour;
+    let newSeconds;
+    let newMinute
+    let amPm;
+    hours > 12 ? newHour = hours % 12 : newHour = hours
+    hours > 12 ? amPm = "pm" : amPm = "am"
+    seconds < 10 ? newSeconds = `0${seconds}` : newSeconds = seconds
+    minutes < 10 ? newMinute = `0${minutes}` : newMinute = minutes
 
+    let fullTime = `${weekdays[day]}/${newHour}:${newMinute}:${newSeconds} ${amPm}`
+    // setTime(fullTime)
+    time = fullTime
+    const clockUpdate = setInterval(() => {
+        // setTime(fullTime)
+        time = fullTime
+    }, 1000)
+    // return () =>
+    // clearInterval(clockUpdate)
+    // }, [time])
+    console.log(fullTime);
+    console.log(time);
 
-        const currentTime = new Date()
-        const hours = currentTime.getHours()
-        const minutes = currentTime.getMinutes()
-        const seconds = currentTime.getSeconds()
-        const day = currentTime.getDay()
-        const weekdays = ["Sn", "Mn", "Tu", "Wd", "Th", "Fr", "St"]
-        // console.log(seconds)
-
-        let newHour;
-        let newSeconds;
-        let newMinute
-        let amPm;
-
-        hours > 12 ? newHour = hours % 12 : newHour = hours
-        hours > 12 ? amPm = "pm" : amPm = "am"
-        seconds < 10 ? newSeconds = `0${seconds}` : newSeconds = seconds
-        minutes < 10 ? newMinute = `0${minutes}` : newMinute = minutes
-        const fullTime = `${weekdays[day]}/${newHour}:${newMinute}:${newSeconds} ${amPm}`
-
-
-        const clockUpdate = setInterval(() => {
-            setTime(fullTime)
-
-
-        }, 60000)
-        return () =>
-            clearInterval(clockUpdate)
-
-    }, [time])
     return (
         <div className=' px-2  text-neutral-700 text-8xl font-bold h-screen w-screen bg-lightShade'>
             <div ref={barRef} className='h-1 absolute bottom-4 bar bg-white rounded-full'></div>
             <div ref={bar2Ref} className='h-1 absolute bottom-4 bar bg-neutral-400 rounded-full'></div>
             <p className='absolute text-base text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
-            <p ref={clockRef} className='absolute text-base bottom-[162px] text-neutral-400'>{time.toUpperCase()}</p>
+            <p ref={clockRef} className='absolute text-base bottom-[162px] text-neutral-400'>{time ? `${time.toUpperCase()}` : "Calibrating Time..."}</p>
             <h1 className='absolute bottom-8' >
                 {status ? ` ${Math.floor(progress / domImages.length * 100)}%` : "0%"}
                 {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
@@ -275,7 +273,7 @@ const Preloader = ({ pullData }) => {
                 <span> Just </span>
                 <span> Do</span>
                 <span > this </span>
-                <span className='text-neutral-300 '>  And </span>
+                <span className='text-neutral-300 '> And </span>
                 <span className='font-[georgia] font-medium italic'> Be proud </span>
             </p>
             <div className={imgLoaded ? "h-0 [&>*]:h-0 transition-[1s]" : "h-0 [&>*]:h-0 transition-[1s] "}>
