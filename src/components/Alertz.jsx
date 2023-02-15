@@ -168,7 +168,7 @@ const Alertz = ({ locationProps }) => {
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            Alertz is a mobile application that notifies users of crime alerts within their close proximity with a feature of allowing the users send help to the person in need (who created the emergency report) by dialing an emergency contact number.<br />
+                            Alertz is a <span className='text-red-200'>mobile </span>application that notifies users of crime alerts within their close proximity with a feature of allowing the users send help to the person in need (who created the emergency report) by dialing an emergency contact number.<br />
                             This project was designed by a team of talented designers: <a className='text-purple-300' href="https://www.linkedin.com/in/jenny-anthony-48721a185">Obiekea Jennifer</a> and <a href="https://www.linkedin.com/in/flourish-ralph-469162203" className='text-orange-200'>myself.</a> <br />
                             I served as a Product Designer.
                         </article>
@@ -184,9 +184,13 @@ const Alertz = ({ locationProps }) => {
                             The Challenge.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Crime is a phenomenon that is now largely being recognized as a social vice that occurs naturally  and at any given point. This in itself is an issue, but a greater problem is an information gap.<br />
+                            <span className='text-red-300'>Crime</span> is a phenomenon that is now largely
+                            being recognized as a social vice that occurs
+                            naturally  and at any given point. This in
+                            itself is an issue, but a greater problem
+                            is an <span className='text-blue-200' >information gap.</span> <br />
                             How do people know when and where a crime has taken place?<br />
-                            If they are aware, then, what can they do about it?
+                            If they are aware, then, <span className='text-pink-300'>what can they do</span> about it?
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
@@ -230,7 +234,9 @@ const Alertz = ({ locationProps }) => {
                             The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To bridge the information gap and ensure the users have the opportunity to act according to whatever information they get about criminal activity at any given time, we came up with these solutions:
+                            To <span className='text-red-200'>bridge</span> the information gap and ensure the users have the
+                            opportunity <span className='text-purple-200'>to act</span> according to whatever information
+                            they get about criminal activity at any given time, we came up with these solutions:
                             <br />
                             <br />
 
@@ -248,7 +254,7 @@ const Alertz = ({ locationProps }) => {
                             Empathy Map.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To better understand the pain points of our users, we extracted information from the survey responses.
+                            To better understand the <span className='text-orange-200' >pain points</span> of our users, we extracted information from the survey responses.
                         </article>
                     </div>
                     <div className='mt-16'>
@@ -275,7 +281,8 @@ const Alertz = ({ locationProps }) => {
                             User Flow.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            We came up with a user flow to serve as a guide for our thought process and also to make the user interaction as seamless as possible.
+                            We came up with a user flow to serve as a <span className='text-red-200'>guide</span>  for our thought process and also
+                            to make the <span className='text-blue-300'>user interaction</span> as seamless as possible.
                         </article>
                     </div>
                     <div className='mt-16'>

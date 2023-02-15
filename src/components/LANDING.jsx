@@ -33,12 +33,12 @@ const LANDING = () => {
         yPercent: 0,
         opacity: 1,
         duration: 1.5,
-        delay: 2,
+        delay: 1,
         // ease: "Bounce.easeOut"
 
         // scrollTrigger: {
-        //   trigger: refs.current[0],
-        //   // scrub: "true"
+        //   trigger: hero,
+        //   scrub: "true"
         // }
       })
     gsap.fromTo(refs.current[0], {
@@ -51,10 +51,10 @@ const LANDING = () => {
         skewX: "0deg",
         opacity: 1,
         duration: 1,
-        delay: 2,
+        delay: 1,
         // ease: "Bounce.easeOut",
         scrollTrigger: {
-          trigger: hero,
+          trigger: refs.current[0],
         }
       })
     gsap.fromTo(refs2.current[0], {
@@ -225,6 +225,25 @@ const LANDING = () => {
     )
 
 
+  }, [])
+  useEffect(() => {
+    setCurrentLocation(location)
+    gsap.fromTo(hero, {
+      opacity: 0,
+    },
+      {
+        skewX: "0deg",
+        // scale: 1,
+        opacity: 1,
+        duration: 1,
+
+        // scrollTrigger: {
+        //   trigger: refs.current[0],
+        //   // scrub: "true"
+        // }
+      })
+
+
   }, [currentLocation])
   return (
     <>
@@ -246,7 +265,7 @@ const LANDING = () => {
               <div
                 className="mb-8">
                 <img
-                  className='min-h-[200px]'
+                  className='min-h-[200px] opacity-0'
                   ref={(element) => refs.current[index] = element}
                   src={datum.image}
                   alt={datum.name} />

@@ -28,6 +28,26 @@
     font-style: normal;
 }
 
+.percentage {
+    opacity: 0;
+    transition: 1s !important;
+}
+
+.location {
+    transition: 1.5s !important;
+}
+
+.clocking {
+    transition: 1.7s !important;
+}
+
+.bar {
+    transition: 1.1 !important;
+}
+
+.preload-text2 {
+    transition: 1.1 !important;
+}
 
 * {
     /* transition: 1s; */

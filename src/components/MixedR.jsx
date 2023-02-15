@@ -177,7 +177,7 @@ const MixedR = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            <span className='font-medium'>A Mixed Reality application for Healthcare</span>
+                            <span className='font-medium'>A <span className="text-orange-200">Mixed Reality</span> application for Healthcare</span>
                         </h1>
                     </div>
                     <div
@@ -194,13 +194,26 @@ const MixedR = ({ locationProps }) => {
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            Mixed Reality (MR) is an immersive technology that combines the real-world environment with augmented reality (AR) and virtual reality (VR) and this is fueled by 3D information.
+                            <span className="text-orange-200">Mixed Reality</span> <span className='text-purple-400'>MR</span>  is an immersive
+                            technology that combines
+                            the real-world environment with augmented reality
+                            <span className='text-red-400'> AR</span> and virtual reality <span className='text-blue-400'> VR</span> and
+                            this is fueled by 3D information.
+
                             <br />
-                            For MR to function, it produces an environment where physical and digital objects can co-exist and interact in real time. This makes it a hybrid distinctive of AR & VR because while AR solely displays a layer of digital elements on top of the real world, MR offers real-world integration and actual interaction with virtual elements.
+                            For <span className='text-purple-400'>MR</span> to function,
+                            it produces an environment where physical and digital
+                            objects can co-exist and interact in real time.
+                            This makes it a hybrid distinctive of <span className='text-red-400'> AR</span> & VR
+                            because while <span className='text-red-400'> AR</span> solely displays
+                            a layer of digital elements on top of the
+                            real world, <span className='text-purple-400'>MR </span>
+                            offers real-world integration and actual
+                            interaction with virtual elements.
                             <br />
-                            Presently, the concept of Mixed Reality applications is regarded as novel, however, there is no denying the fact that there still remain inconceivable possibilities associated with the application of mixed reality in healthcare.
+                            Presently, the concept of <span className="text-orange-200">Mixed Reality</span> applications is regarded as novel, however, there is no denying the fact that there still remain inconceivable possibilities associated with the application of <span className="text-orange-200">mixed reality</span> in healthcare.
                             <br />
-                            Infusing the use of Mixed Reality as a technique can help in the generation of personalized 3D models for every patient and this can help the medical personnel visualize the internal anatomy of the patient in a fully immersive and interactive environment.
+                            Infusing the use of <span className="text-orange-200">Mixed Reality</span> as a technique can help in the generation of personalized 3D models for every patient and this can help the medical personnel visualize the internal anatomy of the patient in a fully immersive and interactive environment.
                             <br />
                             The possibility of this paves the way for realistic activities to be carried out, such as preoperative simulations which can be used to determine optimal procedures pertaining to patients’ prognosis and to predict the final surgical outcomes of the patients involved.
                             <br />
@@ -273,13 +286,13 @@ const MixedR = ({ locationProps }) => {
                             The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Although still being engaged with, interacting with Mixed Reality can help to improve the general health status across the world and this is largely due to the fact that mixed reality helps with visualization and with visualization comes better implementation.
+                            Although still being engaged with, interacting with <span className="text-orange-200">Mixed Reality</span> can help to improve the general health status across the world and this is largely due to the fact that <span className="text-orange-200">mixed reality</span> helps with visualization and with visualization comes better implementation.
                             <br />
                             When it comes to being implemented in the surgical field, MR wearable devices such as the Microsoft HoloLens can be used in combination with new emerging imaging technologies.
                             <br />
                             The use of this kind of immersive technology ensures that the medical personnel has access to spatial localization of anatomical structures which helps to improve mental precision, simplifying preoperative planning.
                             <br />
-                            As a Mixed Reality application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
+                            As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
                             <br />
 
                             {/* <ul className=' [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
