@@ -177,7 +177,7 @@ const MixedR = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            <span className='font-medium'>A <span className="text-orange-200">Mixed Reality</span> application for Healthcare</span>
+                            <span className='font-medium'>A <span>Mixed Reality</span> application for Healthcare</span>
                         </h1>
                     </div>
                     <div

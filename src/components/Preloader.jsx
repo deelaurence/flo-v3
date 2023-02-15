@@ -178,11 +178,11 @@ const Preloader = ({ pullData }) => {
             percentage.style.transform = "translateY(0px)"
             percentage.style.opacity = 1
             bar.style.transform = "translateY(0px)"
-            bar2.style.transform = "translateY(0px)"
+            // bar2.style.transform = "translateY(0px)"
             clocking.style.transform = "translateY(0px)"
             locationDom.style.transform = "translateY(0px)"
             bar.style.opacity = 1
-            bar2.style.opacity = 1
+            // bar2.style.opacity = 1
             clocking.style.opacity = 1
             locationDom.style.opacity = 1
         }
@@ -362,7 +362,7 @@ const Preloader = ({ pullData }) => {
     return (
         <div className=' px-2 text-neutral-700 text-8xl font-bold h-screen w-screen bg-darkShade'>
             <div ref={barRef} className='opacity-0 h-[1px] absolute bottom-4 -translate-y-[50px] bar bg-neutral-200 rounded-full'></div>
-            <div ref={bar2Ref} className='opacity-0 h-[1px] w-[94%] absolute -translate-y-[50px] bottom-4 bar bg-neutral-700 rounded-full'></div>
+            {/* <div ref={bar2Ref} className='opacity-0 h-[1px] w-[94%] absolute -translate-y-[50px] bottom-4 bar bg-neutral-700 rounded-full'></div> */}
             <p className='location -translate-y-[50px] absolute opacity-0 text-base text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
             <p ref={clockRef} className='clocking -translate-y-[50px] opacity-0 absolute text-base bottom-[164px] text-neutral-400'>{time ? `${time.toUpperCase()}` : "Calibrating Time..."}</p>
 
