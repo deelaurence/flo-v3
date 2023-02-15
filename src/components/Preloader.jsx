@@ -127,7 +127,7 @@ const Preloader = ({ pullData }) => {
                         setImageLoaded(true)
                     }, 17000);
                     setTimeout(() => {
-                        percentage.innerHTML = "Welcome"
+                        percentage.innerHTML = "Hello"
                         percentage.style.transform = "translateY(-50px)"
                         percentage.style.opacity = 0
                         bar.style.width = "94%"
@@ -371,14 +371,14 @@ const Preloader = ({ pullData }) => {
                 {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
             </h1>
             <img className='three-shoes opacity-[.1] blur-[100px]' src={threeShoe} alt="" />
-            <div ref={preloadTextRef} className='right-6 opacity-0 preload-text [&>*]:overflow-visible flex flex-col font-medium absolute overflow-visible top-4 text-white text-4xl' >
-                <p> Inepto <span className='text-neutral-500'>Ne</span></p>
+            <div ref={preloadTextRef} className='right-6 opacity-0 preload-text [&>*]:overflow-visible flex flex-col font-normal absolute overflow-visible top-4 text-white text-4xl' >
+                <p> Incepto <span className='text-neutral-500'>Ne</span></p>
                 <p>Desistam</p>
             </div>
 
-            <div ref={preloadText2Ref} className='opacity-0 preload-text2 [&>*]:overflow-visible right-4 flex flex-col font-medium absolute overflow-visible top-4 text-white text-4xl' >
-                <p> May I not <span className='text-neutral-300'>shrink</span></p>
-                <p> from my <span className='text-neutral-300'>purpose</span></p>
+            <div ref={preloadText2Ref} className='opacity-0 preload-text2 [&>*]:overflow-visible right-4 flex flex-col font-normal absolute overflow-visible top-4 text-white text-3xl' >
+                <p> May I not <span className='text-neutral-500'>shrink</span></p>
+                <p> from my <span className='text-neutral-500'>purpose</span></p>
             </div>
 
             <div className={imgLoaded ? "h-0 [&>*]:h-0 transition-[1s]" : "h-0 [&>*]:h-0 transition-[1s] "}>
