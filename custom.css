@@ -89,21 +89,21 @@
 
 .bg-playground>img:hover {
     transform: scale(1.2);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
-    transition: ease-in-out .5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
+    transition: ease-out .5s;
     transform-origin: bottom;
+
 }
 
-.shoptacle-cont:hover {
-    transform: scale(1.2);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
-    transition: ease-in-out .5s;
-    transform-origin: bottom;
+
+.shoptacle {
+    transition: .5s;
+    cursor: pointer;
 }
 
 .shoptacle:hover {
     transform: scale(1.2) !important;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
     transition: ease-in-out .5s !important;
     transform-origin: bottom !important;
 }
@@ -114,8 +114,7 @@
 
 .bg-playground>img {
     transition: .5s;
-
-
+    cursor: pointer;
 }
 
 .shots-cont>img {
@@ -127,7 +126,15 @@
     /* border-bottom: 10px solid rgb(173, 173, 173); */
 }
 
+@media (min-width: 768px) {
+    .bg-playground>img:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
+        transition: ease-out 1s;
+        transform-origin: bottom;
 
+    }
+}
 
 .nav-menu {
     transition: 1.5s;
