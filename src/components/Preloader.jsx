@@ -90,7 +90,7 @@ const Preloader = ({ pullData }) => {
     const [currentLocation, setCurrentLocation] = useState('')
     let wordsArray = ["Maya", " Dodo"]
     let [words, setWords] = useState("")
-    let [imgLoaded, setImageLoaded] = useState(true)
+    let [imgLoaded, setImageLoaded] = useState(false)
     let [animation, setAnimation] = useState(false)
     let [status, setStatus] = useState(0)
     // let [time, setTime] = useState('')
