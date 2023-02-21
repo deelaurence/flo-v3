@@ -263,9 +263,9 @@ const LANDING = () => {
           return (
             <Link key={datum.name} to={datum.link}>
               <div
-                className="mb-8">
+                className="mb-8 ">
                 <img
-                  className='min-h-[200px] opacity-0'
+                  className='min-h-[200px] object-cover opacity-0'
                   ref={(element) => refs.current[index] = element}
                   src={datum.image}
                   alt={datum.name} />

@@ -1,3 +1,8 @@
+* {
+    text-decoration-skip-ink: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 @font-face {
     font-family: satoshi;
     src: url(./src/fonts/Satoshi-Regular.ttf) format("truetype");
@@ -89,11 +94,22 @@
     transform-origin: bottom;
 }
 
+.shoptacle-cont:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    transition: ease-in-out .5s;
+    transform-origin: bottom;
+}
+
 .shoptacle:hover {
     transform: scale(1.2) !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
     transition: ease-in-out .5s !important;
     transform-origin: bottom !important;
+}
+
+.shoptacle {
+    /* opacity: 0.5 */
 }
 
 .bg-playground>img {

@@ -302,7 +302,7 @@ const Playground = () => {
                     </div>
                     <div className='h-72 w-72 grids grid-5 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:w-[40%] flex justify-around h-56 w-64'>
-                            <div className='flex flex-col overflow-visible justify-between '>
+                            <div className='flex flex-col shoptacle-cont  overflow-visible justify-between '>
                                 <img className='shoptacle' src={shoptacle1} onClick={handleEnlarge} alt="" />
                                 <img className='shoptacle' src={shoptacle3} onClick={handleEnlarge} alt="" />
                             </div>

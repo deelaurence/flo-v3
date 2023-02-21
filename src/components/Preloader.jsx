@@ -90,7 +90,7 @@ const Preloader = ({ pullData }) => {
     const [currentLocation, setCurrentLocation] = useState('')
     let wordsArray = ["Maya", " Dodo"]
     let [words, setWords] = useState("")
-    let [imgLoaded, setImageLoaded] = useState(false)
+    let [imgLoaded, setImageLoaded] = useState(true)
     let [animation, setAnimation] = useState(false)
     let [status, setStatus] = useState(0)
     // let [time, setTime] = useState('')
@@ -244,11 +244,11 @@ const Preloader = ({ pullData }) => {
             //     skewX: "0deg",
             // })
             gsap.fromTo(text, {
-                yPercent: -110,
+                xPercent: 110,
                 skewX: "10deg",
                 opacity: "0"
             }, {
-                yPercent: -30,
+                xPercent: 30,
                 opacity: 1,
                 duration: 2,
                 delay: 2,
@@ -256,11 +256,11 @@ const Preloader = ({ pullData }) => {
                 skewX: "0deg",
             })
             gsap.fromTo(text, {
-                yPercent: -30,
+                xPercent: 30,
                 skewX: "10deg",
                 // opacity: "0"
             }, {
-                yPercent: -10,
+                xPercent: 10,
                 // opacity: 1,
                 duration: .5,
                 delay: 3.5,
@@ -285,20 +285,20 @@ const Preloader = ({ pullData }) => {
                 skewX: "0deg",
             })
             gsap.fromTo(text, {
-                yPercent: -10,
+                xPercent: 10,
             }, {
-                yPercent: -150,
+                xPercent: 150,
                 opacity: 0,
                 duration: 3,
                 delay: 5,
                 // ease: "Bounce.easeOut",
             })
             gsap.fromTo(text2, {
-                yPercent: -110,
+                xPercent: 110,
                 opacity: 0,
                 // skewY: "5deg"
             }, {
-                yPercent: 20,
+                xPercent: 0,
                 opacity: 1,
                 duration: 2,
                 delay: 9,
@@ -371,12 +371,12 @@ const Preloader = ({ pullData }) => {
                 {/* {status ? ` ${pseudoStatus}%` : "0%"} */}
             </h1>
             <img className='three-shoes opacity-[.1] blur-[100px]' src={threeShoe} alt="" />
-            <div ref={preloadTextRef} className='right-6 opacity-0 preload-text [&>*]:overflow-visible flex flex-col font-normal absolute overflow-visible top-4 text-white text-4xl' >
+            <div ref={preloadTextRef} className='right-6 opacity-0 preload-text [&>*]:overflow-visible flex flex-col font-medium absolute overflow-visible top-4 text-white text-4xl' >
                 <p> Incepto <span className='text-neutral-500'>Ne</span></p>
                 <p>Desistam</p>
             </div>
 
-            <div ref={preloadText2Ref} className='opacity-0 preload-text2 [&>*]:overflow-visible right-4 flex flex-col font-normal absolute overflow-visible top-4 text-white text-3xl' >
+            <div ref={preloadText2Ref} className='opacity-0 preload-text2 [&>*]:overflow-visible right-4 flex flex-col font-medium absolute overflow-visible top-4 text-white text-3xl' >
                 <p> May I not <span className='text-neutral-500'>shrink</span></p>
                 <p> from my <span className='text-neutral-500'>purpose</span></p>
             </div>
