@@ -45,7 +45,7 @@ const MixedR = ({ locationProps }) => {
     const oculus = document.querySelector('.headset')
     const solution = document.querySelector('.solution')
     const overview = document.querySelector('.overview')
-
+    const main = document.querySelector('main')
     const touchStart = () => {
         console.log("start");
         // oculus.style.transform = "rotateY(0deg) translateY(5px)"
@@ -82,6 +82,15 @@ const MixedR = ({ locationProps }) => {
         setLocation(locationProps)
         console.log("kodetech effect");
         console.log(oculus);
+        gsap.fromTo(main, {
+            opacity: 0,
+        },
+            {
+                opacity: 1,
+
+                duration: 3,
+            })
+
         gsap.to(oculus, {
             yPercent: 20,
             duration: 2,
@@ -158,7 +167,7 @@ const MixedR = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}

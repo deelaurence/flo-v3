@@ -32,6 +32,7 @@ import { useEffect } from 'react'
 
 
 const Alertz = ({ locationProps }) => {
+    const main = document.querySelector('main')
     const controls = useAnimation();
     const [ref, inView] = useInView();
     const parentRef = useRef(null)
@@ -113,6 +114,18 @@ const Alertz = ({ locationProps }) => {
 
     //     //     })
     // }, [location]);
+    useEffect(() => {
+        setLocation(locationProps)
+        console.log("kodetech effect");
+        gsap.fromTo(main, {
+            opacity: 0,
+        },
+            {
+                opacity: 1,
+
+                duration: 3,
+            })
+    }, [location]);
 
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
@@ -135,7 +148,7 @@ const Alertz = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}

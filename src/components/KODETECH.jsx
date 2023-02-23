@@ -26,6 +26,7 @@ import { useEffect } from 'react'
 
 const KODETECH = ({ locationProps }) => {
     const controls = useAnimation();
+    const main = document.querySelector('main')
     const [ref, inView] = useInView();
     const parentRef = useRef(null)
     const findingsRef = useRef(null)
@@ -34,78 +35,18 @@ const KODETECH = ({ locationProps }) => {
     const articles = document.querySelectorAll("article")
     const span = document.querySelectorAll("span")
     const [location, setLocation] = useState("")
-    // useEffect(() => {
-    //     setLocation(locationProps)
-    //     console.log("kodetech effect");
-    //     gsap.fromTo(parent, {
-    //         background: "#212121",
-    //         color: "#fafafa"
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "rgb(100,100,100)",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 trigger: finding,
-    //                 toggleActions: "play reverse play reverse"
-    //                 // scrub: true
-    //             }
-    //         })
-    //     gsap.fromTo(articles, {
-    //         background: "#212121",
-    //         color: "#fafafab9"
+    useEffect(() => {
+        setLocation(locationProps)
+        console.log("kodetech effect");
+        gsap.fromTo(main, {
+            opacity: 0,
+        },
+            {
+                opacity: 1,
 
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "rgb(100,100,100)",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 // scrub: true,
-    //                 trigger: finding,
-    //                 toggleActions: "play reverse play reverse"
-    //             }
-
-    //         })
-    //     gsap.fromTo(span, {
-    //         background: "#212121",
-    //         color: "#fafafa"
-
-
-    //     },
-    //         {
-    //             // background: "#d9dddc",
-    //             background: "#212121",
-    //             // color: "#212121",
-    //             color: "white",
-    //             duration: 1,
-    //             scrollTrigger: {
-    //                 // scrub: true,
-    //                 toggleActions: "play reverse play reverse",
-    //                 trigger: finding
-    //             }
-    //         })
-    //     // gsap.fromTo(articles, {
-    //     //     y: 30,
-    //     //     // opacity: 0
-
-    //     // },
-    //     //     {
-    //     //         y: 0,
-    //     //         // opacity: 1,
-    //     //         scrollTrigger: {
-    //     //             duration: 2,
-    //     //             // scrub: true,
-    //     //             trigger: articles,
-    //     //             toggleActions: "play reverse play reverse"
-    //     //         }
-
-    //     //     })
-    // }, [location]);
+                duration: 3,
+            })
+    }, [location]);
 
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
@@ -128,7 +69,7 @@ const KODETECH = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="px-6 opacity-0 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}

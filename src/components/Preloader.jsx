@@ -244,29 +244,29 @@ const Preloader = ({ pullData }) => {
             //     skewX: "0deg",
             // })
             gsap.fromTo(text, {
-                xPercent: 110,
-                skewX: "10deg",
+                // xPercent: 110,
+                // skewX: "10deg",
                 opacity: "0"
             }, {
-                xPercent: 30,
+                // xPercent: 30,
                 opacity: 1,
                 duration: 2,
-                delay: 2,
+
                 // ease: "Bounce.easeOut",
                 skewX: "0deg",
             })
-            gsap.fromTo(text, {
-                xPercent: 30,
-                skewX: "10deg",
-                // opacity: "0"
-            }, {
-                xPercent: 10,
-                // opacity: 1,
-                duration: .5,
-                delay: 3.5,
-                ease: "Bounce.easeOut",
-                skewX: "0deg",
-            })
+            // gsap.fromTo(text, {
+            //     xPercent: 30,
+            //     skewX: "10deg",
+            //     // opacity: "0"
+            // }, {
+            //     xPercent: 10,
+            //     // opacity: 1,
+            //     duration: .5,
+            //     delay: 3.5,
+            //     ease: "Bounce.easeOut",
+            //     skewX: "0deg",
+            // })
             gsap.fromTo(threeS, {
                 // filter: "contrast(200%)",
                 // yPercent: 100,
@@ -285,20 +285,20 @@ const Preloader = ({ pullData }) => {
                 skewX: "0deg",
             })
             gsap.fromTo(text, {
-                xPercent: 10,
+                // xPercent: 10,
             }, {
-                xPercent: 150,
+                // xPercent: 150,
                 opacity: 0,
                 duration: 3,
                 delay: 5,
                 // ease: "Bounce.easeOut",
             })
             gsap.fromTo(text2, {
-                xPercent: 110,
+                // xPercent: 110,
                 opacity: 0,
                 // skewY: "5deg"
             }, {
-                xPercent: 0,
+                // xPercent: 0,
                 opacity: 1,
                 duration: 2,
                 delay: 9,
