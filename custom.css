@@ -1,5 +1,6 @@
 * {
     text-decoration-skip-ink: none;
+    text-underline-offset: -40% !important;
     -webkit-tap-highlight-color: transparent;
 }
 

@@ -64,7 +64,7 @@ const Menu = ({ hideMenu, menu, locationProps }) => {
             <div className={menu ? ' nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
                 'nav1-animate  dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
                 <Link to='/'>
-                    <p onClick={handleActiveWork} className={activeWork ? 'underline underline-offset-[-40%]' : 'text-opaque'}>Work</p>
+                    <p onClick={handleActiveWork} className={activeWork ? 'underline underline-offset-[-40%] ' : 'text-opaque'}>Work</p>
                 </Link>
                 <Link to="/playground">
                     <p onClick={handleActivePlayground} className={activePlayground ? 'underline underline-offset-[-40%]' : 'text-opaque '}>Playground</p>

@@ -102,13 +102,12 @@ const KODETECH = ({ locationProps }) => {
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            KodeTech is an e-commerce website that
+                            <span className='text-orange-400'>Kodetech</span> is an e-commerce website that
                             was created to help the company expand
                             their brand while allowing them connect
                             with their users and effectively market their
                             tech gadget products. <br />
-                            On this platform, users are able to easily
-                            interact with the website and have an
+                            On this platform, users are able to <span className='text-green-300'>easily interact</span> with the website and have an
                             experience that is user-friendly while
                             performing their primary tasks of placing
                             orders.
@@ -125,11 +124,11 @@ const KODETECH = ({ locationProps }) => {
                             The Challenge.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            As a Nigerian-Tech brand, KodeTech is
+                            As a Nigerian-Tech brand, <span className='text-orange-400'>KodeTech</span> is
                             interested in bridging the communication
                             gap through the utilization of technology
                             and technological products, however, they
-                            require a platform that would allow them
+                            require a <span className='text-green-300'>platform</span> that would allow them
                             connect with their users whilst providing
                             them with top-notch user experience and
                             making sure there is the availability of
@@ -141,7 +140,8 @@ const KODETECH = ({ locationProps }) => {
                             Research.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To get started, primary research was carried out to understand the pain points of the target users
+                            To get started, primary research was carried out to understand the <span className='text-purple-300'>pain points</span> of
+                            the target users
                             and the main aim of this was to connect with the users and in turn discover a variety of opportunities
                             for the product.
                         </article>
@@ -151,7 +151,8 @@ const KODETECH = ({ locationProps }) => {
                             Findings.
                         </h3>
                         <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Target users are inclined to carry out online purchases, however, they complained of certain difficulties
+                            Target users are inclined to carry out online purchases, however,
+                            they complained of certain difficulties
                             which made them restrict their online transactions.
                             <br />
 
@@ -172,7 +173,8 @@ const KODETECH = ({ locationProps }) => {
                             The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            After understanding the challenges faced by the users and taking into consideration the core objective
+                            After understanding the challenges faced by the users and taking into
+                            consideration the<span className='text-green-300'> core </span>objective
                             of the brand, goals were crafted to establish major points:
                             <br />
                             <br />
@@ -193,10 +195,11 @@ const KODETECH = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             In the creation of this product, the
                             target group that was focused on made
-                            up the majority of the KodeTech product
+                            up the majority of the <span className='text-orange-400'>KodeTech</span> product
                             users. The user base consists of the younger
-                            demographic which are capable of
-                            interacting with the KodeTech platform to
+                            demographic <span className='text-purple-300'>younger
+                                demographic</span> which are capable of
+                            interacting with the <span className='text-orange-400'>KodeTech</span> platform to
                             conduct online transactions. As a result,
                             the user profiles were pooled and merged
                             to form a single user persona.
@@ -216,7 +219,7 @@ const KODETECH = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             For a product such as this, it was imperative
                             that every action taken by the users would be
-                            seamless as a result of the presence of an
+                            <span className='text-purple-300'>seamless</span> as a result of the presence of an
                             end-to-end information architecture workflow.
                         </article>
                     </div>
