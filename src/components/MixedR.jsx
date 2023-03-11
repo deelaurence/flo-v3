@@ -1,27 +1,16 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import WorkWithFlo from './WorkWithFloForPortfolio'
-import kodeTechCofee from '../assets/kodetech-mockup.png'
-import vrMockup from '../assets/landing-vr.png'
-import kodeTech1 from '../assets/kodetech1.png'
-import kodeTech2 from '../assets/kodetech2.png'
-import kodeTech3 from '../assets/kodetech3.png'
-
-import userPersona from './images/userpersona.png'
-import architecture from '../assets/kodetech-flow1.png'
-import userFlow1 from '../assets/kodetech-flow2.png'
-import userFlow2 from '../assets/kodetech-flow3.png'
-import userFlow3 from '../assets/kodetech-flow4.png'
+import vrMockup from '../assets/landing-vr.webp'
 import mrUserflow from '../assets/mr-userflow.jpg'
-import mrScreen1 from '../assets/mr-screen1.png'
-import mrScreen2 from '../assets/mr-screen2.png'
-import mrScreen3 from '../assets/mr-screen3.png'
-import mrScreen4 from '../assets/mr-screen4.jpg'
+import mrScreen1 from '../assets/mr-screen1.webp'
+import mrScreen2 from '../assets/mr-screen2.webp'
+import mrScreen3 from '../assets/mr-screen3.webp'
+import mrScreen4 from '../assets/mr-screen4.webp'
 
 
-import vrGif from "../assets/headset.png"
-import prev from './images/prev.png'
-import next from './images/next.png'
+import vrGif from "../assets/headset.webp"
+
+import next from '../assets/next.png'
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

@@ -1,11 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
-import sun from '../assets/sun.png'
-import moon from '../assets/moon.png'
-import flo1 from '../assets/flo1.png'
 
 import React from 'react'
 import Menu from './Menu'
-import logo from './images/680fe7a0a23e7b6c80c6547abf7eb43a-sticker 2.png'
 import { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 const Navbar = ({ locationProps }) => {

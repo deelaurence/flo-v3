@@ -1,9 +1,9 @@
-import landingAlertz from '../assets/landing-alertz.png'
-import landingVr from '../assets/landing-vr.png'
-import landingGuild from '../assets/landing-guild.png'
-import landingKodetech from '../assets/landing-kodetech.png'
-import landingFemmina from '../assets/landing-femmina.png'
-import landingDexchange from '../assets/landing-dexchange.png'
+import landingAlertz from '../assets/landing-alertz.webp'
+import landingVr from '../assets/landing-vr.webp'
+import landingGuild from '../assets/landing-guild.webp'
+import landingKodetech from '../assets/landing-kodetech.webp'
+import landingFemmina from '../assets/landing-femmina.webp'
+import landingDexchange from '../assets/landing-dexchange.webp'
 
 
 let data = [

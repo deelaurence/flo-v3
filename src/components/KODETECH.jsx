@@ -1,19 +1,19 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import WorkWithFlo from './WorkWithFloForPortfolio'
-import kodeTechCofee from '../assets/kodetech-mockup.png'
-import kodeTech1 from '../assets/kodetech1.png'
-import kodeTech2 from '../assets/kodetech2.png'
-import kodeTech3 from '../assets/kodetech3.png'
+import kodeTechCofee from '../assets/kodetech-mockup.webp'
+import kodeTech1 from '../assets/kodetech1.webp'
+import kodeTech2 from '../assets/kodetech2.webp'
+import kodeTech3 from '../assets/kodetech3.webp'
 
-import userPersona from './images/userpersona.png'
+import userPersona from '../assets/userpersona.png'
 import architecture from '../assets/kodetech-flow1.png'
 import userFlow1 from '../assets/kodetech-flow2.png'
 import userFlow2 from '../assets/kodetech-flow3.png'
 import userFlow3 from '../assets/kodetech-flow4.png'
 
-import prev from './images/prev.png'
-import next from './images/next.png'
+import prev from '../assets/prev.png'
+import next from '../assets/next.png'
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

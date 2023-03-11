@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 import { motion, useAnimation, useScroll } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import landingAlertz from '../assets/landing-alertz.png'
 import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
 import { useLocation } from 'react-router-dom'

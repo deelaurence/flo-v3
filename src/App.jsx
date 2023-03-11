@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 
 
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LANDING from './components/LANDING';
-import PORTFOLIOPAGE from './components/PORTFOLIOPAGE';
 import KODETECH from './components/KODETECH';
 import Alertz from './components/Alertz';
 import MixedR from './components/MixedR';
@@ -14,7 +12,6 @@ import Guild from './components/Guild'
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import Preloader from './components/Preloader'
-import Sphere from './components/Shere'
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
 import Playground from './components/Playground';
@@ -40,7 +37,6 @@ function App() {
           <Navbar locationProps={location} />
           <Routes>
             <Route path="/" key={document.location.href} element={<LANDING />} />
-            <Route path="/d" key={document.location.href} element={<Sphere />} />
             <Route path="/guild" key={document.location.href} element={<Guild />} />
             <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
             <Route path="/menu" key={document.location.href} element={<Menu />} />
