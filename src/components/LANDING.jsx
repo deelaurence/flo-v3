@@ -15,6 +15,7 @@ const LANDING = () => {
   const [currentLocation, setCurrentLocation] = useState("")
   const refs = useRef([])
   const refs2 = useRef([])
+  const refs3 = useRef([])
   const heroRef = useRef(null)
   const hero = heroRef.current
   useEffect(() => {
@@ -40,7 +41,37 @@ const LANDING = () => {
         //   scrub: "true"
         // }
       })
-    gsap.fromTo(refs.current[0], {
+    // gsap.fromTo(refs.current[0], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+    // },
+    //   {
+    //     yPercent: 0,
+    //     skewX: "0deg",
+    //     opacity: 1,
+    //     duration: 1,
+    //     delay: 1,
+    //     // ease: "Bounce.easeOut",
+    //     scrollTrigger: {
+    //       trigger: refs.current[0],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[0], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: 3,
+    //     scrollTrigger: {
+    //       trigger: refs.current[0],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[0], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -56,22 +87,40 @@ const LANDING = () => {
           trigger: refs.current[0],
         }
       })
-    gsap.fromTo(refs2.current[0], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: 3,
-        scrollTrigger: {
-          trigger: refs.current[0],
-        }
-      }
-    )
 
-    gsap.fromTo(refs.current[1], {
+
+    // gsap.fromTo(refs.current[1], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+
+    // },
+    //   {
+    //     yPercent: 0,
+    //     skewX: "0deg",
+
+    //     opacity: 1,
+    //     duration: 1,
+    //     delay: 2.5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[0],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[1], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: .5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[0],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[1], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -80,29 +129,43 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-
         opacity: 1,
         duration: 1,
-        delay: 2.5,
+        delay: 1,
         scrollTrigger: {
           trigger: refs.current[0],
         }
       })
-    gsap.fromTo(refs2.current[1], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: .5,
-        scrollTrigger: {
-          trigger: refs.current[0],
-        }
-      }
-    )
-    gsap.fromTo(refs.current[2], {
+    // gsap.fromTo(refs.current[2], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+
+    // },
+    //   {
+    //     yPercent: 0,
+    //     skewX: "0deg",
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: refs.current[2],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[2], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: .5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[1],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[2], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -111,28 +174,44 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-
         opacity: 1,
+        delay: 1.3,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[2],
         }
       })
-    gsap.fromTo(refs2.current[2], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: .5,
-        scrollTrigger: {
-          trigger: refs.current[1],
-        }
-      }
-    )
-    gsap.fromTo(refs.current[3], {
+    // gsap.fromTo(refs.current[3], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+
+    // },
+    //   {
+    //     yPercent: 0,
+    //     skewX: "0deg",
+
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: refs.current[3],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[3], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: .5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[3],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[3], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -141,28 +220,44 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-
+        delay: 1.5,
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[3],
         }
       })
-    gsap.fromTo(refs2.current[3], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: .5,
-        scrollTrigger: {
-          trigger: refs.current[3],
-        }
-      }
-    )
-    gsap.fromTo(refs.current[4], {
+    // gsap.fromTo(refs.current[4], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+
+    // },
+    //   {
+    //     yPercent: 0,
+
+    //     skewX: "0deg",
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: refs.current[4],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[4], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: .5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[4],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[4], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -173,26 +268,43 @@ const LANDING = () => {
 
         skewX: "0deg",
         opacity: 1,
+        delay: 2,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[4],
         }
       })
-    gsap.fromTo(refs2.current[4], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: .5,
-        scrollTrigger: {
-          trigger: refs.current[4],
-        }
-      }
-    )
-    gsap.fromTo(refs.current[5], {
+    // gsap.fromTo(refs.current[5], {
+    //   yPercent: 20,
+    //   opacity: 0,
+    //   skewX: "4deg"
+
+    // },
+    //   {
+    //     yPercent: 0,
+    //     skewX: "0deg",
+
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: refs.current[5],
+    //     }
+    //   })
+    // gsap.fromTo(refs2.current[5], {
+    //   yPercent: 20,
+    //   opacity: 0
+    // },
+    //   {
+    //     yPercent: 0,
+    //     duration: 1.2,
+    //     opacity: 1,
+    //     delay: .5,
+    //     scrollTrigger: {
+    //       trigger: refs.current[5],
+    //     }
+    //   }
+    // )
+    gsap.fromTo(refs3.current[5], {
       yPercent: 20,
       opacity: 0,
       skewX: "4deg"
@@ -201,27 +313,13 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-
+        delay: 2.2,
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[5],
         }
       })
-    gsap.fromTo(refs2.current[5], {
-      yPercent: 20,
-      opacity: 0
-    },
-      {
-        yPercent: 0,
-        duration: 1.2,
-        opacity: 1,
-        delay: .5,
-        scrollTrigger: {
-          trigger: refs.current[5],
-        }
-      }
-    )
 
 
   }, [])
@@ -262,13 +360,14 @@ const LANDING = () => {
           return (
             <Link key={datum.name} to={datum.link}>
               <div
-                className="mb-8 ">
+                ref={(element) => refs3.current[index] = element}
+                className="mb-8 opacity-0">
                 <img
-                  className='min-h-[200px] object-cover opacity-0'
+                  className='min-h-[200px] object-cover '
                   ref={(element) => refs.current[index] = element}
                   src={datum.image}
                   alt={datum.name} />
-                <aside ref={(element) => refs2.current[index] = element} className='opacity-0 flex flex-col mt-3'>
+                <aside ref={(element) => refs2.current[index] = element} className=' flex flex-col mt-3'>
                   <div className='flex justify-between'>
                     <h3 className='font-bold text-[17px] md:text-base mt-2'>{datum.name}</h3>
                     <p className='text-[11px] font-medium mt-2 md:text-sm'>{datum.year}</p>

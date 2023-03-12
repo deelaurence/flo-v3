@@ -225,6 +225,7 @@ const Alertz = ({ locationProps }) => {
                             Target users are inclined to carry out online purchases, however, they complained of certain difficulties
                             which made them restrict their online transactions.
                             <br />
+                            <br />
 
                             <span className='block mt-4 mb-2'> These difficulties were in the form of:</span>
                             <br />

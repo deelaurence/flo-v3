@@ -199,6 +199,7 @@ const MixedR = ({ locationProps }) => {
                             this is fueled by 3D information.
 
                             <br />
+                            <br />
                             For <span className='text-purple-400'>MR</span> to function,
                             it produces an environment where physical and digital
                             objects can co-exist and interact in real time.
@@ -209,11 +210,15 @@ const MixedR = ({ locationProps }) => {
                             offers real-world integration and actual
                             interaction with virtual elements.
                             <br />
+                            <br />
                             Presently, the concept of <span className="text-orange-200">Mixed Reality</span> applications is regarded as novel, however, there is no denying the fact that there still remain inconceivable possibilities associated with the application of <span className="text-orange-200">mixed reality</span> in healthcare.
+                            <br />
                             <br />
                             Infusing the use of <span className="text-orange-200">Mixed Reality</span> as a technique can help in the generation of personalized 3D models for every patient and this can help the medical personnel visualize the internal anatomy of the patient in a fully immersive and interactive environment.
                             <br />
+                            <br />
                             The possibility of this paves the way for realistic activities to be carried out, such as preoperative simulations which can be used to determine optimal procedures pertaining to patients’ prognosis and to predict the final surgical outcomes of the patients involved.
+                            <br />
                             <br />
                             With the implementation of this product, there will be increased patient engagement using holographic patient consultation, the option of remote expert consultation, and the possibility for training simulations.
 
@@ -232,7 +237,9 @@ const MixedR = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Although the healthcare system is seen to be such an integral and crucial aspect of human wellbeing, it is greatly flawed in the process of providing proper medical services to people who need them, especially in emergency situations.
                             <br />
+                            <br />
                             This flaw, although manageable in the previous years keeps increasing to new highs everyday and the surge level is likely not to reduce anytime soon and this is largely due to the recovery from the COVID-19 pandemic as the healthcare industry since the year 2020 has undergone a lot of transformation.
+                            <br />
                             <br />
                             As a result of this, patient experience with healthcare keeps dwindling and this reduces the retention level of patients who are likely to keep using healthcare services.
                         </article>
@@ -267,7 +274,9 @@ const MixedR = ({ locationProps }) => {
                             Target users are inclined to carry out online purchases, however, they complained of certain difficulties
                             which made them restrict their online transactions.
                             <br />
+                            <br />
                             <span className='block mt-4 mb-2'> These difficulties were in the form of:</span>
+                            <br />
                             <br />
 
                             <ul className=' [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
@@ -286,11 +295,16 @@ const MixedR = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Although still being engaged with, interacting with <span className="text-orange-200">Mixed Reality</span> can help to improve the general health status across the world and this is largely due to the fact that <span className="text-orange-200">mixed reality</span> helps with visualization and with visualization comes better implementation.
                             <br />
+                            <br />
                             When it comes to being implemented in the surgical field, MR wearable devices such as the Microsoft HoloLens can be used in combination with new emerging imaging technologies.
+                            <br />
                             <br />
                             The use of this kind of immersive technology ensures that the medical personnel has access to spatial localization of anatomical structures which helps to improve mental precision, simplifying preoperative planning.
                             <br />
+                            <br />
                             As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
+                            As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
+                            <br />
                             <br />
 
                             {/* <ul className=' [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
@@ -346,6 +360,7 @@ const MixedR = ({ locationProps }) => {
                         </div>
                         <article className='text-[1rem] mb-8 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             I came up with a User Flow to serve as a guide for my thought process and to make the user interaction a seamless one.
+                            <br />
                             <br />
                             For optimal product interaction, the user would need to wear a pair of HoloLens glasses.</article>
                         <img src={mrUserflow} onClick={handleEnlargeLandscape} alt="" />
