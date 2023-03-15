@@ -708,13 +708,21 @@ const WhoIsFlo = () => {
         </div>
       </section>
 
-      <section ref={shotsRef} className='overflow-visible'>
+      <section ref={shotsRef} className='w-full  overflow-visible'>
         <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
-        <div className='[&>*]:w-[42vw] md:[&>*]:w-[38vw] shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] [&>*]:absolute gap-6 '>
-          <img draggable="true" onClick={handleHover} ref={shot1Ref} className=' top-0 ' src={shot1} alt="" />
-          <img onClick={handleHover2} ref={shot2Ref} className='top-0  right-0' src={shot2} alt="" />
-          <img onClick={handleHover3} ref={shot3Ref} className='bottom-0 left-0' src={shot3} alt="" />
-          <img onClick={handleHover4} ref={shot4Ref} className='bottom-0  right-0' src={shot4} alt="" />
+        <div className=' [&>*]:w-[48.8%] md:[&>*]:w-[48.5%]   shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] flex flex-wrap gap-[2vw] '>
+        <div className=' top-0 '>
+          <img draggable="true" onClick={handleHover} ref={shot1Ref} className='h-full' src={shot1} alt="" />
+        </div>
+        <div className='top-0  right-0'>
+         <img onClick={handleHover2} ref={shot2Ref}  src={shot2} alt="" className='h-full' />
+        </div> 
+        <div className='bottom-0 left-0'>
+          <img onClick={handleHover3} ref={shot3Ref}  src={shot3} alt="" className='h-full'/>
+        </div>
+        <div className='bottom-0  right-0'>
+          <img onClick={handleHover4} ref={shot4Ref}  src={shot4} alt="" className='h-full'/>
+        </div>
           <p ref={subtitlesRef} className='opacity-0 absolute top-[30%]  left-[30%] z-[11] font-bold text-2xl'>Subtitles</p>
         </div>
       </section>

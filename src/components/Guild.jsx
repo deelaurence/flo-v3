@@ -190,13 +190,12 @@ const Guild = ({ locationProps }) => {
                             this served as the core purpose of the platform;
                             <br />
                             <br />
-
-
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>
                                     Making sure that Guild has a <span className='text-red-300'> good onboarding process </span>whilst also prioritizing
                                     user navigation to be as easy and seamless as possible, with the negation of
-                                    any possible confusion factor.</li>
+                                    any possible confusion factor.
+                                </li>
                             </ul>
                             <span className='block mt-4 mb-2'> After ensuring a resolution of the documented complaints
                                 about Discord, the following Web3 features were decided on and included to improve

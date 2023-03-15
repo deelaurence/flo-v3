@@ -181,7 +181,7 @@ const KODETECH = ({ locationProps }) => {
 
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li>Ensuring<span className='font-medium text-lightShade  dark:text-darkShade'> user-friendliness</span> on the website.</li>
-                                <li>Priortizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation.</span></li>
+                                <li>Prioritizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation.</span></li>
                                 <li>Including a variety of<span className='font-medium text-lightShade  dark:text-darkShade'> payment methods.</span></li>
                                 <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available.</li>
                                 <li>Crafting detailed<span className='font-medium text-lightShade  dark:text-darkShade'> product descriptions.</span></li>
@@ -219,7 +219,7 @@ const KODETECH = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             For a product such as this, it was imperative
                             that every action taken by the users would be
-                            <span className='text-purple-300'>seamless</span> as a result of the presence of an
+                            <span className='text-purple-300'> seamless</span> as a result of the presence of an
                             end-to-end information architecture workflow.
                         </article>
                     </div>

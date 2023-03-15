@@ -244,7 +244,7 @@ const MixedR = ({ locationProps }) => {
                             As a result of this, patient experience with healthcare keeps dwindling and this reduces the retention level of patients who are likely to keep using healthcare services.
                         </article>
                         <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>Factors that affect patient experience negatively include:</p>
-                        <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
+                        <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible  ml-4 dark:text-darkShade'>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span> A lack of personalized interaction with medical personnel.</li>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Loss of patients’ data and records when they switch insurance plans or healthcare services.</li>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Lack of price transparency as regards patients’ testing and therapy.</li>
