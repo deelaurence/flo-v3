@@ -710,8 +710,8 @@ const WhoIsFlo = () => {
 
       <section ref={shotsRef} className='w-full  overflow-visible'>
         <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
-        <div className=' [&>*]:w-[48.8%] md:[&>*]:w-[48.5%]   shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw]  md:h-[115vw] flex flex-wrap gap-[2vw] '>
-        <div className=' top-0 '>
+        <div className='[&>*]:w-[48.8%] [&>*]:h-[48.8%] md:[&>*]:w-[48.5%]  shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw] md:h-[115vw] flex flex-wrap gap-[2vw]'>
+        <div className='top-0'>
           <img draggable="true" onClick={handleHover} ref={shot1Ref} className='h-full' src={shot1} alt="" />
         </div>
         <div className='top-0  right-0'>

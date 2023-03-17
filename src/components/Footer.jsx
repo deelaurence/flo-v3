@@ -94,17 +94,17 @@ const Footer = ({ locationProps }) => {
             <p className='text-opaque mt-12 md:mt-24 mb-3'>
               Contact.
             </p>
-            <a className='font-medium text-yellow-200' href="mailto:Ralph.flourish@yahoo.com">Ralph.flourish@yahoo.com</a>
+            <a className='font-medium' href="mailto:Ralph.flourish@yahoo.com">Ralph.flourish@yahoo.com</a>
           </div>
           <div ref={connectRef}>
             <p className='text-opaque mt-24 mb-3'>
               Connect with me.
             </p>
             <div className='flex font-medium gap-4'>
-              <a href="" className='text-orange-200'>Notion</a>
-              <a href="" className='text-red-300'>Dribbble</a>
-              <a href="" className='text-blue-400'>Twitter</a>
-              <a href="" className='text-green-400'> LinkedIn</a>
+              <a href="" className=''>Notion</a>
+              <a href="" className=''>Dribbble</a>
+              <a href="" className=''>Twitter</a>
+              <a href="" className=''> LinkedIn</a>
             </div>
           </div>
         </section>
