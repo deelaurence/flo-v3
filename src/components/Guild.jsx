@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import WorkWithFlo from './WorkWithFloForPortfolio'
-import kodeTechCofee from '../assets/kodetech-mockup.webp'
+import kodeTechCofee from '../assets/landing-guild.webp'
 import kodeTech1 from '../assets/kodetech1.webp'
 import kodeTech2 from '../assets/kodetech2.webp'
 import kodeTech3 from '../assets/kodetech3.webp'

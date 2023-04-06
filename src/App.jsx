@@ -14,6 +14,7 @@ import Navbar from './components/Navbar';
 import Preloader from './components/Preloader'
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
+
 import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect, useRef } from 'react';

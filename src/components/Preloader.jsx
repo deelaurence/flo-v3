@@ -37,11 +37,12 @@ import shot2 from "../assets/shot2.webp"
 import shot3 from "../assets/shot3.webp"
 import shot4 from "../assets/shot4.webp"
 import kodetechCoffee from '../assets/kodetech-mockup.webp'
-import kodetechFlow1 from '../assets/kodetech-flow1.png'
-import kodetechFlow2 from '../assets/kodetech-flow2.png'
-import kodetechFlow3 from '../assets/kodetech-flow3.png'
-import kodetechFlow4 from '../assets/kodetech-flow4.png'
-import kodetech1 from '../assets/kodetech1.webp'
+import kodetechFlow1 from '../assets/kodetech-flow1.webp'
+import kodetechFlow2 from '../assets/kodetech-flow2.webp'
+import kodetechFlow3 from '../assets/kodetech-flow3.webp'
+import kodetechFlow4 from '../assets/kodetech-flow4.webp' 
+import kodetech1 from '../assets/kodetech1.webp' 
+
 import kodetech2 from '../assets/kodetech2.webp'
 import kodetech3 from '../assets/kodetech3.webp'
 import alertzResponse1 from '../assets/alertz-response1.webp'
@@ -65,7 +66,7 @@ import mrScreen4 from '../assets/mr-screen4.webp'
 import mrUserflow from '../assets/mr-userflow.webp'
 
 
-import userPersona from '../assets/userpersona.png'
+import userPersona from '../assets/userpersona.webp'
 
 
 const Preloader = ({ pullData }) => {
