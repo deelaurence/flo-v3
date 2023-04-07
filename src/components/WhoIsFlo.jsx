@@ -65,7 +65,7 @@ const WhoIsFlo = () => {
 
     return
     if (e.detail === 2) {
-      console.log(e.detail);
+      //(e.detail);
       subtitles.style.opacity = "0"
       subtitles.style.top = "30%"
       subtitles.style.transform = "skewX(10deg)"
@@ -344,7 +344,7 @@ const WhoIsFlo = () => {
   const [currentLocation, setCurrentLocation] = useState("")
 
   useEffect(() => {
-    console.log("run about effect");
+    //("run about effect");
     setCurrentLocation(location)
     const creative = creativeRef.current;
     gsap.fromTo(floImg, {

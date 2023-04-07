@@ -19,7 +19,7 @@ const LANDING = () => {
   const heroRef = useRef(null)
   const hero = heroRef.current
   useEffect(() => {
-    console.log("run effect landing")
+    //("run effect landing")
     setCurrentLocation(location)
     gsap.fromTo(hero, {
       yPercent: 40,
@@ -175,7 +175,7 @@ const LANDING = () => {
         yPercent: 0,
         skewX: "0deg",
         opacity: 1,
-        delay: 1.3,
+        delay: .8,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[2],
@@ -220,7 +220,7 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-        delay: 1.5,
+        delay: 1,
         opacity: 1,
         duration: 1,
         scrollTrigger: {
@@ -268,7 +268,7 @@ const LANDING = () => {
 
         skewX: "0deg",
         opacity: 1,
-        delay: 2,
+        delay: 1.2,
         duration: 1,
         scrollTrigger: {
           trigger: refs.current[4],
@@ -313,7 +313,7 @@ const LANDING = () => {
       {
         yPercent: 0,
         skewX: "0deg",
-        delay: 2.2,
+        delay: 1.5,
         opacity: 1,
         duration: 1,
         scrollTrigger: {

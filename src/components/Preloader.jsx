@@ -99,9 +99,6 @@ const Preloader = ({ pullData }) => {
     let [pseudoStatus, setPseudoStatus] = useState(0)
     pullData(imgLoaded)
     const domImages = document.querySelectorAll("img")
-    // console.log(progress.length);
-    // console.log(barClass)
-    // try {
     setTimeout(() => {
         setAnimation(true)
     }, 2000);
@@ -109,22 +106,11 @@ const Preloader = ({ pullData }) => {
         domImages.forEach((image, index) => {
             image.addEventListener("load", () => {
                 setProgress(progress.push(index))
-                // setTimeout(() => {
-                // console.log(status);
-                // setInterval(() => {
-
-                //   setStatus(status++)
-
-                // }, 2000);
+            
                 setStatus(progress.length)
-                // }, 2000);
-                console.log(`image ${index} loaded`);
-                console.log(progress.length, domImages.length);
-                console.log(image.complete)
+            
                 if (progress.length / domImages.length * 100 > 90) {
-                    console.log("not completed but load notwithstanding")
                     setTimeout(() => {
-                        // percentage.innerHTML = "loading"
                         setImageLoaded(true)
                     }, 17000);
                     setTimeout(() => {
@@ -144,11 +130,10 @@ const Preloader = ({ pullData }) => {
                         text2.style.opacity = 0
                         text2.style.transform = "translateY(-100px)"
                         text2.style.transition = "2s"
-                        // setImageLoaded(true)
                     }, 15000);
                 }
                 if (progress.length == domImages.length) {
-                    console.log("completed")
+                    //("completed")
                     setTimeout(() => {
 
                         // setImageLoaded(true)
@@ -163,7 +148,7 @@ const Preloader = ({ pullData }) => {
 
     if (bar) {
         // setTimeout(() => {
-        bar.style.width = `${status / domImages.length * 94}%`
+        bar.style.width = `${status / domImages.length * 98}%`
         // bar2.style.width = `${pseudoStatus / 99 * 94}%`
         // bar2.style.width = `${status / domImages.length * 94}%`
 
@@ -171,7 +156,7 @@ const Preloader = ({ pullData }) => {
     }
 
 
-    // console.log(text);
+    // //(text);
     useEffect(() => {
         // setTimeout(() => {
         if (percentage) {
@@ -205,45 +190,8 @@ const Preloader = ({ pullData }) => {
 
     }, [currentLocation])
 
-    // useEffect(() => {
-    //     // getImage()
-    //     let imageDelay = setTimeout(() => {
-    //         getImage()
-    //         setCurrentLocation(location)
-    //     }, 5000);
-
-    //     return () =>
-    //         clearTimeout(imageDelay)
-    // }, [currentLocation])
     useEffect(() => {
         setTimeout(() => {
-            console.log("animation useeffect");
-            // console.log(preloadText);
-            // gsap.fromTo(threeS, {
-            //     filter: "contrast(200%)",
-            //     // scale: 4,
-            // }, {
-            //     filter: "contrast(190%)",
-            //     filter: "blur(120px)",
-            //     duration: 20,
-            //     // scale: 1,
-            //     delay: 0,
-            //     opacity: 1,
-            //     // ease: "Bounce.easeOut",
-            //     skewX: "0deg",
-            // })
-            // gsap.fromTo(percentage, {
-            //     yPercent: -110,
-            //     skewX: "10deg",
-            //     opacity: "0"
-            // }, {
-            //     yPercent: -30,
-            //     opacity: 1,
-            //     duration: 2,
-            //     // delay: 2,
-            //     // ease: "Bounce.easeOut",
-            //     skewX: "0deg",
-            // })
             gsap.fromTo(text, {
                 // xPercent: 110,
                 // skewX: "10deg",
@@ -256,18 +204,6 @@ const Preloader = ({ pullData }) => {
                 // ease: "Bounce.easeOut",
                 skewX: "0deg",
             })
-            // gsap.fromTo(text, {
-            //     xPercent: 30,
-            //     skewX: "10deg",
-            //     // opacity: "0"
-            // }, {
-            //     xPercent: 10,
-            //     // opacity: 1,
-            //     duration: .5,
-            //     delay: 3.5,
-            //     ease: "Bounce.easeOut",
-            //     skewX: "0deg",
-            // })
             gsap.fromTo(threeS, {
                 // filter: "contrast(200%)",
                 // yPercent: 100,
@@ -337,7 +273,7 @@ const Preloader = ({ pullData }) => {
     const seconds = currentTime.getSeconds()
     const day = currentTime.getDay()
     const weekdays = ["Sn", "Mn", "Tu", "Wd", "Th", "Fr", "St"]
-    // console.log(seconds)
+    // //(seconds)
     let newHour;
     let newSeconds;
     let newMinute
@@ -357,12 +293,12 @@ const Preloader = ({ pullData }) => {
     // return () =>
     // clearInterval(clockUpdate)
     // }, [time])
-    // console.log(fullTime);
-    // console.log(time);
+    // //(fullTime);
+    // //(time);
 
     return (
         <div className=' px-2 text-neutral-700 text-8xl font-bold h-screen w-screen bg-darkShade'>
-            <div ref={bar2Ref} className='opacity-0 h-[1px] w-[94%] absolute -translate-y-[50px] bottom-4 bar bg-neutral-700 rounded-full'></div>
+            <div ref={bar2Ref} className='opacity-0 h-[1px] w-[98%] absolute -translate-y-[50px] bottom-4 bar bg-neutral-700 rounded-full'></div>
             <div ref={barRef} className='opacity-0 h-[1px] absolute bottom-4 -translate-y-[50px] bar bg-neutral-200 rounded-full'></div>
             <p className='location -translate-y-[50px] absolute opacity-0 text-base text-neutral-500 bottom-[144px]'>\Lagos &mdash; NG</p>
             <p ref={clockRef} className='clocking -translate-y-[50px] opacity-0 absolute text-base bottom-[164px] text-neutral-400'>{time ? `${time.toUpperCase()}` : "Calibrating Time..."}</p>

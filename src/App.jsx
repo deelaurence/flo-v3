@@ -25,7 +25,7 @@ function App() {
   const [currentLocation, setCurrentLocation] = useState('')
   const [imgLoaded, setImageLoaded] = useState(false)
   const pullData = ((data) => {
-    console.log(data);
+    //(data);
     setImageLoaded(data)
   })
   return (

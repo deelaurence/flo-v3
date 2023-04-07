@@ -15,17 +15,17 @@ const Navbar = ({ locationProps }) => {
   const [refreshBlendBar, setRefreshBlendBar] = useState(false)
   const [currentLocation, setCurrentLocation] = useState("")
   useEffect(() => {
-    console.log(locationProps.href);
+    console.log("location changed o");
     setCurrentLocation(location)
     if (locationProps.href.includes('about')) {
-      console.log('about');
+      //('about');
       setActiveAbout(true)
       setActiveWork(false)
       setActivePlayground(false)
       return
     }
     if (locationProps.href.includes('playground')) {
-      console.log('playground active');
+      //('playground active');
       setActivePlayground(true)
       setActiveWork(false)
       return
@@ -36,7 +36,7 @@ const Navbar = ({ locationProps }) => {
       setActiveWork(true)
       return
     }
-  }, [activeAbout, activeWork, activePlayground])
+  }, [location])
 
   const handleActiveAbout = () => {
     setActiveAbout(true)
@@ -65,13 +65,13 @@ const Navbar = ({ locationProps }) => {
 
 
   let blendBar = document.querySelector('.blend-bar')
-  // console.log(blendBar);
+  // //(blendBar);
 
 
-  // console.log(locationProps);
+  // //(locationProps);
   // const handleNightMode = () => {
   //   setNight(!night)
-  //   console.log('niiight');
+  //   //('niiight');
   // }
 
   // if (night) {
@@ -123,17 +123,26 @@ const Navbar = ({ locationProps }) => {
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
-        <Menu locationProps={locationProps} menu={menu} hideMenu={hideMenu} />
+        <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />
       </div>
       <div className="md:hidden flex  gap-1 self-end ">
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
         <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
       <div className="hidden md:flex  gap-4 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
-        <p onClick={handleActiveWork} className={activeWork ? 'text-sm font-regular text-lightShade underline underline-offset-[-40%]' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
-        <p onClick={handleActivePlayground} className={activePlayground ? 'text-sm font-regular text-lightShade underline underline-offset-[-40%]' : ' text-sm font-regular text-opaque'} ><Link to='/playground'>Playground</Link></p>
-        <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-lightShade underline underline-offset-[-40%]' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
-        <p className={activeResume ? 'text-sm font-regular text-lightShade underline underline-offset-[-40%]' : ' text-sm font-regular text-opaque'} ><Link to='/resume'>Résumé</Link></p>
+        <div className='relative'>
+        <div className={activeWork?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
+        <p onClick={handleActiveWork} className={activeWork ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
+        </div>
+        <div className='relative'>
+        <div className={activePlayground?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
+        <p onClick={handleActivePlayground} className={activePlayground ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/playground'>Playground</Link></p>
+        </div>
+        <div className='relative'>
+        <div className={activeAbout?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
+        <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
+        </div>
+        <p className={activeResume ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/resume'>Résumé</Link></p>
       </div>
     </nav>
 

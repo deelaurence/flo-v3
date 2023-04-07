@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import WorkWithFlo from './WorkWithFloForPortfolio'
 import kodeTechCofee from '../assets/kodetech-mockup.webp'
 import kodeTech1 from '../assets/kodetech1.webp'
 import kodeTech2 from '../assets/kodetech2.webp'
@@ -37,7 +36,7 @@ const KODETECH = ({ locationProps }) => {
     const [location, setLocation] = useState("")
     useEffect(() => {
         setLocation(locationProps)
-        console.log("kodetech effect");
+        //("kodetech effect");
         gsap.fromTo(main, {
             opacity: 0,
         },
@@ -224,7 +223,7 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='mt-16'>
-                        <img src={architecture} onClick={handleEnlargeLandscape} alt="" />
+                        <img src={architecture}  alt="" />
                     </div>
 
                     <div>
@@ -234,15 +233,15 @@ const KODETECH = ({ locationProps }) => {
                         <div className='flex flex-col gap-8 text-opaque font-medium'>
                             <div>
                                 <h5 className='mb-5'>Sign Up/Log In task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow1} alt="" />
+                                <img  src={userFlow1} alt="" />
                             </div>
                             <div>
                                 <h5 className='mb-5'>Order/Add to Cart task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow2} alt="" />
+                                <img  src={userFlow2} alt="" />
                             </div>
                             <div>
                                 <h5 className='mb-5'>Check Out task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow3} alt="" />
+                                <img  src={userFlow3} alt="" />
                             </div>
                         </div>
                     </div>
@@ -274,7 +273,7 @@ const KODETECH = ({ locationProps }) => {
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>
                         <p className='mb-4'>Owari da.</p>
-                        <p className=''>Arigato. <span className='text-base'>😡</span> </p>
+                        <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
                     <div className='flex gap-2 items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />

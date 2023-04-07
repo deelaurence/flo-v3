@@ -44,12 +44,12 @@ const Playground = () => {
     const [landscape, setLandscape] = useState(false)
     const html = document.querySelector("html")
     const grids = document.querySelectorAll(".grids")
-    // console.log(grids);
+    // //(grids);
     const playgroundStart = (() => {
         grids.forEach(grid => {
             grid.style.transform = "scale(0.95) rotate(1deg)"
         });
-        console.log('scrolling');
+        //('scrolling');
         backText.style.opacity = "1"
         backText.style.transform = " translateY(100px)"
     })
@@ -58,10 +58,10 @@ const Playground = () => {
             backText.style.transform = "translateY(80px) rotate(0deg)"
             grid.style.transform = "scale(1) rotate(0deg)"
         });
-        console.log('stop');
+        //('stop');
     })
     const handleEnlarge = (e) => {
-        console.log(html);
+        //(html);
         // setPopupImg("")
         setLandscape(false)
         setPop(!pop)
@@ -82,11 +82,11 @@ const Playground = () => {
 
     // setInterval(() => {
     //     setCount(count++)
-    //     console.log(count);
+    //     //(count);
     // }, 5000);
     // setCount(location.pathname)
     useEffect(() => {
-        console.log("run playground effect");
+        //("run playground effect");
         setCount(location)
         gsap.fromTo(playgroundInfo, {
             // scale: .2,

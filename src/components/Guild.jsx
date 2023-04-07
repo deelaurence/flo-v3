@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import WorkWithFlo from './WorkWithFloForPortfolio'
 import kodeTechCofee from '../assets/landing-guild.webp'
 import kodeTech1 from '../assets/kodetech1.webp'
 import kodeTech2 from '../assets/kodetech2.webp'
@@ -44,7 +43,7 @@ const Guild = ({ locationProps }) => {
     const [location, setLocation] = useState("")
     useEffect(() => {
         setLocation(locationProps)
-        console.log("kodetech effect");
+        //("kodetech effect");
         gsap.fromTo(main, {
             opacity: 0,
         },
@@ -170,9 +169,8 @@ const Guild = ({ locationProps }) => {
                             <br />
                             <br />
 
-                            <span className='block mt-4 mb-2'> Some of the findings:</span>
-                            <br />
-                            <br />
+                            <span className='block mb-4 mt-4'> Some of the findings:</span>
+                            
 
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li><span className='font-medium text-lightShade  dark:text-darkShade'>Discord</span> has a poor onboarding process.</li>
@@ -274,7 +272,7 @@ const Guild = ({ locationProps }) => {
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>
                         <p className='mb-4'>Owari da.</p>
-                        <p className=''>Arigato. <span className='text-base'>😡</span> </p>
+                        <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
                     <div className='flex gap-2 items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />

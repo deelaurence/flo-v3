@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import WorkWithFlo from './WorkWithFloForPortfolio'
 import alertzMockup from '../assets/landing-alertz.webp'
 import kodeTechCofee from '../assets/kodetech-mockup.webp'
 import kodeTech1 from '../assets/kodetech1.webp'
@@ -40,7 +39,7 @@ const Alertz = ({ locationProps }) => {
     const [location, setLocation] = useState("")
     // useEffect(() => {
     //     setLocation(locationProps)
-    //     console.log("kodetech effect");
+    //     //("kodetech effect");
     //     gsap.fromTo(parent, {
     //         background: "#212121",
     //         color: "#fafafa"
@@ -112,7 +111,7 @@ const Alertz = ({ locationProps }) => {
     // }, [location]);
     useEffect(() => {
         setLocation(locationProps)
-        console.log("kodetech effect");
+        //("kodetech effect");
         gsap.fromTo(main, {
             opacity: 0,
         },
@@ -268,7 +267,7 @@ const Alertz = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='mt-16'>
-                        <img src={empathy} onClick={handleEnlargeLandscape} alt="" />
+                        <img src={empathy}  alt="" />
                     </div>
 
                     <div className='text-[1.5rem] font-[600] mt-20'>
@@ -296,7 +295,7 @@ const Alertz = ({ locationProps }) => {
                         </article>
                     </div>
                     <div className='mt-16'>
-                        <img src={userFlow} onClick={handleEnlargeLandscape} alt="" />
+                        <img src={userFlow}  alt="" />
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
@@ -305,38 +304,10 @@ const Alertz = ({ locationProps }) => {
 
                     </div>
                     <div className='mt-16'>
-                        <img src={screen} onClick={handleEnlargeLandscape} alt="" />
+                        <img src={screen}  alt="" />
                     </div>
 
-                    {/* <div>
-                        <div className='mt-14 font-semibold text-[1.5rem] mb-6'>
-                            <h3>Task Flows.</h3>
-                        </div>
-                        <div className='flex flex-col gap-8 text-opaque font-medium'>
-                            <div>
-                                <h5 className='mb-5'>Sign Up/Log In task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow1} alt="" />
-                            </div>
-                            <div>
-                                <h5 className='mb-5'>Order/Add to Cart task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow2} alt="" />
-                            </div>
-                            <div>
-                                <h5 className='mb-5'>Check Out task flow.</h5>
-                                <img onClick={handleEnlargeLandscape} src={userFlow3} alt="" />
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div className='text-[1.5rem] font-[600] mt-20'>
-                        <h3 className='mb-5'>
-                            Screens.
-                        </h3>
-                    </div>
-                    <div className='flex flex-col gap-12'>
-                        <div><img src={kodeTech1} alt="" /></div>
-                        <div><img src={kodeTech2} alt="" /></div>
-                        <div><img src={kodeTech3} alt="" /></div>
-                    </div> */}
+
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Have a go!
@@ -352,7 +323,7 @@ const Alertz = ({ locationProps }) => {
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>
                         <p className='mb-4'>Owari da.</p>
-                        <p className=''>Arigato. <span className='text-base'>😡</span> </p>
+                        <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
                     <div className='flex gap-2 items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />

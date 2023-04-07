@@ -36,7 +36,7 @@ const MixedR = ({ locationProps }) => {
     const overview = document.querySelector('.overview')
     const main = document.querySelector('main')
     const touchStart = () => {
-        console.log("start");
+        //("start");
         // oculus.style.transform = "rotateY(0deg) translateY(5px)"
         oculus.style.transform = "scale(1.1)"
         // oculus.style.zIndex = "0"
@@ -52,7 +52,7 @@ const MixedR = ({ locationProps }) => {
         // })
     }
     const touchEnd = () => {
-        console.log("end");
+        //("end");
         oculus.style.transform = "scale(1) "
         // // oculus.style.opacity = ".1"
         // oculus.style.zIndex = "0"
@@ -69,8 +69,8 @@ const MixedR = ({ locationProps }) => {
     }
     useEffect(() => {
         setLocation(locationProps)
-        console.log("kodetech effect");
-        console.log(oculus);
+        //("kodetech effect");
+        //(oculus);
         gsap.fromTo(main, {
             opacity: 0,
         },
@@ -363,7 +363,7 @@ const MixedR = ({ locationProps }) => {
                             <br />
                             <br />
                             For optimal product interaction, the user would need to wear a pair of HoloLens glasses.</article>
-                        <img src={mrUserflow} onClick={handleEnlargeLandscape} alt="" />
+                        <img src={mrUserflow} alt="" />
 
 
                     </div>
@@ -390,7 +390,7 @@ const MixedR = ({ locationProps }) => {
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>
                         <p className='mb-4'>Owari da.</p>
-                        <p className=''>Arigato. <span className='text-base'>😡</span> </p>
+                        <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
                     <div className='flex gap-2 items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
