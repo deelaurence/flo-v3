@@ -304,8 +304,6 @@ const MixedR = ({ locationProps }) => {
                             <br />
                             As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
                             As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
-                            <br />
-                            <br />
 
                             {/* <ul className=' [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li>Ensuring<span className='font-medium text-lightShade  dark:text-darkShade'> user-friendliness</span> on the website.</li>
@@ -376,7 +374,7 @@ const MixedR = ({ locationProps }) => {
                         <div><img src={mrScreen1} alt="" /></div>
                         <div><img src={mrScreen2} alt="" /></div>
                         <div><img src={mrScreen3} alt="" /></div>
-                        <div><img src={mrScreen4} alt="" /></div>
+                        {/* <div><img src={mrScreen4} alt="" /></div> */}
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
