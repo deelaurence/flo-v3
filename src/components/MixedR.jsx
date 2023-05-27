@@ -183,10 +183,10 @@ const MixedR = ({ locationProps }) => {
                         <p className='mb-2'>Role:</p>
                         <p className='font-[600] text-[1.1rem] text-lightShade '>Product Designer</p>
                     </div>
-                    <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-da1hade leading-8 mt-10'>
+                    {/* <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-da1hade leading-8 mt-10'>
                         <p className='mb-2'>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1.1rem]'>3 weeks</p>
-                    </div>
+                    </div> */}
                     <div className='overview text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
                             Overview

@@ -632,11 +632,11 @@ const WhoIsFlo = () => {
 
   return (
     <main className='px-6 pt-24 md:px-16 tracking-[0.3px]  bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade'>
-      <section className='mb-24 flex flex-col gap-20 items-end md:flex-row-reverse overflow-visible'>
+      <section className='mb-48 flex flex-col gap-20 items-end md:flex-row-reverse overflow-visible'>
         <div ref={floImgRef} className='w-[70%] self-start md:w-[40%]'>
           <img rel="preload" src={heroImg} alt="" />
         </div>
-        <div className='mt-7 text-3xl intro-cont [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl intro-cont [&>*]:overflow-visible md:text-5xl font-medium md:w-[60%]'>
           <h3 ref={inquisitiveRef} className='mb-2'>
             Inquisitive.
           </h3>
@@ -665,11 +665,11 @@ const WhoIsFlo = () => {
           </div>
         </div>
       </section>
-      <section className='mb-24 overflow-visible flex flex-col gap-20 items-end md:flex-row'>
+      <section className='mb-48 overflow-visible flex flex-col gap-20 items-end md:flex-row'>
         <div ref={threeShoesRef} className='w-[70%] self-end md:w-[90%]'>
           <img src={threeShoes} alt="" />
         </div>
-        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-4xl md:text-right md:w-[120%] font-medium'>
+        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-5xl md:text-right md:w-[120%] font-medium'>
           <h3 ref={creativeRef} className='mb-2'>
             Creative.
           </h3>
@@ -686,11 +686,11 @@ const WhoIsFlo = () => {
           </div>
         </div>
       </section>
-      <section className='mb-24 flex overflow-visible flex-col gap-20 items-end md:flex-row-reverse'>
+      <section className='mb-48 flex overflow-visible flex-col gap-20 items-end md:flex-row-reverse'>
         <div ref={seaWavesRef} className='w-[70%] self-start md:w-[40%]'>
           <img src={seaWaves} alt="" />
         </div>
-        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-4xl font-medium md:w-[60%]'>
+        <div className='mt-7 text-3xl overflow-visible  [&>*]:overflow-visible md:text-5xl font-medium md:w-[60%]'>
           <h3 ref={curiousRef} className='mb-2'>
             Curious.
           </h3>
@@ -709,7 +709,7 @@ const WhoIsFlo = () => {
       </section>
 
       <section ref={shotsRef} className='w-full  overflow-visible'>
-        <p draggable="true" className='text-center mb-8'>Some of my shots.</p>
+        <p draggable="true" className='text-center text-xl mb-8'>Some of my shots.</p>
         <div className='[&>*]:w-[48.8%] [&>*]:h-[48.8%] md:[&>*]:w-[48.5%]  shots-cont [&>*]:transition-[1s] relative overflow-visible h-[115vw] md:h-[115vw] flex flex-wrap gap-[2vw]'>
         <div className='top-0'>
           <img draggable="true" onClick={handleHover} ref={shot1Ref} className='h-full' src={shot1} alt="" />

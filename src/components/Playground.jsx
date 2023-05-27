@@ -241,7 +241,8 @@ const Playground = () => {
                     </h3>
                 </section>
 
-                <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32  px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px] sm:px-16 justify-between text-lightShade'>
+                <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} 
+                className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32 border px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px]  justify-between text-lightShade'>
                     <div className='h-72 w-72  grids grid-1 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />

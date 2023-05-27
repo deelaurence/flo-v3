@@ -349,7 +349,7 @@ const LANDING = () => {
           <div className='object-cover dp-cont h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
             <img className='' src={displayPicture} alt="" />
           </div>
-          <h3 className='ml-4 product-designer text-[26px]  font-medium sm:min-w-[60%]  sm:text-4xl  overflow-visible' >Product Designer.</h3>
+          <h3 className='ml-4 product-designer text-[26px]  font-regular sm:min-w-[60%]  sm:text-[4xl]  overflow-visible' >Product Designer.</h3>
           <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '> Designing with a dash of imagination and a pinch of perfection, turning pixels into magic and products into must-haves.</p>
         </div>
       </section>
@@ -370,9 +370,9 @@ const LANDING = () => {
                 <aside ref={(element) => refs2.current[index] = element} className=' flex flex-col mt-3'>
                   <div className='flex justify-between'>
                     <h3 className='font-bold text-[17px] md:text-base mt-2'>{datum.name}</h3>
-                    <p className='text-[11px] font-medium mt-2 md:text-sm'>{datum.year}</p>
+                    <p className='text-[11px] font-medium mt-2 md:text-xs'>{datum.year}</p>
                   </div>
-                  <p className='text-[12px] mt-1 md:mb-8 md:text-sm'>{datum.details}</p>
+                  <p className='text-[12px] text-opaque mt-1 md:mb-8 md:text-sm'>{datum.details}</p>
                 </aside>
               </div>
             </Link>

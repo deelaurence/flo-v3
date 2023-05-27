@@ -159,7 +159,7 @@ const Alertz = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            Alertz: <span className='font-medium'> A <br />Crime Alert app</span>
+                            Alertz: <span className='font-medium'> A <span className='block sm:inline'> Crime Alert app</span></span>
                         </h1>
                     </div>
                     <div
@@ -167,10 +167,10 @@ const Alertz = ({ locationProps }) => {
                         <p className='mb-2'>Role:</p>
                         <p className='font-[600] text-[1.1rem] text-lightShade '>Product Designer</p>
                     </div>
-                    <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-da1hade leading-8 mt-10'>
+                    {/* <div className='text-[1.1rem] font-[500]  text-[#fafafab9]  dark:text-da1hade leading-8 mt-10'>
                         <p className='mb-2'>Length:</p>
                         <p className='font-[600] text-white  dark:text-darkShade text-[1.1rem]'>3 weeks</p>
-                    </div>
+                    </div> */}
                     <div className='text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
                             Overview
