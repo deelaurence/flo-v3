@@ -118,7 +118,7 @@ const Navbar = ({ locationProps }) => {
           className="flex gap-1 blend-bar-child overflow-hidden">
           <h3
             onClick={handleActiveWork}
-            className="self-end flourish -mb-1 font-medium text-lg">Flourish.</h3>
+            className="self-end flourish -mb-1 font-regular text-lg">Flourish.</h3>
         </div>
       </Link>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
@@ -129,18 +129,18 @@ const Navbar = ({ locationProps }) => {
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
         <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
-      <div className="hidden md:flex  gap-4 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
+      <div className="hidden md:flex  gap-10 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
         <div className='relative'>
-        <div className={activeWork?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
-        <p onClick={handleActiveWork} className={activeWork ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
+        <div className={activeWork?'bg-white h-[1px]   w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
+        <p onClick={handleActiveWork} className={activeWork ? 'text-white text-sm font-regular ' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
         </div>
         <div className='relative'>
         <div className={activePlayground?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
-        <p onClick={handleActivePlayground} className={activePlayground ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/playground'>Playground</Link></p>
+        <p onClick={handleActivePlayground} className={activePlayground ? 'text-sm font-regular text-white ' : ' text-sm font-regular text-opaque'} ><Link to='/playground'>Playground</Link></p>
         </div>
         <div className='relative'>
         <div className={activeAbout?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
-        <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
+        <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-white ' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
         </div>
         <p className={activeResume ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/resume'>Résumé</Link></p>
       </div>
