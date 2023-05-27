@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useRef } from 'react'
 import vrMockup from '../assets/landing-vr.webp'
 import mrUserflow from '../assets/mr-userflow.jpg'
-import mrScreen1 from '../assets/mr-screen1.webp'
-import mrScreen2 from '../assets/mr-screen2.webp'
-import mrScreen3 from '../assets/mr-screen3.webp'
+import mrScreen1 from '../assets/mr-screen11.webp'
+import mrScreen2 from '../assets/mr-screen22.webp'
+import mrScreen3 from '../assets/mr-screen33.webp'
 import mrScreen4 from '../assets/mr-screen4.webp'
 
 

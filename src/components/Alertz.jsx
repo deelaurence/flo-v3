@@ -303,7 +303,7 @@ const Alertz = ({ locationProps }) => {
                         </h3>
 
                     </div>
-                    <div className='mt-16'>
+                    <div className=''>
                         <img src={screen}  alt="" />
                     </div>
 
