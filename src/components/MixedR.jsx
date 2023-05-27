@@ -353,7 +353,7 @@ const MixedR = ({ locationProps }) => {
                     </div> */}
 
                     <div>
-                        <div className='mt-14 font-semibold text-[1.5rem] mb-6'>
+                        <div className='mt-20 font-semibold text-[1.5rem] mb-6'>
                             <h3>User Flow.</h3>
                         </div>
                         <article className='text-[1rem] mb-8 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>

@@ -4,6 +4,12 @@
     -webkit-tap-highlight-color: transparent;
     /* transition: 1s; */
 }
+body{
+    height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+}
 
 @font-face {
     font-family: satoshi;
