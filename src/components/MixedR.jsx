@@ -19,6 +19,7 @@ gsap.registerPlugin(ScrollTrigger)
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const MixedR = ({ locationProps }) => {
@@ -156,7 +157,7 @@ const MixedR = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] sm:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
@@ -168,7 +169,7 @@ const MixedR = ({ locationProps }) => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section className='headset overflow-hidden opacity-[.07]  fixed'>
+                <section className='headset overflow-hidden opacity-[.07] sm:hidden fixed'>
                     <img className='' src={vrGif} alt="" />
                 </section>
                 <section onTouchEnd={touchEnd} onTouchStart={touchStart} className=' mt-20 relative pb-10'>
@@ -192,35 +193,18 @@ const MixedR = ({ locationProps }) => {
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            <span className="text-orange-200">Mixed Reality</span> <span className='text-purple-400'>MR</span>  is an immersive
-                            technology that combines
-                            the real-world environment with augmented reality
-                            <span className='text-red-400'> AR</span> and virtual reality <span className='text-blue-400'> VR</span> and
-                            this is fueled by 3D information.
-
+                            In today's rapidly evolving technological landscape, Mixed Reality (MR) stands out as a transformative tool that combines the real world with augmented and virtual reality, fueled by 3D information. 
                             <br />
                             <br />
-                            For <span className='text-purple-400'>MR</span> to function,
-                            it produces an environment where physical and digital
-                            objects can co-exist and interact in real time.
-                            This makes it a hybrid distinctive of <span className='text-red-400'> AR</span> & VR
-                            because while <span className='text-red-400'> AR</span> solely displays
-                            a layer of digital elements on top of the
-                            real world, <span className='text-purple-400'>MR </span>
-                            offers real-world integration and actual
-                            interaction with virtual elements.
+                            While augmented reality (AR) overlays  digital elements onto the real world and virtual reality (VR) creates a fully virtual environment, MR bridges the gap by integrating and enabling real-world interaction with virtual elements. 
                             <br />
                             <br />
-                            Presently, the concept of <span className="text-orange-200">Mixed Reality</span> applications is regarded as novel, however, there is no denying the fact that there still remain inconceivable possibilities associated with the application of <span className="text-orange-200">mixed reality</span> in healthcare.
+                            Harnessing the power of MR in healthcare holds immense potential to revolutionize patient care and transform medical practices. 
                             <br />
                             <br />
-                            Infusing the use of <span className="text-orange-200">Mixed Reality</span> as a technique can help in the generation of personalized 3D models for every patient and this can help the medical personnel visualize the internal anatomy of the patient in a fully immersive and interactive environment.
+                            This case study explores the implementation of a cutting-edge Mixed Reality application that aims to enhance patient experience, streamline communication, and enable better decision-making in the medical field.
                             <br />
                             <br />
-                            The possibility of this paves the way for realistic activities to be carried out, such as preoperative simulations which can be used to determine optimal procedures pertaining to patients’ prognosis and to predict the final surgical outcomes of the patients involved.
-                            <br />
-                            <br />
-                            With the implementation of this product, there will be increased patient engagement using holographic patient consultation, the option of remote expert consultation, and the possibility for training simulations.
 
                         </article>
                     </div>
@@ -235,13 +219,7 @@ const MixedR = ({ locationProps }) => {
                             The Challenge.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Although the healthcare system is seen to be such an integral and crucial aspect of human wellbeing, it is greatly flawed in the process of providing proper medical services to people who need them, especially in emergency situations.
-                            <br />
-                            <br />
-                            This flaw, although manageable in the previous years keeps increasing to new highs everyday and the surge level is likely not to reduce anytime soon and this is largely due to the recovery from the COVID-19 pandemic as the healthcare industry since the year 2020 has undergone a lot of transformation.
-                            <br />
-                            <br />
-                            As a result of this, patient experience with healthcare keeps dwindling and this reduces the retention level of patients who are likely to keep using healthcare services.
+                            The healthcare system, despite its critical role in human well-being, has been plagued by various challenges, which have only been exacerbated by the recovery from the COVID-19 pandemic. 
                         </article>
                         <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>Factors that affect patient experience negatively include:</p>
                         <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible  ml-4 dark:text-darkShade'>
@@ -250,21 +228,28 @@ const MixedR = ({ locationProps }) => {
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Lack of price transparency as regards patients’ testing and therapy.</li>
                             {/* <li><span className='font-medium text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li> */}
                         </ul>
+                        <article className='text-[1rem] mt-6 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                            As a result, patient experience and retention levels have suffered, necessitating innovative solutions to improve healthcare delivery. 
+                        </article>
+                        
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Research.
+                            Research Insights: Identifying Pain Points.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To get things started, I carried out secondary research to understand the challenges individuals have pertaining to the healthcare system.
+                            In-depth secondary research was conducted to gain a comprehensive understanding of the challenges individuals face within the healthcare system. 
                         </article>
                         <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>I discovered the following:</p>
                         <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                            <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Healthcare is not readily accessible to cater to the needs of everyone.</li>
-                            <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Healthcare is now largely data-dependent but technology is not being properly implemented.</li>
+                            <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Healthcare is not readily accessible to everyone.</li>
+                            <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Although healthcare is now largely data-dependent technology implementation remains lacking.</li>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>There is a communication gap between medical personnel and patients.</li>
                             {/* <li><span className='font-medium text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li> */}
                         </ul>
+                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                            All of these issues tend to hinder effective healthcare delivery. 
+                        </article>
                     </div>
                     {/* <div ref={findingsRef} className=' text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
@@ -290,91 +275,109 @@ const MixedR = ({ locationProps }) => {
                     </div> */}
                     <div className=' text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            The Solution.
+                            The Solution: Harnessing the Power of Mixed Reality.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Although still being engaged with, interacting with <span className="text-orange-200">Mixed Reality</span> can help to improve the general health status across the world and this is largely due to the fact that <span className="text-orange-200">mixed reality</span> helps with visualization and with visualization comes better implementation.
+                            Recognizing the potential of MR to enhance healthcare, the proposed solution leverages MR wearable devices, such as the Microsoft HoloLens, in conjunction with emerging imaging technologies. 
                             <br />
                             <br />
-                            When it comes to being implemented in the surgical field, MR wearable devices such as the Microsoft HoloLens can be used in combination with new emerging imaging technologies.
+                            By providing medical professionals with spatial localization of anatomical structures, this immersive technology improves mental precision and simplifies preoperative planning. 
                             <br />
                             <br />
-                            The use of this kind of immersive technology ensures that the medical personnel has access to spatial localization of anatomical structures which helps to improve mental precision, simplifying preoperative planning.
+                            Moreover, the Mixed Reality application acts as a bridge, fostering a stronger interrelationship between medical personnel and patients.
                             <br />
                             <br />
-                            As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
-                            As a <span className="text-orange-200">Mixed Reality</span> application, this product intends to serve as an instrumental tool that bridges the interrelationship gap between medical personnel and their patients. <br />
-
-                            {/* <ul className=' [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li>Ensuring<span className='font-medium text-lightShade  dark:text-darkShade'> user-friendliness</span> on the website.</li>
-                                <li>Priortizing<span className='font-medium text-lightShade  dark:text-darkShade'> easy navigation.</span></li>
-                                <li>Including a variety of<span className='font-medium text-lightShade  dark:text-darkShade'> payment methods.</span></li>
-                                <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available.</li>
-                                <li>Crafting detailed<span className='font-medium text-lightShade  dark:text-darkShade'> product descriptions.</span></li>
-                            </ul> */}
                         </article>
                     </div>
-                    {/* <div className='text-[1.5rem] font-[600] mt-20'>
-                        <h3 className='mb-5'>
-                            User Persona.
-                        </h3>
-                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            In the creation of this product, the
-                            target group that was focused on made
-                            up the majority of the KodeTech product
-                            users. The user base consists of the younger
-                            demographic which are capable of
-                            interacting with the KodeTech platform to
-                            conduct online transactions. As a result,
-                            the user profiles were pooled and merged
-                            to form a single user persona.
-                        </article>
-                    </div>
-                    <div className='mt-10'>
-                        <img src={userPersona} alt="" />
-                    </div>
-                    <article className='text-[1rem] mt-10 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                        After this, the information architecture and
-                        task flows were designed.
-                    </article>
-                    <div className='text-[1.5rem] font-[600] mt-20'>
-                        <h3 className='mb-5'>
-                            Information Architecture.
-                        </h3>
-                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            For a product such as this, it was imperative
-                            that every action taken by the users would be
-                            seamless as a result of the presence of an
-                            end-to-end information architecture workflow.
-                        </article>
-                    </div>
-                    <div className='mt-16'>
-                        <img src={architecture} onClick={handleEnlargeLandscape} alt="" />
-                    </div> */}
-
+                    
                     <div>
                         <div className='mt-20 font-semibold text-[1.5rem] mb-6'>
-                            <h3>User Flow.</h3>
+                            <h3>User Flow: Seamlessly Interacting with MR.</h3>
                         </div>
                         <article className='text-[1rem] mb-8 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            I came up with a User Flow to serve as a guide for my thought process and to make the user interaction a seamless one.
-                            <br />
-                            <br />
-                            For optimal product interaction, the user would need to wear a pair of HoloLens glasses.</article>
+                            To ensure optimal user interaction, I developed a well-defined user flow, guiding the thought process and facilitating a seamless experience. By wearing a pair of HoloLens glasses, users can immerse themselves in a fully interactive MR environment, enhancing the visualization of medical information.
+                            </article>
                         <img src={mrUserflow} alt="" />
 
 
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Screens.
+                            Screens: Transforming the Healthcare Experience.
                         </h3>
+
+                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>The application encompasses various screens, each designed to cater to different aspects of the healthcare experience.</p>
+                        <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
+                            <li>The <span className='font-medium text-lightShade  dark:text-darkShade'>Patient's information</span> screen provides a comprehensive overview of the patient's medical history and relevant details, ensuring medical personnel have a holistic understanding of the patient's background.</li>
+                            <li>The <span className='font-medium text-lightShade  dark:text-darkShade'>Charts</span> screen presents vital medical data in a visually appealing manner, allowing for better analysis and decision-making.</li>
+                            <li>Finally, the <span className='font-medium text-lightShade  dark:text-darkShade'>Results</span> screen showcases the outcomes of medical tests and procedures, providing clarity and empowering patients to actively participate in their healthcare journey.</li>
+                            {/* <li><span className='font-medium text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li> */}
+                        </ul>
+                        
                     </div>
-                    <div className='solution flex flex-col gap-12'>
+                    <div className='solution flex flex-col gap-12 mt-16'>
                         <div><img src={mrScreen1} alt="" /></div>
                         <div><img src={mrScreen2} alt="" /></div>
                         <div><img src={mrScreen3} alt="" /></div>
                         {/* <div><img src={mrScreen4} alt="" /></div> */}
+                    </div>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Conclusion: Paving the Way for the Future of Healthcare.
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                            Through the strategic implementation of Mixed Reality, the proposed application demonstrates its potential to significantly improve healthcare experiences, boost patient engagement, facilitate remote consultations with experts, and enable realistic training simulations.  
+                            </p>
+
+                            <p>
+                             By seamlessly integrating technology and human touch, this innovative solution offers a glimpse into the future of healthcare, paving the way for enhanced patient care and greater efficiency in medical practices.
+                            </p>
+                            <p>
+                             With its unique blend of technological advancement and user-centric design, this case study serves as a powerful and valuable insight into how technology can revolutionize healthcare.
+                            </p>
+                        </article>
+
+                    </div>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Takeaway: Lessons Learned.
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                            Working on this Mixed Reality (MR) healthcare project has been an enlightening journey, allowing me to acquire invaluable insights as a product designer.   
+                            </p>
+
+                            <p>
+                             Throughout the development process, I have learned several key lessons that have shaped my understanding of designing for transformative technologies and healthcare. 
+                            </p>
+                            <p>
+                             Here are the key takeaways from this project:
+                            </p>
+                        </article>
+                        <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
+
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'>1. Embracing Novelty: The Power of Mixed Reality</h6>
+                            <p>Exploring the potential of MR in healthcare has showcased the immense power of embracing novel technologies. MR's ability to seamlessly blend the physical and digital realms opens up new possibilities for visualization, communication, and decision-making in the medical field. As a product designer, it is essential to stay curious and embrace emerging technologies to create innovative solutions that have a profound impact on user experiences.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 2. Human-Centered Design: Enhancing Patient Care</h6>
+                            <p>Designing for healthcare requires a strong focus on human-centered design principles. Understanding the pain points and challenges faced by both medical personnel and patients is crucial in developing meaningful solutions. By leveraging MR to bridge the communication gap, provide personalized experiences, and empower patients, we can enhance the overall quality of healthcare and improve patient outcomes.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 3. Seamless User Experience: Simplifying Complexity</h6>
+                            <p>Creating a seamless user experience is paramount when designing for MR applications. The user flow, interface design, and interaction patterns must be intuitive and effortless, allowing users to navigate through the application effortlessly. Striking the right balance between visual appeal and functional simplicity is key to ensuring user engagement and adoption.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 4. Collaboration and Communication: Essential for Success</h6>
+                            <p>The successful implementation of MR in healthcare relies on effective collaboration and communication between product designers, healthcare professionals, and stakeholders. Close collaboration ensures that the product meets the specific needs of medical personnel and aligns with industry standards and regulations. It is essential to foster a collaborative environment, actively seeking feedback and integrating it into the design process.</p>
+                            <br />
+                            <br />
+                            <p>As a product designer working on this Mixed Reality healthcare project, I have learned the importance of embracing new technologies, prioritizing human-centered design, and creating seamless user experiences. By leveraging MR's capabilities, we can bridge communication gaps, enhance patient care, and revolutionize the healthcare industry. This project has reaffirmed my commitment to designing innovative solutions that have a positive impact on people's lives. As I move forward, these lessons learned will continue to guide me in creating innovative solutions that positively impact people's lives.</p>
+                        </div>
+                        </div>
+
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
@@ -390,17 +393,19 @@ const MixedR = ({ locationProps }) => {
                         <p className='mb-4'>Owari da.</p>
                         <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
-                    <div className='flex gap-2 items-center mt-20 '>
+                    <div className='flex flex-col'>
+                    <Link to='/alertz' className='flex w-24 gap-2 items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
                         <p className='text-[1rem] leading-8 font-[500] -ml-4 text-[#fafafa]  dark:text-darkShade'>
                             Previous
                         </p>
-                    </div>
-                    <div className='flex gap-2 items-center justify-end '>
+                    </Link>
+                    <Link to="/guild" className='flex gap-2 w-24 items-center self-end justify-end '>
                         <p className='text1rem] leading-8 font-[500]   '>
                             Next
                         </p>
                         <img className='h-3' src={next} alt="" srcSet="" />
+                    </Link>
                     </div>
                 </section>
             </main>

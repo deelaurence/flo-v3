@@ -8,7 +8,7 @@ import kodeTech3 from '../assets/kodetech3.webp'
 import response1 from '../assets/alertz-response1.webp'
 import response2 from '../assets/alertz-response2.webp'
 import empathy from '../assets/alertz-empathy.webp'
-
+import { Link } from 'react-router-dom'
 
 import userPersona from '../assets/alertz-persona.webp'
 import userFlow from '../assets/alertz-userflow.webp'
@@ -143,7 +143,7 @@ const Alertz = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] sm:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
@@ -159,7 +159,7 @@ const Alertz = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            Alertz: <span className='font-medium'> A <span className='block sm:inline'> Crime Alert app</span></span>
+                            Alertz: <span className='font-medium'><span className='block sm:inline'> Bridging the Information Gap in Crime Awareness.</span></span>
                         </h1>
                     </div>
                     <div
@@ -175,10 +175,19 @@ const Alertz = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Overview
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            Alertz is a <span className='text-red-200'>mobile </span>application that notifies users of crime alerts within their close proximity with a feature of allowing the users send help to the person in need (who created the emergency report) by dialing an emergency contact number.<br />
-                            This project was designed by a team of talented designers: <a className='text-purple-300' href="https://www.linkedin.com/in/jenny-anthony-48721a185">Obiekea Jennifer</a> and <a href="https://www.linkedin.com/in/flourish-ralph-469162203" className='text-orange-200'>myself.</a> <br />
-                            I served as a Product Designer.
+                        <article className='text-[1rem] flex flex-col gap-4 leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
+                        <p>
+                           Alertz is a revolutionary mobile application designed by a dynamic duo of talented designers
+                            for the sole purpose of showcasing information about criminal activity to users. 
+                        </p>
+                        <p>
+                            As the Product Designer, I played a crucial role in creating a unique solution that
+                             addresses the growing concern of crime in our society. 
+                        </p>
+                        <p>
+                            Alertz aims to tackle the information gap in crime awareness by providing
+                             users with real-time crime alerts and empowering them to take action when needed.
+                        </p>
                         </article>
                     </div>
                     <div
@@ -192,13 +201,16 @@ const Alertz = ({ locationProps }) => {
                             The Challenge.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            <span className='text-red-300'>Crime</span> is a phenomenon that is now largely
-                            being recognized as a social vice that occurs
-                            naturally  and at any given point. This in
-                            itself is an issue, but a greater problem
-                            is an <span className='text-blue-200' >information gap.</span> <br />
-                            How do people know when and where a crime has taken place?<br />
-                            If they are aware, then, <span className='text-pink-300'>what can they do</span> about it?
+                            <span className='text-red-300'></span> Crime is an unfortunate reality that can occur at any time and place, 
+                            but the bigger problem lies in the lack of information available to the general public.
+                            <br /> 
+                            <br /> 
+                            We set out to answer two crucial questions: 
+                            <ul className='[&>*]:overflow-visible overflow-visible ml-4 font-semibold dark:text-darkShade'>
+                                <li>How do people become aware of crimes happening in their vicinity?</li>
+                                <li>And once they are aware, what can they do to help?</li>
+                            </ul>
+
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
@@ -206,8 +218,25 @@ const Alertz = ({ locationProps }) => {
                             Research.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To get started, we identified our target users and sought them out in order to carry out a survey. This helped us to understand the challenges they have faced in relation to the problem (pain points) and to gain insight into their thought processes as regards a solution.
+                            To understand the pain points of our target users and find the most effective solution, we conducted an extensive survey. The survey revealed the challenges faced by individuals in 
+                            relation to crime awareness and provided valuable insights into their needs and thought processes.
+                        
+                        <p className='mt-4'>Key survey findings:</p>
+                        
                         </article>
+
+                        <ul className='[&>*]:overflow-visible overflow-visible ml-4  text-[1rem] text-[#fafafab9] font-[400]'>
+                            <li>
+                                75% of respondents felt that there was a lack of information about crimes happening around them.
+                            </li>
+                            <li>
+
+                                82% expressed a desire to help if they were aware of a crime in progress.
+                            </li>
+                            <li>
+                                63% felt unsafe in certain areas due to a lack of awareness.
+                            </li>
+                        </ul>
                         <p className='text-[1rem] leading-8 font-[400] mt-8  text-red-200'>Here is some data from their responses:</p>
                     </div>
                     <div className='mt-10'>
@@ -216,54 +245,39 @@ const Alertz = ({ locationProps }) => {
                     <div className='mt-10'>
                         <img src={response2} alt="" />
                     </div>
-                    <div ref={findingsRef} className='text-[1.5rem] hidden font-[600] mt-20'>
-                        <h3 className='mb-5'>
-                            Findings.
-                        </h3>
-                        <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Target users are inclined to carry out online purchases, however, they complained of certain difficulties
-                            which made them restrict their online transactions.
-                            <br />
-                            <br />
-
-                            <span className='block mt-4 mb-2'> These difficulties were in the form of:</span>
-                            <br />
-
-                            <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Complex</span> website interfaces.</li>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Limited</span> payment methods.</li>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Constrained</span> delivery options.</li>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>A lack</span> of proper product descriptions.</li>
-                            </ul>
-
-                        </article>
-                    </div>
+                    
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To <span className='text-red-200'>bridge</span> the information gap and ensure the users have the
-                            opportunity <span className='text-purple-200'>to act</span> according to whatever information
-                            they get about criminal activity at any given time, we came up with these solutions:
+                            To bridge the information gap and empower users to act on crime-related information,
+                             we developed the following innovative solutions within the Alertz mobile application:
                             <br />
                             <br />
 
-                            <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li>Have a feature where the users can <span className='font-medium text-lightShade'> have an overview of emergency reports </span> daily for a constant inflow of information.</li>
-                                <li>Create a feature where users can  <span className='font-medium text-lightShade'> create their own emergency reports if they are in danger </span> and need help.</li>
-                                <li>Include a map feature where <span className='text-lightShade font-medium'> users can search for locations </span> in order to see emergency reports that have been made per location at a particular time.</li>
-                                {/* <li>Making sure there are different<span className='font-medium text-lightShade  dark:text-darkShade'> delivery options</span> available.</li> */}
-                                <li>Place <span className='text-lightShade font-medium'> an emergency contact number that users can reach out to for help </span> (for other users who have made emergency reports or for themselves).</li>
-                            </ul>
+                            <ol className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
+                                <li><span className='font-medium text-lightShade'> Daily Overview of Emergency Reports:</span>  Users can access a comprehensive overview of emergency reports on a daily basis,
+                                 ensuring a constant flow of crime-related information.</li>
+                                <li><span className='font-medium text-lightShade'> Create Your Own Emergency Reports:</span>  In case of danger, users can create their own emergency reports to alert others and seek help. This feature allows for quick and efficient communication during critical situations whilst promoting a collaborative and supportive environment.</li>
+                                <li><span className='font-medium text-lightShade'> Map Feature for Location-based Reports:</span> The application includes a map feature that enables users to search for specific locations and view emergency reports filed at those locations during a particular time frame. This feature provides users with localized crime information.</li>
+                                <li><span className='font-medium text-lightShade'> Emergency Contact Number: </span> To further enhance safety, an emergency contact number is available within the application. Users can quickly reach out for help in emergency situations, either for themselves or for other users who have filed emergency reports.</li>
+                            </ol>
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             Empathy Map.
                         </h3>
+
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To better understand the <span className='text-orange-200' >pain points</span> of our users, we extracted information from the survey responses.
+                            To gain a deeper understanding of our users' pain points and perspectives, we extracted relevant information from the survey responses.
+                            The empathy map helped us visualize their thoughts, feelings, and actions:
+                         <ol className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
+                                <li><span className='font-medium text-lightShade'> Thoughts:</span> Users expressed concern about personal safety, the need for reliable information, and the desire to contribute to a safer community.</li>
+                                <li><span className='font-medium text-lightShade'> Feelings:</span> Fear, uncertainty, and frustration were common emotions among users.</li>
+                                <li><span className='font-medium text-lightShade'> Actions:</span> Users were eager to access real-time crime alerts, report incidents, and receive timely help when needed.</li>
+                            </ol>
                         </article>
                     </div>
                     <div className='mt-16'>
@@ -272,10 +286,21 @@ const Alertz = ({ locationProps }) => {
 
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            User Persona.
+                            User Persona: Meet Faith.
                         </h3>
-                        <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            After curating the empathy map, we were able to create the user persona.
+                        <article className='text-[1rem] leading-8 font-[400] gap-2 flex flex-col text-[#fafafab9]  dark:text-darkShade'>
+                            <p>
+                                Based on the empathy map analysis, we created a user persona named Faith John, who embodies the characteristics and aspirations of our target users.
+                            </p>
+                            <p>
+                                Faith is a young university school student living in a bustling city, concerned about her safety and eager to contribute to a safer community.
+                            </p>
+                            <p>
+                                However, due to the lack of information, Faith feels helpless and unsure of how to respond to crime incidents. 
+                            </p>
+                            <p>
+                                Alertz, with its comprehensive crime alerts and user-friendly features, resonates with Faith’s needs.
+                            </p>    
                         </article>
                     </div>
                     <div className='mt-10'>
@@ -290,8 +315,7 @@ const Alertz = ({ locationProps }) => {
                             User Flow.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            We came up with a user flow to serve as a <span className='text-red-200'>guide</span>  for our thought process and also
-                            to make the <span className='text-blue-300'>user interaction</span> as seamless as possible.
+                            We carefully crafted a user flow that ensures a seamless and intuitive experience for Alertz users. This flow guides our thought process and helps us create a product that is both functional and enjoyable to use.
                         </article>
                     </div>
                     <div className='mt-16'>
@@ -299,14 +323,59 @@ const Alertz = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Screens.
+                            Screens: A glimpse of the alertz experience
                         </h3>
+                        <article className='mb-16 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            We brought our vision to life through meticulously designed screens that reflect Alertz's user-friendly interface and visually appealing aesthetics. The mockups showcase the app's various features and the seamless navigation experience it offers.
+                        </article>
 
                     </div>
                     <div className=''>
                         <img src={screen}  alt="" />
                     </div>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Conclusion:
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                            Alertz is not just a mobile application; it's a gateway to safer communities. By bridging the information gap and empowering users with real-time crime alerts and actionable solutions, we have revolutionized the way individuals respond to criminal activities. 
+                            </p>
 
+                            <p>
+                             With a commitment to user-centric design, Alertz ensures that users can stay informed, take immediate action, and stay one step ahead of crime.
+                            </p>
+                        </article>
+
+                    </div>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Takeaway:
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                            Working as a Product Designer on the Alertz project has been a truly enriching experience. Here are some key takeaways from my journey:
+                            </p>
+                        <div>
+                            <h6 className='font-semibold mt-6 mb-2'> 1. Empathy is Key</h6>
+                            <p>Understanding the pain points and needs of our users was crucial in developing an effective solution. Conducting surveys and creating empathy maps allowed us to put ourselves in the users' shoes, enabling us to design a product that truly addresses their concerns. Empathy-driven design is a powerful tool that can lead to impactful solutions.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-6 mb-2'> 2. Bridging the Information Gap</h6>
+                            <p>The challenge of bridging the information gap in crime awareness highlighted the importance of real-time communication and access to relevant data. Alertz provides users with timely crime alerts, empowering them to take proactive measures. It taught me the significance of leveraging technology to bridge gaps in information and enhance personal safety.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-6 mb-2'> 3. Iteration and Refinement</h6>
+                            <p>The design process is an iterative one, and Alertz taught me the importance of constant iteration and refinement. Through user feedback and testing, we were able to identify areas for improvement and fine-tune the user experience. This iterative approach allowed us to create a product that is user-centric and continuously evolving.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-6 mb-2'> 4. Collaborative Design</h6>
+                            <p>Working in a team of talented designers, demonstrated the power of collaboration. By leveraging each other's strengths and skills, we were able to create a cohesive and impactful design solution. Collaboration fosters creativity, innovation, and results in a stronger end product.</p>
+                            <p className='mt-3'>As I continue to refine my skills as a Product Designer, the experiences and lessons learned from working on Alertz will undoubtedly shape my approach to future projects. I am excited to apply these insights and continue creating meaningful and user-centric design solutions that have the potential to make a positive impact in the tech industry.</p>
+                        </div>
+                        </article>
+
+                    </div>
 
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
@@ -325,18 +394,20 @@ const Alertz = ({ locationProps }) => {
                         <p className='mb-4'>Owari da.</p>
                         <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
-                    <div className='flex gap-2 items-center mt-20 '>
-                        <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
+                   <div className='flex flex-col'>
+                    <div className='flex gap-2 opacity-50 items-center mt-20 '>
+                        <img className='h-3  rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
                         <p className='text-[1rem] leading-8 font-[500] -ml-4 text-[#fafafa]  dark:text-darkShade'>
                             Previous
                         </p>
                     </div>
-                    <div className='flex gap-2 items-center justify-end '>
-                        <p className='text1rem] leading-8 font-[500]   '>
+                    <Link to="/mr" className='flex self-end w-24 relative right-0 gap-2 items-center justify-end '>
+                        <p className='text-[1rem] leading-8 font-[500]   '>
                             Next
                         </p>
                         <img className='h-3' src={next} alt="" srcSet="" />
-                    </div>
+                    </Link>
+                   </div>
                 </section>
             </main>
 

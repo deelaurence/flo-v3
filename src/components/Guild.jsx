@@ -16,7 +16,7 @@ import screen4 from '../assets/guild-screen4.webp'
 
 // import userPersona from './images/userpersona.webp'
 
-
+import { Link } from 'react-router-dom'
 
 import prev from '../assets/prev.png'
 import next from '../assets/next.png'
@@ -75,7 +75,7 @@ const Guild = ({ locationProps }) => {
     }
     return (
         <>
-            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] md:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
+            <main ref={parentRef} className="opacity-0 px-6 tracking-[0.4px] sm:px-16 pt-20   relative flex flex-col bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade [&>*]:dark:text-darkShade md:min-h-[90vh] md:pb-10">
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
@@ -108,19 +108,16 @@ const Guild = ({ locationProps }) => {
                             Overview
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
-                            Currently, the whole media has been abuzz as a result of the introduction of Web3. Web3 poses as a new web version filled with loads of benefits because of its decentralized nature.
+                            The rise of Web3 has sparked a global frenzy, captivating the media and tech enthusiasts alike. Web3, the decentralized version of the web, holds immense potential for revolutionizing online interactions and fostering peer-to-peer exchanges.
                             <br />
                             <br />
-                            <span className='text-red-400'> Web3 </span>communities are decentralized networks that use blockchain technology to enable peer-to-peer (P2P) interactions and exchanges and they are known to offer a range of possibilities for people to engage with each other and with the broader community.
+                            Recognizing the need for a dedicated space where individuals can engage, learn, and explore the intricacies of Web3, Guild emerges as a game-changing community platform. 
                             <br />
                             <br />
-                            Guild serves as a community platform for people who are interested in Web3 or looking to understand more about Web3 operations.
+                            In this case study, we delve into the journey of Guild, a platform designed to surpass the user experience of the widely used Discord. 
                             <br />
                             <br />
-                            This was a team challenge in the Web3 community I belong to on Discord; <span className='text-purple-400'> DesignersDAO.</span>
-                            <br />
-                            <br />
-                            I served as a Product Designer.
+                            As a Product Designer and a member of the DesignersDAO community, I took on the challenge alongside my team to craft an exceptional user-centric platform that embraces the spirit of Web3.
                         </article>
                     </div>
                     <div
@@ -131,13 +128,10 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem]  font-[600] mt-[88px]'>
                         <h3 className='mb-5'>
-                            The Challenge.
+                            Understanding the Challenge.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            As intriguing as Web3 is, it is still perceived as <span className='text-orange-400'> novel </span> and although this gives it a level of appeal, there is still a lot of intricacy involved. Therefore, there is the need for a space where people interested in Web3 can interact and learn about new opportunities.
-                            <br />
-                            <br />
-                            For this project, the brief was to Design a <span className='text-green-400'> Community </span> platform for <span className='text-red-400'> Web3 </span> that has better UX than Discord.
+                            While Web3 carries an undeniable allure, its complexities can deter new users from fully engaging with the technology. The aim of this project was to create a community platform for Web3 that would offer seamless user experience, surpassing the limitations of Discord.
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
@@ -145,13 +139,13 @@ const Guild = ({ locationProps }) => {
                             Desk Research.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Since our brief centered around <span className='text-yellow-200'> improving Discord </span> and creating a better <span className='text-purple-300'> UX </span> experience, we carried out research to understand the user interaction with Discord as a <span className='text-red-400'> Web3 </span> community platform.
+                            Since our project centered around creating a better UX experience than Discord, we carried out research to understand the user interaction with Discord as a Web3 community platform.
                             <br />
                             <br />
-                            Discord currently serves as a community platform that welcomes people interested in majorly tech and gaming activities, however, the user interaction isn’t as seamless as expected.
+                            To accomplish this, we conducted in-depth desk research to grasp the nuances of user interaction on Discord and explored alternative platforms like Slack, element.io, and tribe.so. 
                             <br />
                             <br />
-                            To get a better understanding about Web3 community platforms asides from Discord, research was carried out to source and identify such platforms (like Slack, element.io, tribe.so, etc.).
+                            Additionally, we conducted primary research to connect with potential users, uncover pain points, and unearth opportunities to shape the product.
                             <br />
                             <br />
                             To get started, primary research was carried out to understand the <span className='text-orange-400'> pain points </span> of the target users and the main aim of this was to connect with the users and in turn discover a variety of opportunities for the product.
@@ -159,57 +153,51 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            User Research.
+                            Unveiling User Insights.
                         </h3>
                         <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            Being a major community platform also concerned with <span className='text-red-400'> Web3 </span>, Discord is seen
-                            as a welcome space for numerous interactions and formations of possible communities.
-                            However, extensive user research through the carrying out of interviews indicated a
-                            variety of flaws in the user experience <span className='text-green-400'> UX </span> of the platform.
+                            Discord, a popular community platform known for its association with tech and gaming, proved to have certain shortcomings that hindered the user experience. 
                             <br />
                             <br />
-
-                            <span className='block mb-4 mt-4'> Some of the findings:</span>
-                            
-
-                            <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'>Discord</span> has a poor onboarding process.</li>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Navigation around the platform seems to be quite problematic - especially for new users.</li>
+                            Through extensive user research, including interviews, we uncovered valuable insights:                            
+                            <br />
+                            <ul className='[&>*]:overflow-visible overflow-visible ml-4 mt-2  dark:text-darkShade'>
+                                <li>Discord's onboarding process was subpar, leading to confusion among new users.</li>
+                                <li>Navigating the platform proved challenging, particularly for newcomers.</li>
                             </ul>
 
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            The Solution.
+                            Designing the Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            The pain points of the users were recorded and taken into consideration,
-                            this served as the core purpose of the platform;
+                            To address these pain points and prioritize an exceptional user experience, we outlined the core objectives for Guild:
                             <br />
                             <br />
-                            <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>
-                                    Making sure that Guild has a <span className='text-red-300'> good onboarding process </span>whilst also prioritizing
-                                    user navigation to be as easy and seamless as possible, with the negation of
-                                    any possible confusion factor.
-                                </li>
-                            </ul>
-                            <span className='block mt-4 mb-2'> After ensuring a resolution of the documented complaints
-                                about Discord, the following Web3 features were decided on and included to improve
-                                the <span className='text-green-400'>UX</span> of the Guild platform:</span>
-                            <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
-                                <li>NFT profiles</li>
-                                <li>Voting (polls)</li>
-                            </ul>
+                            <ol className='[&>*]:overflow-visible list-none flex flex-col gap-4 overflow-visible ml-4  dark:text-darkShade'>
+                                <p><span className='font-medium text-lightShade  dark:text-darkShade'></span>
+                                    <span className='font-bold'>1. Streamlined Onboarding:</span>  We aimed to enhance the onboarding process to ensure users quickly familiarize themselves with Guild's features and functionalities.
+                                </p>
+                                <p><span className='font-medium text-lightShade  dark:text-darkShade'></span>
+                                    <span className='font-bold'>2. Intuitive Navigation:</span> Effortless platform navigation was prioritized to minimize any potential confusion factors.
+                                </p>
+                            </ol>
+
+
+                            <span className='block mt-4 mb-2'> With these objectives in mind, we integrated several Web3 features into Guild to elevate its user experience. Notable features included NFT profiles and a voting system through polls.</span>
                         </article>
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            User Journey.
+                            Crafting the User Journey.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            The user journey was curated with two kinds of users in mind - existing users and new users.
+                            To ensure a seamless user experience, we carefully designed the user journey, catering to both existing and new users. This involved mapping out the different stages of user interaction, from account creation to community exploration and engaging in conversations. 
+<br />
+<br />
+                            The user journey was meticulously tailored to provide an intuitive and enjoyable experience at every step.
                         </article>
                     </div>
                     <div className='mt-10'>
@@ -217,10 +205,13 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            User Persona.
+                            Creating User Personas.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            For this iteration process, the target group in focus was made up of a user base that showed a level of interest in Web3, and had some experience with a community-based platform. The differentiated roles were used to create the user persona.
+                            To guide the iteration process effectively, we developed user personas that represented the target audience—individuals with an interest in Web3 and some experience with community-based platforms. 
+                            <br />
+                            <br />
+                            These personas allowed us to empathize with user needs, motivations, and pain points, facilitating a user-centric design approach.
                         </article>
                     </div>
                     <div className='mt-10'>
@@ -233,7 +224,7 @@ const Guild = ({ locationProps }) => {
                             <h3>User Flow</h3>
                         </div>
                         <article className='text-[1rem] mb-6 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To serve as a guide for our thought process and also ensure seamless user interaction, we came up with the user flow.
+                            To enhance user interaction and guide our thought process, we developed a user flow. This visual representation ensured a clear understanding of user actions, ensuring a seamless and intuitive platform experience.
                         </article>
                         <div className='flex flex-col gap-8 text-opaque font-medium'>
                             <div>
@@ -244,21 +235,81 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-6'>
-                            Screens.
+                            Designing the Interface.
                         </h3>
                     </div>
                     <article className='text-[1rem] mb-10 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                        With the main purpose of the platform being predominantly
-                        user-centric in order to fulfil and maintain seamless
-                        human connections, the interface was designed to have
+                        At the core of Guild's design philosophy was the emphasis on human connections and community-centricity. The interface was meticulously crafted to incorporate Web3 features while facilitating seamless interaction and effortless navigation. 
+                        <br />
+                        <br />
+                        Noteworthy screens included account creation, community exploration, and engaging in conversations, all designed with the utmost attention to detail and aesthetic appeal.
 
-                        <span className='text-red-400'> Web3</span> features whilst staying community-based with the prioritization of seamless interaction and easy navigation.
                     </article>
                     <div className='flex flex-col gap-8'>
                         <div><img src={screen1} alt="" /></div>
                         <div><img src={screen2} alt="" /></div>
                         <div><img src={screen3} alt="" /></div>
                         <div><img src={screen4} alt="" /></div>
+                    </div>
+
+                        <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Conclusion.
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                            Guild represents a paradigm shift in Web3 community platforms, offering a user experience that surpasses traditional platforms like Discord. By addressing the pain points of users, such as poor onboarding and navigation, Guild provides a seamless and intuitive environment for individuals interested in Web3 to connect, learn, and explore new opportunities.
+                            </p>
+
+                            <p>
+                            Through extensive research and user-centric design principles, Guild has successfully transformed the way users interact with Web3 communities. The incorporation of Web3 features like NFT profiles and voting mechanisms further enhances the platform's appeal, fostering a sense of belonging and empowerment within the community.
+                            </p>
+                            <p>
+                            Moreover, the carefully curated user journey, user personas, and user flow ensure that both new and existing users can navigate Guild effortlessly and engage in meaningful conversations. The interface design reflects a commitment to human connections and community-centricity, striking a delicate balance between functionality and aesthetics.
+                            </p>
+                            <p>
+                                Guild is more than just a community platform—it is a testament to the limitless possibilities of Web3 and the power of seamless user experiences.
+                            </p>
+                        </article>
+
+                    </div>
+                    <div className='text-[1.5rem] font-[600] mt-20'>
+                        <h3 className='mb-5'>
+                            Takeaway.
+                        </h3>
+                        <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
+                            <p>
+                                Working on Guild as a Product Designer has been an enlightening and transformative experience. Throughout the journey, I have gained valuable insights and learned crucial lessons that have shaped me both professionally and personally.
+                            </p>
+
+                            <p>
+                                Here are the key takeaways from my involvement in the Guild project:                           
+                            </p>
+                        </article>
+                        <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
+
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'>1. Understanding the Importance of User-Centric Design:</h6>
+                            <p>Guild reinforced the significance of prioritizing user needs and preferences in design. By conducting thorough research, connecting with users, and empathizing with their pain points, I recognized that a user-centric approach is the foundation of creating exceptional experiences. Putting users at the forefront of the design process is essential for crafting meaningful and impactful solutions.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 2. Embracing the Complexity of Web3:</h6>
+                            <p>Web3 presented a complex and ever-evolving landscape, challenging me to dive deep into its intricacies. The project highlighted the importance of staying updated with emerging technologies and trends. Embracing complexity allowed me to explore innovative solutions and adapt to the dynamic nature of the Web3 space.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 3. Balancing Innovation and Familiarity:</h6>
+                            <p>Guild taught me the art of striking a balance between pushing boundaries with innovative features and maintaining familiarity for users. While integrating Web3 elements like NFT profiles and voting mechanisms, it was crucial to ensure that the platform remained accessible and intuitive for users of varying backgrounds. This delicate balance between novelty and familiarity is vital in creating inclusive and user-friendly experiences.</p>
+                        </div>
+                        <div>
+                            <h6 className='font-semibold mt-10 mb-4'> 4. The Power of Collaboration:</h6>
+                            <p>Throughout the Guild project, collaboration played a pivotal role. Working closely with the DesignersDAO community and leveraging the diverse expertise of team members enriched the design process. The power of collaboration lies in the exchange of ideas, constructive feedback, and collective effort, leading to stronger and more impactful outcomes.</p>
+                            <br />
+                            <p>As I reflect on my journey with Guild, I am equipped with a deeper understanding of user-centric design, the complexities of Web3, the balance between innovation and familiarity, the value of collaboration, and the power of injecting personality into experiences. These takeaways will undoubtedly guide me in my future endeavors as a Product Designer and pave the way for creating remarkable user experiences in the future.</p>
+                            <br />
+                            <p>Guild has been more than just a project — it has been a stepping stone towards realizing my goals and aspirations as a Product Designer. With the skills and knowledge gained from this experience, I am ready to embark on new challenges, contribute to meaningful projects, and make a lasting impact in the realm of digital product design.</p>
+                        </div>
+                        </div>
+
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
@@ -274,18 +325,21 @@ const Guild = ({ locationProps }) => {
                         <p className='mb-4'>Owari da.</p>
                         <p className=''>Arigato. <span className='text-base'>😊</span> </p>
                     </div>
-                    <div className='flex gap-2 items-center mt-20 '>
+                   <div className='flex flex-col'>
+                    <Link to="/mr" className='flex w-32 gap-2  items-center mt-20 '>
                         <img className='h-3 rotate-[180deg] ml-6' src={next} alt="" srcSet="" />
                         <p className='text-[1rem] leading-8 font-[500] -ml-4 text-[#fafafa]  dark:text-darkShade'>
                             Previous
                         </p>
-                    </div>
-                    <div className='flex gap-2 items-center justify-end '>
+                    </Link>
+                    <Link to="/kodetech" className='flex  gap-2 w-24 items-center self-end justify-end '>
                         <p className='text1rem] leading-8 font-[500]   '>
                             Next
                         </p>
                         <img className='h-3' src={next} alt="" srcSet="" />
+                    </Link>
                     </div>
+                
                 </section>
             </main>
 

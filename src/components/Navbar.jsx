@@ -14,6 +14,34 @@ const Navbar = ({ locationProps }) => {
   const [activeResume, setActiveResume] = useState(false);
   const [refreshBlendBar, setRefreshBlendBar] = useState(false)
   const [currentLocation, setCurrentLocation] = useState("")
+  
+  const [scrollDirection, setScrollDirection] = useState(null);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos > prevScrollPos) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
+
+
+
+  
   useEffect(() => {
     console.log("location changed o");
     setCurrentLocation(location)
@@ -27,6 +55,7 @@ const Navbar = ({ locationProps }) => {
     if (locationProps.href.includes('playground')) {
       //('playground active');
       setActivePlayground(true)
+      setActiveAbout(false)
       setActiveWork(false)
       return
     }
@@ -113,6 +142,7 @@ const Navbar = ({ locationProps }) => {
     <nav
       className={menu ? "px-6  blend-bar fixed nav z-[1] flex py-5 items-center justify-between w-screen text-lightShade  dark:bg-lightShade dark:text-darkShade sm:px-16 absolute-nav" : "px-6 blend-bar fixed nav z-[1000] flex py-5 items-center justify-between w-screen text-lightShade dark:bg-lightShade dark:text-darkShade sm:px-16  absolute-nav mix-blend-difference"}
     >
+      <div className={scrollDirection=="up"?"flex justify-between items-center w-full duration-[1s]":"duration-[1s] -translate-y-[100px] flex justify-between items-center w-full"}>
       <Link to="/">
         <div
           className="flex gap-1 blend-bar-child overflow-hidden">
@@ -125,11 +155,11 @@ const Navbar = ({ locationProps }) => {
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />
       </div>
-      <div className="md:hidden flex  gap-1 self-end ">
+      <div className="sm:hidden flex  gap-1 self-end ">
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
         <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
-      <div className="hidden md:flex  gap-10 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
+      <div className="hidden sm:flex  gap-10 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
         <div className='relative'>
         <div className={activeWork?'bg-white h-[1px]   w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
         <p onClick={handleActiveWork} className={activeWork ? 'text-white text-sm font-regular ' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
@@ -143,6 +173,7 @@ const Navbar = ({ locationProps }) => {
         <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-white ' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
         </div>
         <p className={activeResume ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/resume'>Résumé</Link></p>
+      </div>
       </div>
     </nav>
 

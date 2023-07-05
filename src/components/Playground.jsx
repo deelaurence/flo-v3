@@ -41,9 +41,13 @@ const Playground = () => {
     const location = useLocation()
     const [popupImg, setPopupImg] = useState('')
     const [pop, setPop] = useState(false)
+    const [screen, setScreen] = useState(0)
+    const [xvalue, setXvalue] = useState(0)
+    const [xvalueEnd, setXvalueEnd] = useState(0)
     const [landscape, setLandscape] = useState(false)
     const html = document.querySelector("html")
     const grids = document.querySelectorAll(".grids")
+    
     // //(grids);
     const playgroundStart = (() => {
         grids.forEach(grid => {
@@ -85,6 +89,26 @@ const Playground = () => {
     //     //(count);
     // }, 5000);
     // setCount(location.pathname)
+    useEffect(()=>{
+        window.addEventListener('resize',()=>{         
+            setScreen(window.innerWidth)
+        })
+        if(window.innerWidth>500){
+            setXvalue(200)
+            setXvalueEnd(0)
+            console.log(xvalue)
+            console.log("tab")
+        }
+        if(window.innerWidth>768){
+            setXvalue(300)
+            setXvalueEnd(0)
+            console.log(xvalue)
+            console.log("desktop")
+        }
+        console.log(window.innerWidth)
+        console.log(screen)
+},[screen])
+
     useEffect(() => {
         //("run playground effect");
         setCount(location)
@@ -164,16 +188,17 @@ const Playground = () => {
             scale: .4,
             // opacity: 0,
             y: "-800px",
-            // x: "-100px",
+            x: xvalue,
             // filter: "blur(8px)"
-
+            
         },
-            {
-                scale: 1,
-                // opacity: 1,
-                delay: 7.5,
-                duration: 1,
-                y: -300,
+        {
+            scale: 1,
+            // opacity: 1,
+            delay: 7.5,
+            duration: 1,
+            y: -300,
+            x: xvalueEnd,
                 // filter: "blur(0px)",
                 ease: "easeOut"
 
@@ -242,7 +267,7 @@ const Playground = () => {
                 </section>
 
                 <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} 
-                className='opacity-0 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32 border px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px]  justify-between text-lightShade'>
+                className='opacity-0 sm:translate-x-56 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32 px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px]  justify-between text-lightShade'>
                     <div className='h-72 w-72  grids grid-1 rounded-xl bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />
