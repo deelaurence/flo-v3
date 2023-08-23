@@ -159,7 +159,7 @@ const Alertz = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            Alertz: <span className='font-medium'><span className='block sm:inline'> Bridging the Information Gap in Crime Awareness.</span></span>
+                            Alertz: <span className='font-medium'><span className=' sm:inline'> Bridging the Information Gap in Crime Awareness.</span></span>
                         </h1>
                     </div>
                     <div
@@ -173,7 +173,7 @@ const Alertz = ({ locationProps }) => {
                     </div> */}
                     <div className='text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
-                            Overview
+                            Overview.
                         </h3>
                         <article className='text-[1rem] flex flex-col gap-4 leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                         <p>
@@ -221,7 +221,7 @@ const Alertz = ({ locationProps }) => {
                             To understand the pain points of our target users and find the most effective solution, we conducted an extensive survey. The survey revealed the challenges faced by individuals in 
                             relation to crime awareness and provided valuable insights into their needs and thought processes.
                         
-                        <p className='mt-4'>Key survey findings:</p>
+                        <p className='mt-4 font-semibold'>Key survey findings:</p>
                         
                         </article>
 
@@ -237,7 +237,7 @@ const Alertz = ({ locationProps }) => {
                                 63% felt unsafe in certain areas due to a lack of awareness.
                             </li>
                         </ul>
-                        <p className='text-[1rem] leading-8 font-[400] mt-8  text-red-200'>Here is some data from their responses:</p>
+                        <p className='text-[1rem] leading-8 font-[400] mt-8  text-purple-400'>Here is some data from their responses:</p>
                     </div>
                     <div className='mt-10'>
                         <img src={response1} alt="" />
@@ -306,10 +306,7 @@ const Alertz = ({ locationProps }) => {
                     <div className='mt-10'>
                         <img src={userPersona} alt="" />
                     </div>
-                    <article className='text-[1rem] mt-10 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                        After this, the information architecture and
-                        task flows were designed.
-                    </article>
+                   
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
                             User Flow.
@@ -323,7 +320,7 @@ const Alertz = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Screens: A glimpse of the alertz experience
+                            Screens: A Glimpse of the Alertz experience.
                         </h3>
                         <article className='mb-16 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
                             We brought our vision to life through meticulously designed screens that reflect Alertz's user-friendly interface and visually appealing aesthetics. The mockups showcase the app's various features and the seamless navigation experience it offers.
@@ -335,7 +332,7 @@ const Alertz = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Conclusion:
+                            Conclusion.
                         </h3>
                         <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
                             <p>
@@ -350,28 +347,28 @@ const Alertz = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Takeaway:
+                            Takeaway.
                         </h3>
                         <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
                             <p>
                             Working as a Product Designer on the Alertz project has been a truly enriching experience. Here are some key takeaways from my journey:
                             </p>
                         <div>
-                            <h6 className='font-semibold mt-6 mb-2'> 1. Empathy is Key</h6>
+                            <h6 className='font-semibold text-lightShade mt-6 mb-2'> 1. Empathy is Key</h6>
                             <p>Understanding the pain points and needs of our users was crucial in developing an effective solution. Conducting surveys and creating empathy maps allowed us to put ourselves in the users' shoes, enabling us to design a product that truly addresses their concerns. Empathy-driven design is a powerful tool that can lead to impactful solutions.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-6 mb-2'> 2. Bridging the Information Gap</h6>
+                            <h6 className='font-semibold mt-6 mb-2 text-lightShade'> 2. Bridging the Information Gap</h6>
                             <p>The challenge of bridging the information gap in crime awareness highlighted the importance of real-time communication and access to relevant data. Alertz provides users with timely crime alerts, empowering them to take proactive measures. It taught me the significance of leveraging technology to bridge gaps in information and enhance personal safety.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-6 mb-2'> 3. Iteration and Refinement</h6>
+                            <h6 className='font-semibold mt-6 mb-2 text-lightShade'> 3. Iteration and Refinement</h6>
                             <p>The design process is an iterative one, and Alertz taught me the importance of constant iteration and refinement. Through user feedback and testing, we were able to identify areas for improvement and fine-tune the user experience. This iterative approach allowed us to create a product that is user-centric and continuously evolving.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-6 mb-2'> 4. Collaborative Design</h6>
+                            <h6 className='font-semibold mt-6 mb-2 text-lightShade'> 4. Collaborative Design</h6>
                             <p>Working in a team of talented designers, demonstrated the power of collaboration. By leveraging each other's strengths and skills, we were able to create a cohesive and impactful design solution. Collaboration fosters creativity, innovation, and results in a stronger end product.</p>
-                            <p className='mt-3'>As I continue to refine my skills as a Product Designer, the experiences and lessons learned from working on Alertz will undoubtedly shape my approach to future projects. I am excited to apply these insights and continue creating meaningful and user-centric design solutions that have the potential to make a positive impact in the tech industry.</p>
+                            <p className='mt-6'>As I continue to refine my skills as a Product Designer, the experiences and lessons learned from working on Alertz will undoubtedly shape my approach to future projects. I am excited to apply these insights and continue creating meaningful and user-centric design solutions that have the potential to make a positive impact in the tech industry.</p>
                         </div>
                         </article>
 

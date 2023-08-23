@@ -9,7 +9,6 @@ const Menu = ({ hideMenu, menu, locationProps,location }) => {
     const [activeResume, setActiveResume] = useState(false);
 
     useEffect(() => {
-    console.log("location changed o");
     if (locationProps.href.includes('about')) {
       //('about');
       setActiveAbout(true)

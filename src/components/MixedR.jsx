@@ -121,8 +121,8 @@ const MixedR = ({ locationProps }) => {
             duration: 1,
             rotate: "60deg",
             // delay: 2,
-            opacity: 1,
-            zIndex: 10,
+            // opacity: 1,
+            // zIndex: 10,
 
             scrollTrigger: {
                 trigger: solution,
@@ -176,7 +176,7 @@ const MixedR = ({ locationProps }) => {
                     <div>
                         <h1
                             className="text-[1.8rem] font-semibold md:text-5xl">
-                            <span className='font-medium'>A <span>Mixed Reality</span> application for Healthcare</span>
+                            <span className='font-medium'>Enhancing Healthcare through Mixed Reality: <span>A Revolutionary Solution.</span></span>
                         </h1>
                     </div>
                     <div
@@ -190,7 +190,7 @@ const MixedR = ({ locationProps }) => {
                     </div> */}
                     <div className='overview text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
-                            Overview
+                            Overview.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                             In today's rapidly evolving technological landscape, Mixed Reality (MR) stands out as a transformative tool that combines the real world with augmented and virtual reality, fueled by 3D information. 
@@ -221,7 +221,7 @@ const MixedR = ({ locationProps }) => {
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             The healthcare system, despite its critical role in human well-being, has been plagued by various challenges, which have only been exacerbated by the recovery from the COVID-19 pandemic. 
                         </article>
-                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>Factors that affect patient experience negatively include:</p>
+                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-purple-400'>Factors that affect patient experience negatively include:</p>
                         <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible  ml-4 dark:text-darkShade'>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span> A lack of personalized interaction with medical personnel.</li>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Loss of patients’ data and records when they switch insurance plans or healthcare services.</li>
@@ -235,12 +235,12 @@ const MixedR = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Research Insights: Identifying Pain Points.
+                            Research Insights.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             In-depth secondary research was conducted to gain a comprehensive understanding of the challenges individuals face within the healthcare system. 
                         </article>
-                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>I discovered the following:</p>
+                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-purple-400'>I discovered the following:</p>
                         <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Healthcare is not readily accessible to everyone.</li>
                             <li><span className='font-medium text-lightShade  dark:text-darkShade'></span>Although healthcare is now largely data-dependent technology implementation remains lacking.</li>
@@ -275,7 +275,7 @@ const MixedR = ({ locationProps }) => {
                     </div> */}
                     <div className=' text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            The Solution: Harnessing the Power of Mixed Reality.
+                            The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Recognizing the potential of MR to enhance healthcare, the proposed solution leverages MR wearable devices, such as the Microsoft HoloLens, in conjunction with emerging imaging technologies. 
@@ -291,22 +291,20 @@ const MixedR = ({ locationProps }) => {
                     </div>
                     
                     <div>
-                        <div className='mt-20 font-semibold text-[1.5rem] mb-6'>
-                            <h3>User Flow: Seamlessly Interacting with MR.</h3>
+                        <div className='mt-14 font-semibold text-[1.5rem] mb-6'>
+                            <h3>User Flow.</h3>
                         </div>
                         <article className='text-[1rem] mb-8 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To ensure optimal user interaction, I developed a well-defined user flow, guiding the thought process and facilitating a seamless experience. By wearing a pair of HoloLens glasses, users can immerse themselves in a fully interactive MR environment, enhancing the visualization of medical information.
-                            </article>
+                        </article>
                         <img src={mrUserflow} alt="" />
-
-
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Screens: Transforming the Healthcare Experience.
+                            Screens.
                         </h3>
 
-                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-red-200'>The application encompasses various screens, each designed to cater to different aspects of the healthcare experience.</p>
+                        <p className='text-[1rem] leading-8 font-[400]  mt-8  text-lightShade'>The application encompasses various screens, each designed to cater to different aspects of the healthcare experience.</p>
                         <ul className='text-[1rem] font-[400] text-[#fafafab9] mt-6 [&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                             <li>The <span className='font-medium text-lightShade  dark:text-darkShade'>Patient's information</span> screen provides a comprehensive overview of the patient's medical history and relevant details, ensuring medical personnel have a holistic understanding of the patient's background.</li>
                             <li>The <span className='font-medium text-lightShade  dark:text-darkShade'>Charts</span> screen presents vital medical data in a visually appealing manner, allowing for better analysis and decision-making.</li>
@@ -323,7 +321,7 @@ const MixedR = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Conclusion: Paving the Way for the Future of Healthcare.
+                            Conclusion.
                         </h3>
                         <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
                             <p>
@@ -341,7 +339,7 @@ const MixedR = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Takeaway: Lessons Learned.
+                            Takeaway.
                         </h3>
                         <article className=' flex flex-col gap-2 text-[1rem] leading-8 font-[400]  text-[#fafafab9]'>
                             <p>
@@ -358,19 +356,19 @@ const MixedR = ({ locationProps }) => {
                         <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
 
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'>1. Embracing Novelty: The Power of Mixed Reality</h6>
+                            <h6 className='font-semibold text-lightShade mt-10 mb-4'>1. Embracing Novelty: The Power of Mixed Reality</h6>
                             <p>Exploring the potential of MR in healthcare has showcased the immense power of embracing novel technologies. MR's ability to seamlessly blend the physical and digital realms opens up new possibilities for visualization, communication, and decision-making in the medical field. As a product designer, it is essential to stay curious and embrace emerging technologies to create innovative solutions that have a profound impact on user experiences.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 2. Human-Centered Design: Enhancing Patient Care</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 2. Human-Centered Design: Enhancing Patient Care</h6>
                             <p>Designing for healthcare requires a strong focus on human-centered design principles. Understanding the pain points and challenges faced by both medical personnel and patients is crucial in developing meaningful solutions. By leveraging MR to bridge the communication gap, provide personalized experiences, and empower patients, we can enhance the overall quality of healthcare and improve patient outcomes.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 3. Seamless User Experience: Simplifying Complexity</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 3. Seamless User Experience: Simplifying Complexity</h6>
                             <p>Creating a seamless user experience is paramount when designing for MR applications. The user flow, interface design, and interaction patterns must be intuitive and effortless, allowing users to navigate through the application effortlessly. Striking the right balance between visual appeal and functional simplicity is key to ensuring user engagement and adoption.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 4. Collaboration and Communication: Essential for Success</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 4. Collaboration and Communication: Essential for Success</h6>
                             <p>The successful implementation of MR in healthcare relies on effective collaboration and communication between product designers, healthcare professionals, and stakeholders. Close collaboration ensures that the product meets the specific needs of medical personnel and aligns with industry standards and regulations. It is essential to foster a collaborative environment, actively seeking feedback and integrating it into the design process.</p>
                             <br />
                             <br />

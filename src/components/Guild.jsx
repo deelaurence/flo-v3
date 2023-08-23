@@ -105,7 +105,7 @@ const Guild = ({ locationProps }) => {
                     </div> */}
                     <div className='text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
-                            Overview
+                            Overview.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                             The rise of Web3 has sparked a global frenzy, captivating the media and tech enthusiasts alike. Web3, the decentralized version of the web, holds immense potential for revolutionizing online interactions and fostering peer-to-peer exchanges.
@@ -146,14 +146,11 @@ const Guild = ({ locationProps }) => {
                             <br />
                             <br />
                             Additionally, we conducted primary research to connect with potential users, uncover pain points, and unearth opportunities to shape the product.
-                            <br />
-                            <br />
-                            To get started, primary research was carried out to understand the <span className='text-orange-400'> pain points </span> of the target users and the main aim of this was to connect with the users and in turn discover a variety of opportunities for the product.
                         </article>
                     </div>
                     <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Unveiling User Insights.
+                            User Research.
                         </h3>
                         <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Discord, a popular community platform known for its association with tech and gaming, proved to have certain shortcomings that hindered the user experience. 
@@ -170,7 +167,7 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Designing the Solution.
+                            The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To address these pain points and prioritize an exceptional user experience, we outlined the core objectives for Guild:
@@ -178,10 +175,10 @@ const Guild = ({ locationProps }) => {
                             <br />
                             <ol className='[&>*]:overflow-visible list-none flex flex-col gap-4 overflow-visible ml-4  dark:text-darkShade'>
                                 <p><span className='font-medium text-lightShade  dark:text-darkShade'></span>
-                                    <span className='font-bold'>1. Streamlined Onboarding:</span>  We aimed to enhance the onboarding process to ensure users quickly familiarize themselves with Guild's features and functionalities.
+                                    <span className='font-bold text-lightShade'>1. Streamlined Onboarding:</span>  We aimed to enhance the onboarding process to ensure users quickly familiarize themselves with Guild's features and functionalities.
                                 </p>
                                 <p><span className='font-medium text-lightShade  dark:text-darkShade'></span>
-                                    <span className='font-bold'>2. Intuitive Navigation:</span> Effortless platform navigation was prioritized to minimize any potential confusion factors.
+                                    <span className='font-bold text-lightShade'>2. Intuitive Navigation:</span> Effortless platform navigation was prioritized to minimize any potential confusion factors.
                                 </p>
                             </ol>
 
@@ -191,7 +188,7 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Crafting the User Journey.
+                           The User Journey.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To ensure a seamless user experience, we carefully designed the user journey, catering to both existing and new users. This involved mapping out the different stages of user interaction, from account creation to community exploration and engaging in conversations. 
@@ -205,13 +202,13 @@ const Guild = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Creating User Personas.
+                            User Persona.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To guide the iteration process effectively, we developed user personas that represented the target audience—individuals with an interest in Web3 and some experience with community-based platforms. 
+                            To guide the iteration process effectively, we developed user persona that represents the target audience—individuals with an interest in Web3 and some experience with community-based platforms. 
                             <br />
                             <br />
-                            These personas allowed us to empathize with user needs, motivations, and pain points, facilitating a user-centric design approach.
+                            These persona allowed us to empathize with user needs, motivations, and pain points, facilitating a user-centric design approach.
                         </article>
                     </div>
                     <div className='mt-10'>
@@ -221,7 +218,7 @@ const Guild = ({ locationProps }) => {
 
                     <div>
                         <div className='mt-14 font-semibold text-[1.5rem] mb-6'>
-                            <h3>User Flow</h3>
+                            <h3>User Flow.</h3>
                         </div>
                         <article className='text-[1rem] mb-6 leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             To enhance user interaction and guide our thought process, we developed a user flow. This visual representation ensured a clear understanding of user actions, ensuring a seamless and intuitive platform experience.
@@ -242,7 +239,7 @@ const Guild = ({ locationProps }) => {
                         At the core of Guild's design philosophy was the emphasis on human connections and community-centricity. The interface was meticulously crafted to incorporate Web3 features while facilitating seamless interaction and effortless navigation. 
                         <br />
                         <br />
-                        Noteworthy screens included account creation, community exploration, and engaging in conversations, all designed with the utmost attention to detail and aesthetic appeal.
+                        Noteworthy screens included <span className='text-lightShade font-semibold'>account creation, </span> <span className='text-lightShade font-semibold'>community exploration </span>and <span className='text-lightShade font-semibold'>engaging in conversations</span>, all designed with the utmost attention to detail and aesthetic appeal.
 
                     </article>
                     <div className='flex flex-col gap-8'>
@@ -289,19 +286,19 @@ const Guild = ({ locationProps }) => {
                         <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
 
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'>1. Understanding the Importance of User-Centric Design:</h6>
+                            <h6 className='font-semibold text-lightShade mt-10 mb-4'>1. Understanding the Importance of User-Centric Design:</h6>
                             <p>Guild reinforced the significance of prioritizing user needs and preferences in design. By conducting thorough research, connecting with users, and empathizing with their pain points, I recognized that a user-centric approach is the foundation of creating exceptional experiences. Putting users at the forefront of the design process is essential for crafting meaningful and impactful solutions.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 2. Embracing the Complexity of Web3:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 2. Embracing the Complexity of Web3:</h6>
                             <p>Web3 presented a complex and ever-evolving landscape, challenging me to dive deep into its intricacies. The project highlighted the importance of staying updated with emerging technologies and trends. Embracing complexity allowed me to explore innovative solutions and adapt to the dynamic nature of the Web3 space.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 3. Balancing Innovation and Familiarity:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 3. Balancing Innovation and Familiarity:</h6>
                             <p>Guild taught me the art of striking a balance between pushing boundaries with innovative features and maintaining familiarity for users. While integrating Web3 elements like NFT profiles and voting mechanisms, it was crucial to ensure that the platform remained accessible and intuitive for users of varying backgrounds. This delicate balance between novelty and familiarity is vital in creating inclusive and user-friendly experiences.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 4. The Power of Collaboration:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 4. The Power of Collaboration:</h6>
                             <p>Throughout the Guild project, collaboration played a pivotal role. Working closely with the DesignersDAO community and leveraging the diverse expertise of team members enriched the design process. The power of collaboration lies in the exchange of ideas, constructive feedback, and collective effort, leading to stronger and more impactful outcomes.</p>
                             <br />
                             <p>As I reflect on my journey with Guild, I am equipped with a deeper understanding of user-centric design, the complexities of Web3, the balance between innovation and familiarity, the value of collaboration, and the power of injecting personality into experiences. These takeaways will undoubtedly guide me in my future endeavors as a Product Designer and pave the way for creating remarkable user experiences in the future.</p>

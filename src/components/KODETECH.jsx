@@ -98,7 +98,7 @@ const KODETECH = ({ locationProps }) => {
                     </div> */}
                     <div className='text-[1.5rem] font-[600] mt-16'>
                         <h3 className='mb-5'>
-                            Overview
+                            Overview.
                         </h3>
                         <article className='text-[1rem] flex flex-col gap-3 leading-8 font-[400]  dark:text-darkShade  text-[#fafafab9]'>
                             <p>
@@ -107,7 +107,7 @@ const KODETECH = ({ locationProps }) => {
                             </p>
                             <p>
 
-                            I As a Product Design intern at KodeCamp, I had the privilege of being part of this exciting team project. 
+                            As a Product Design intern at KodeCamp, I had the privilege of being part of this exciting team project. 
                             </p>
                             <p>
 
@@ -139,12 +139,19 @@ const KODETECH = ({ locationProps }) => {
                             Primary Research.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
-                            To begin, we conducted primary research to gain insights into the pain points of our target users. We discovered that although users were inclined to make online purchases, they faced several difficulties that hindered their online transactions. 
+                            To begin, we conducted primary research to gain insights 
+                            into the pain points of our target users. 
+                            We discovered that although users were 
+                            inclined to make online purchases, 
+                            they faced several difficulties that hindered their online transactions. 
+                        
                         </article>
                     </div>
                     <div ref={findingsRef} className='text-[1.5rem] font-[600] mt-4'>
                         <article className='text-[1rem] overflow-1ible leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                         
+                            <p className=''>These challenges included:</p>
+
                             <ul className='[&>*]:overflow-visible overflow-visible ml-4  dark:text-darkShade'>
                                 <li><span className='font-medium text-lightShade  dark:text-darkShade'>Complex</span> website interfaces.</li>
                                 <li><span className='font-medium text-lightShade  dark:text-darkShade'>Limited</span> payment methods.</li>
@@ -156,7 +163,7 @@ const KODETECH = ({ locationProps }) => {
                     </div>
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5'>
-                            Crafting the Solution.
+                            The Solution.
                         </h3>
                         <article className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Armed with a deep understanding of the users' challenges, we set out to create a solution that would enhance their experience while aligning with KodeTech's core objectives.
@@ -243,27 +250,49 @@ const KODETECH = ({ locationProps }) => {
                         <div><img src={kodeTech2} alt="" /></div>
                         <div><img src={kodeTech3} alt="" /></div>
                     </div>
-                    <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
-
-                        <div>
-                            <h6 className='font-semibold mt-10 mb-4'>1. Increased User Engagement: </h6>
-                            <p>The user-friendly interface, simplified navigation, and comprehensive product descriptions captivated users, leading to increased engagement and longer browsing sessions on the platform. Users found it easier to explore KodeTech's extensive range of tech gadgets, resulting in a higher likelihood of making a purchase.</p>
+                    {/* <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
+                     
+                        <div className='mt-14 font-semibold text-[1.5rem] mb-10'>
+                            <h3>Results and Impact.</h3>
+                        </div>
+                        
+                        <div className='mt-6'>
+                            <h6 className='font-semibold text-lightShade mb-2'>1. Increased User Engagement: 
+                            <span className='font-normal text-[#fafafab9]'> The user-friendly interface, simplified navigation, and comprehensive
+                             product descriptions captivated users, leading to increased engagement and 
+                             longer browsing sessions on the platform. 
+                             Users found it easier to explore KodeTech's 
+                             extensive range of tech gadgets, resulting 
+                             in a higher likelihood of making a purchase.
+                             </span>
+                            </h6>
+                            
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 2. Improved Conversion Rates:</h6>
-                            <p>By addressing the challenges users faced during online transactions, such as limited payment methods and constrained delivery options, we witnessed a remarkable improvement in conversion rates. Users felt confident and secure throughout the buying process, resulting in a higher percentage of successful transactions.</p>
+                            <h6 className='font-semibold mt-10 mb-2 text-lightShade'> 2. Improved Conversion Rates:
+                            
+                            <span className='font-normal text-[#fafafab9]'> By addressing the challenges users faced during online transactions, such as limited payment methods and constrained delivery options, we witnessed a remarkable improvement in conversion rates. Users felt confident and secure throughout the buying process, resulting in a higher percentage of successful transactions.</span>
+                            </h6>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 3. Positive User Feedback:</h6>
-                            <p>Strengthening customer support channels, such as live chat or chatbot functionality, can provide users with real-time assistance, improving their overall experience and resolving queries promptly.</p>
+                            <h6 className='font-semibold mt-10 mb-2 text-lightShade'> 
+                            3. Positive User Feedback:
+                            
+                            <span className='font-normal text-[#fafafab9]'> Strengthening customer support channels, such as live chat or chatbot functionality, can provide users with real-time assistance, improving their overall experience and resolving queries promptly.</span>
+                            </h6>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 4. Expansion of Customer Base:</h6>
-                            <p>KodeTech's focus on the younger demographic, coupled with the enhanced user experience, attracted a wider customer base. The website's user-centric approach resonated with tech-savvy individuals seeking a reliable platform to purchase quality tech gadgets. As a result, KodeTech witnessed an increase in new customers, expanding its market reach.</p>
+                            <h6 className='font-semibold mt-10 mb-2 text-lightShade'> 
+                            4. Expansion of Customer Base: 
+                            
+                            <span className='font-normal text-[#fafafab9]'> KodeTech's focus on the younger demographic, coupled with the enhanced user experience, attracted a wider customer base. The website's user-centric approach resonated with tech-savvy individuals seeking a reliable platform to purchase quality tech gadgets. As a result, KodeTech witnessed an increase in new customers, expanding its market reach.</span>
+                            </h6>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 5. Business Growth and Brand Recognition:</h6>
-                            <p>With the improved website, KodeTech experienced substantial business growth, reporting increased sales and revenue. The brand's reputation for delivering quality products and an exceptional user experience gained traction within the Nigerian market. KodeTech established itself as a leading tech brand, garnering recognition and trust from customers and industry peers alike.</p>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 5. Business Growth and Brand Recognition:
+                            
+                            <span className='font-normal text-[#fafafab9]'> With the improved website, KodeTech experienced substantial business growth, reporting increased sales and revenue. The brand's reputation for delivering quality products and an exceptional user experience gained traction within the Nigerian market. KodeTech established itself as a leading tech brand, garnering recognition and trust from customers and industry peers alike.</span>
+                            </h6>
                         </div>
                         
                        
@@ -280,19 +309,19 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                         <div>
-                            <h6 className='font-semibold  mb-4'>1. Personalization </h6>
+                            <h6 className='font-semibold  mb-4 text-lightShade'>1. Personalization </h6>
                             <p>Implementing personalized recommendations and tailored experiences based on user preferences and purchase history can further enhance user engagement and encourage repeat purchases.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 2. Integration of Social Commerce:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 2. Integration of Social Commerce:</h6>
                             <p>Exploring social media integrations and features that enable users to share products, reviews, and recommendations on their social networks can increase brand visibility and drive organic growth.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 3. Enhanced Customer Support:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 3. Enhanced Customer Support:</h6>
                             <p>The revamped website received overwhelmingly positive feedback from users. They appreciated the seamless experience, intuitive design, and the availability of multiple payment and delivery options. Users felt that KodeTech genuinely understood their needs and catered to them effectively, fostering trust and loyalty towards the brand.</p>
                         </div>
                         
-                        </div>
+                        </div> */}
 
                     <div className='text-[1.5rem] font-[600] mt-20'>
                         <h3 className='mb-5 text-lightShade'>
@@ -307,7 +336,7 @@ const KODETECH = ({ locationProps }) => {
                     </div>
 
                     <div className='text-[1rem] font-normal leading-8 text-[#fafafab9]'>
-                        <div className='text-[1.5rem] font-[600] mt-20'>
+                        <div className='text-[1.5rem] font-[600] mt-10'>
                         <h3 className='mb-5 text-lightShade'>
                             Takeaway.
                         </h3>
@@ -318,28 +347,28 @@ const KODETECH = ({ locationProps }) => {
                         </article>
                     </div>
                         <div>
-                            <h6 className='font-semibold  mb-4'>1. User-Centricity is Key: </h6>
+                            <h6 className='font-semibold text-lightShade mb-4'>1. User-Centricity is Key: </h6>
                             <p>The success of any digital product hinges on understanding the needs, pain points, and aspirations of the target users. By conducting thorough research and creating a user persona, we were able to design a platform that resonated with our target audience, resulting in increased engagement, conversion rates, and customer satisfaction.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 2. Empathy and Problem Solving:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 2. Empathy and Problem Solving:</h6>
                             <p>As a Product Designer, empathizing with users and approaching problem-solving with a user-centric mindset are essential. By delving into the pain points faced by KodeTech's users, we were able to identify opportunities for improvement and craft effective solutions. This experience has reinforced the importance of actively listening to users and being receptive to their feedback throughout the design process.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 3. Seamless User Experience:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 3. Seamless User Experience:</h6>
                             <p>Designing an intuitive and seamless user experience is paramount to the success of any e-commerce platform. By prioritizing user-friendliness, easy navigation, and clear task flows, we created a website that guided users through their journey effortlessly. This project taught me the significance of attention to detail in crafting interactions, visual hierarchy, and information architecture to optimize the overall user experience.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 4. Iteration and Continuous Improvement:</h6>
-                            <p>Designing an intuitive and seamless user experience is paramount to the success of any e-commerce platform. By prioritizing user-friendliness, easy navigation, and clear task flows, we created a website that guided users through their journey effortlessly. This project taught me the significance of attention to detail in crafting interactions, visual hierarchy, and information architecture to optimize the overall user experience.</p>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 4. Iteration and Continuous Improvement:</h6>
+                            <p>The design process is iterative, and there is always room for improvement. Throughout the project, we incorporated user feedback, refined designs, and iterated on the website's features and functionalities. This iterative approach enabled us to create a product that met the evolving needs of users and positioned KodeTech for future growth.</p>
                         </div>
                         <div>
-                            <h6 className='font-semibold mt-10 mb-4'> 5. Collaboration and Communication:</h6>
+                            <h6 className='font-semibold mt-10 mb-4 text-lightShade'> 5. Collaboration and Communication:</h6>
                             <div className='flex flex-col gap-3'>
                             <p>Effective collaboration with cross-functional teams is crucial for successful product design. Working closely with developers, stakeholders, and fellow designers allowed us to align our goals, overcome challenges, and deliver a cohesive and impactful solution. Clear communication, active listening, and the ability to present and articulate design decisions were vital skills honed during this project.</p>
                             <p>By incorporating these takeaways into my skill set, I am better equipped to tackle future design challenges and deliver exceptional user experiences. </p>
                             <p>The KodeTech project has not only strengthened my design skills but also provided me with a deeper understanding of the importance of user research, collaboration, and continuous improvement in creating successful digital products. </p>
-                            <p>As a Product Designer, I am proud to have contributed to this project, and I believe that the skills and expertise showcased in this case study position me as a confident product designer who has the ability to make a valuable contribution in shaping the future of digital products.</p>
+                            <p className='mt-8'>As a Product Designer, I am proud to have contributed to this project, and I believe that the skills and expertise showcased in this case study position me as a confident product designer who has the ability to make a valuable contribution in shaping the future of digital products.</p>
                             </div>
                         </div>
 

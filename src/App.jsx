@@ -24,10 +24,20 @@ function App() {
   // gsap.registerPlugin(S)
   const [currentLocation, setCurrentLocation] = useState('')
   const [imgLoaded, setImageLoaded] = useState(false)
+  
   const pullData = ((data) => {
     //(data);
-    setImageLoaded(data)
-  })
+  useEffect(()=>{
+
+    const timeoutId= setTimeout(()=>{
+       
+       setImageLoaded(data)
+      },100)
+      return ()=>{
+        clearTimeout(timeoutId)
+      }
+    },[data])
+  }) 
   return (
     <Router>
 

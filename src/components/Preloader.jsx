@@ -318,7 +318,7 @@ const Preloader = ({ pullData }) => {
                 <p> from my <span className='text-neutral-500'>purpose</span></p>
             </div>
 
-            <div className={imgLoaded ? "h-0 [&>*]:h-0 transition-[1s]" : "h-0 [&>*]:h-0 transition-[1s] "}>
+            <div className={true ? "h-0 [&>*]:h-0 transition-[1s]" : "h-0 [&>*]:h-0 transition-[1s] "}>
                 <img src={flo} className='floImg -z-[100] h-10' alt="flo" />
                 <img src={sea} className='floImg -z-[100] h-10' alt="flo" />
                 <img src={femmina} className='floImg -z-[100] h-10' alt="flo" />

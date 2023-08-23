@@ -15,14 +15,13 @@ const Navbar = ({ locationProps }) => {
   const [refreshBlendBar, setRefreshBlendBar] = useState(false)
   const [currentLocation, setCurrentLocation] = useState("")
   
-  const [scrollDirection, setScrollDirection] = useState(null);
+  const [scrollDirection, setScrollDirection] = useState("up");
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-
-      if (currentScrollPos > prevScrollPos) {
+      const currentScrollPos = window.scrollY;
+      if (currentScrollPos > prevScrollPos+2) {
         setScrollDirection('down');
       } else {
         setScrollDirection('up');
@@ -43,7 +42,6 @@ const Navbar = ({ locationProps }) => {
 
   
   useEffect(() => {
-    console.log("location changed o");
     setCurrentLocation(location)
     if (locationProps.href.includes('about')) {
       //('about');

@@ -8,6 +8,9 @@ import { motion, useAnimation, useScroll } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
+import vlcVideo from "../assets/vlc.mp4"
+import kickz from "../assets/kickz.webm"
+import dynamicIsland from "../assets/dynamic.webm"
 import { useLocation } from 'react-router-dom'
 
 const LANDING = () => {
@@ -352,6 +355,46 @@ const LANDING = () => {
           <h3 className='ml-4 product-designer text-[26px]  font-regular sm:min-w-[60%]  sm:text-[4xl]  overflow-visible' >Product Designer.</h3>
           <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '> Designing with a dash of imagination and a pinch of perfection, turning pixels into magic and products into must-haves.</p>
         </div>
+      </section>
+      <section
+      className="overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90" 
+      >
+        <Link >
+              <div
+                className="mb-8 ">
+                <video className='min-h-[200px]' autoPlay muted loop >
+                  <source src={kickz} type="video/mp4" />
+                  Sorry your browser does not support this video
+                </video>  
+                <aside  className=' flex flex-col mt-3'>
+                  <div className='flex justify-between'>
+                    <h3 className='font-bold text-[17px] md:text-base mt-2'>Kickz</h3>
+                    <p className='text-[11px] font-medium mt-2 md:text-xs'>2023</p>
+                  </div>
+                  <p className='text-[12px] text-opaque mt-1 md:mb-8 md:text-sm'>Interaction &mdash; Slider Effect (inspiration from uiadrian)</p>
+                </aside>
+              </div>
+            </Link>
+        <Link >
+              <div
+                className="mb-16 ">
+                
+                <div className='min-h-300px bg-black px-4 py-6'>
+
+                <video className='min-h-[200px]' autoPlay muted loop >
+                  <source src={dynamicIsland} type="video/mp4" />
+                  Sorry your browser does not support this video
+                </video>  
+                </div>
+                <aside  className=' flex flex-col mt-3'>
+                  <div className='flex justify-between'>
+                    <h3 className='font-bold text-[17px] md:text-base mt-2'>Apple's Dynamic Island</h3>
+                    <p className='text-[11px] font-medium mt-2 md:text-xs'>2023</p>
+                  </div>
+                  <p className='text-[12px] text-opaque mt-1 md:mb-8 md:text-sm'>Interaction &mdash; (Supafast! Inspiaration from Zander Whitehurst)</p>
+                </aside>
+              </div>
+            </Link>
       </section>
       <section className='overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
 

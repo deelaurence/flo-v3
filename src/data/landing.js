@@ -2,8 +2,6 @@ import landingAlertz from '../assets/landing-alertz.webp'
 import landingVr from '../assets/landing-vr.webp'
 import landingGuild from '../assets/landing-guild.webp'
 import landingKodetech from '../assets/landing-kodetech.webp'
-import landingFemmina from '../assets/landing-femmina.webp'
-import landingDexchange from '../assets/landing-dexchange.webp'
 
 
 let data = [
@@ -34,19 +32,7 @@ let data = [
         details: 'An E-Commerce Website.',
         year: '2022',
         link: "/kodetech"
-    },
-    {
-        name: 'Femmina',
-        image: `${landingFemmina}`,
-        details: 'A FemTech Application.',
-        year: 'Coming Soon',
-    },
-    {
-        name: 'D-Exchange',
-        image: `${landingDexchange}`,
-        details: 'A Liquidity Pool Design.',
-        year: 'Coming Soon',
-    },
+    }
 ]
 
 export default data
