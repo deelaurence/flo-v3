@@ -9,8 +9,8 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
 import vlcVideo from "../assets/vlc.mp4"
-import kickz from "../assets/kickz.webm"
-import dynamicIsland from "../assets/dynamic.webm"
+import kickz from '../assets/kickz.webm'
+import dynamicIsland from '../assets/dynamic.webm'
 import { useLocation } from 'react-router-dom'
 
 const LANDING = () => {
