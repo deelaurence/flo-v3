@@ -64,7 +64,8 @@ import mrScreen2 from '../assets/mr-screen22.webp'
 import mrScreen3 from '../assets/mr-screen33.webp'
 import mrScreen4 from '../assets/mr-screen4.webp'
 import mrUserflow from '../assets/mr-userflow.webp'
-
+import kickz from '../assets/Kickz.webm'
+import dynamicIsland from '../assets/dynamic.webm'
 
 import userPersona from '../assets/userpersona.webp'
 
@@ -384,6 +385,8 @@ const Preloader = ({ pullData }) => {
                 <img src={mrScreen4} className='floImg -z-[100] h-10' alt="flo" />
                 <img src={mrUserflow} className='floImg -z-[100] h-10' alt="flo" />
                 <img src={userPersona} className='floImg -z-[100] h-10' alt="flo" />
+                <img src={kickz} className='floImg -z-[100] h-10' alt="flo" />
+                <img src={dynamicIsland} className='floImg -z-[100] h-10' alt="flo" />
             </div>
         </div>
     )
