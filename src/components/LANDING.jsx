@@ -13,6 +13,7 @@ import kickz from '../assets/kickz.webm'
 import dynamicIsland from '../assets/dynamic.webm'
 import { useLocation } from 'react-router-dom'
 
+
 const LANDING = () => {
   const location = useLocation()
   const [currentLocation, setCurrentLocation] = useState("")
