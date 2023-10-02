@@ -1,4 +1,5 @@
 import React from 'react'
+import Playground from './Playground';
 import { useEffect, useState, useRef } from 'react';
 import displayPicture from '../assets/display-picture.gif'
 import { gsap } from 'gsap'
@@ -10,6 +11,7 @@ import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
 import vlcVideo from "../assets/vlc.mp4"
 import kickz from '../assets/Kickz.webm'
+import emoji from '../assets/emoji.png'
 import dynamicIsland from '../assets/dynamic.webm'
 import { useLocation } from 'react-router-dom'
 
@@ -348,57 +350,56 @@ const LANDING = () => {
   }, [currentLocation])
   return (
     <>
-      <section ref={heroRef} className='mt-20 overflow-hidden opacity-0 px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade'>
-        <div className='flex items-center flex-wrap  my-20'>
-          <div className='object-cover dp-cont h-12 w-12 rounded-full sm:h-20 sm:w-20  bg-red-50'>
-            <img className='' src={displayPicture} alt="" />
+      <section  className='mt-10 overflow-hidden   px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade '>
+        <div className='flex items-center gap-2 flex-col h-[500px] sm:h-[600px]  sm:flex-row my-20 '>
+          <div className=' gap-2 flex h-[68%]  sm:h-full'>
+              <div className='bg-[rgb(232,213,253)] rounded-xl flex justify-center items-center h-full w-1/2'>
+                <div className=' h-1/2 '>
+                  <img src={emoji} alt="" />
+                </div>
+              </div>
+              <div className='flex h-full gap-2 w-1/2 flex-col'>
+                <div className='w-full h-1/2 rounded-xl bg-[rgb(215,247,229)] flex justify-center items-center'>
+                  <p className='text-[rgb(21,132,70)] sm:text-3xl font-bold'>Product <br /> Designer.</p>
+                </div>
+                <div className='rounded-xl w-full h-1/2 flex flex-col items-center justify-center gap-4 bg-[rgb(250,250,250)]'>
+                  <p className='text-darkShade text-[8px] sm:text-[16px] leading-[12px] sm:leading-normal font-medium h-[60%] w-[80%]'>
+                    I have always been enthralled
+                    by the concept of building. The ability
+                    to take a blank space and just fill it up.<br/>
+                    The power to create something and confer upon it 
+                    some form of meaning. <br/>
+                    I design to build, take up space, and make my mark.
+
+                  </p>
+                  <div className='bg-white flex justify-between h-[20%] text-darkShade font-bold text-sm w-[80%]'>
+                    <p className='sm:text-xl'>About me</p>
+                    <p>ar</p>
+                  </div>
+                </div>
+              </div>
           </div>
-          <h3 className='ml-4 product-designer text-[26px]  font-regular sm:min-w-[60%]  sm:text-[4xl]  overflow-visible' >Product Designer.</h3>
-          <p className='mt-4 w-[90%] sm:w-full text-sm sm:text-base '> Designing with a dash of imagination and a pinch of perfection, turning pixels into magic and products into must-haves.</p>
+          <div className='h-[30%]  flex gap-2  sm:flex-col sm:h-full '>
+              <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'></div>
+              <div className='w-1/2 sm:w-full h-full sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
+
+                <div className='h-[50%] w-1/3 rounded-b-lg bg-darkShade'>
+                
+                </div>
+                <div className='flex gap-2 items-center justify-between w-[90%] h-[30%]'>
+                <p className='   text-[7px] sm:text-[14px] sm:font-medium w-[70%]'>
+                  My playground is filled with a variety of
+                  elite designs that go on to show my
+                  creative depth in user interface design.
+                </p>
+                <p>Ar</p>
+                </div>
+              </div>
+          </div>
         </div>
       </section>
-      <section
-      className="overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90" 
-      >
-        <Link >
-              <div
-                className="mb-8 ">
-                <video className='min-h-[200px]' autoPlay muted loop >
-                  <source src={kickz} type="video/mp4" />
-                  Sorry your browser does not support this video
-                </video>  
-                <aside  className=' flex flex-col mt-3'>
-                  <div className='flex justify-between'>
-                    <h3 className='font-bold text-[17px] md:text-base mt-2'>Kickz</h3>
-                    <p className='text-[11px] font-medium mt-2 md:text-xs'>2023</p>
-                  </div>
-                  <p className='text-[12px] text-opaque mt-1 md:mb-8 md:text-sm'>Interaction &mdash; Slider Effect (inspiration from uiadrian)</p>
-                </aside>
-              </div>
-            </Link>
-        <Link >
-              <div
-                className="mb-16 ">
-                
-                <div className='min-h-300px bg-black px-4 py-6'>
-
-                <video className='min-h-[200px]' autoPlay muted loop >
-                  <source src={dynamicIsland} type="video/mp4" />
-                  Sorry your browser does not support this video
-                </video>  
-                </div>
-                <aside  className=' flex flex-col mt-3'>
-                  <div className='flex justify-between'>
-                    <h3 className='font-bold text-[17px] md:text-base mt-2'>Apple's Dynamic Island</h3>
-                    <p className='text-[11px] font-medium mt-2 md:text-xs'>2023</p>
-                  </div>
-                  <p className='text-[12px] text-opaque mt-1 md:mb-8 md:text-sm'>Interaction &mdash; (Supafast! Inspiaration from Zander Whitehurst)</p>
-                </aside>
-              </div>
-            </Link>
-      </section>
+      
       <section className='overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
-
 
         {landingData.map((datum, index) => {
           return (
