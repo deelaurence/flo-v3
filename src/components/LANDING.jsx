@@ -10,6 +10,7 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
 import vlcVideo from "../assets/vlc.mp4"
+import kick from "../assets/kick.mp4"
 import kickz from '../assets/Kickz.webm'
 import emoji from '../assets/emoji.png'
 import dynamicIsland from '../assets/dynamic.webm'
@@ -354,8 +355,8 @@ const LANDING = () => {
         <div className='flex items-center gap-2 flex-col h-[500px] sm:h-[600px]  sm:flex-row my-20 '>
           <div className=' gap-2 flex h-[68%]  sm:h-full'>
               <div className='bg-[rgb(232,213,253)] rounded-xl flex justify-center items-center h-full w-1/2'>
-                <div className=' h-1/2 '>
-                  <img src={emoji} alt="" />
+                <div className=' h-1/2'>
+                  <img src={emoji} className='h-full' alt="" />
                 </div>
               </div>
               <div className='flex h-full gap-2 w-1/2 flex-col'>
@@ -380,7 +381,9 @@ const LANDING = () => {
               </div>
           </div>
           <div className='h-[30%]  flex gap-2  sm:flex-col sm:h-full '>
-              <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'></div>
+              <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'>
+                <video className='object-cover h-full w-full bg-white' autoPlay loop muted src={kick}></video>
+              </div>
               <div className='w-1/2 sm:w-full h-full sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
 
                 <div className='h-[50%] w-1/3 rounded-b-lg bg-darkShade'>
