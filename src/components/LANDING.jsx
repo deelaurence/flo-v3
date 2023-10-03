@@ -23,8 +23,15 @@ const LANDING = () => {
   const refs = useRef([])
   const refs2 = useRef([])
   const refs3 = useRef([])
+  const videoRef=useRef(null)
   const heroRef = useRef(null)
   const hero = heroRef.current
+  const video=videoRef.current
+  // console.log(video)
+  // const video = document.querySelector("video")
+  
+  video?video.play():console.log("Video mounting...")
+
   useEffect(() => {
     //("run effect landing")
     setCurrentLocation(location)
@@ -382,7 +389,7 @@ const LANDING = () => {
           </div>
           <div className='h-[30%]  flex gap-2  sm:flex-col sm:h-full '>
               <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'>
-                <video className='object-cover h-full w-full bg-white' autoPlay loop muted src={kick}></video>
+                <video ref={videoRef} className='object-cover h-full w-full bg-white'  loop muted src={kick}></video>
               </div>
               <div className='w-1/2 sm:w-full h-full sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
 
