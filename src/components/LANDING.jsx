@@ -30,7 +30,10 @@ const LANDING = () => {
   // console.log(video)
   // const video = document.querySelector("video")
   
-  video?video.play():console.log("Video mounting...")
+  if(video){
+    video.play()
+  }
+  // video?video.play():console.log("Video mounting...")
 
   useEffect(() => {
     //("run effect landing")
