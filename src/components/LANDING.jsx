@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import landingData from '../data/landing';
 import vlcVideo from "../assets/vlc.mp4"
 import kick from "../assets/kick.mp4"
+import kickGif from "../assets/kick.gif"
+
 import kickz from '../assets/Kickz.webm'
 import emoji from '../assets/emoji.png'
 import dynamicIsland from '../assets/dynamic.webm'
@@ -392,7 +394,7 @@ const LANDING = () => {
           </div>
           <div className='h-[30%]  flex gap-2  sm:flex-col sm:h-full '>
               <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'>
-                <video ref={videoRef} className='object-cover h-full w-full bg-white'  loop muted src={kick}></video>
+                <img className='object-cover h-full w-full bg-white' src={kickGif} alt="" />
               </div>
               <div className='w-1/2 sm:w-full h-full sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
 
