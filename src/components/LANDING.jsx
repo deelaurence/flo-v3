@@ -371,9 +371,17 @@ const LANDING = () => {
                   <img src={emoji} className='h-[200px] sm:h-full ' alt="" />
                 </div>
               </div>
-              <div className='flex h-full gap-2 sm:w-1/2 flex-col'>
-                <div className='w-full h-[300px] rounded-xl bg-[rgb(215,247,229)] hidden sm:flex justify-center items-center'>
-                  <p className='text-[rgb(21,132,70)] text-4xl sm:text-3xl  font-extrabold pb-4 sm:font-bold'>Product <br /> Designer.</p>
+              <div className='flex h-full gap-2 sm:w-1/2 flex-col-reverse'>
+                <div className='w-full h-[500px] rounded-xl py-6 bg-[rgb(215,247,229)] justify-center flex flex-col  gap-10'>
+                  <p className='px-6 text-darkShade text-xl font-[500]'>I work like a gorrila really, 
+                  I'm not even kidding.
+                  The ability
+                  to take a blank space and just fill it up.
+                  The power to create something
+                  </p>
+                  
+                  <p className=' ml-6 h-12 w-12 bg-green-700 rounded-full'></p>
+                  <p className='text-[rgb(21,132,70)] text-5xl sm:text-3xl font-[thunder] px-6 font-extrabold pb-4 sm:font-bold'>Explore <br /> My Work.</p>
                 </div>
                 <div className='rounded-xl w-full px-6 sm:px-0 sm:h-1/2 flex flex-col items-center justify-center gap-4 bg-orange-200'>
                   <h3 className='text-darkShade mt-10 mb-6 font-[thunder] font-black text-5xl sm:hidden'>
@@ -419,7 +427,7 @@ const LANDING = () => {
       
       <section className='overflow-hidden px-6 sm:px-16 flex gap-6 flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
 
-        {landingData.map((datum, index) => {
+        {/* {landingData.map((datum, index) => {
           return (
             <Link key={datum.name} to={datum.link}>
               <div
@@ -440,69 +448,8 @@ const LANDING = () => {
               </div>
             </Link>
           )
-        })}
+        })} */}
 
-        {/* <div className="">
-          <img src={landingAlertz} alt="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div>
-
-        <div className="">
-          <img src={landingAlertz} ref={nextRef} alt="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div>
-        <div className="">
-          <img src={landingAlertz} ref={nextRef} alt="" srcset="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div>
-        <div className="">
-          <img src={landingAlertz} alt="" srcset="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div>
-        <div className="">
-          <img src={landingAlertz} alt="" srcset="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div>
-        <div className="">
-          <img src={landingAlertz} alt="" srcset="" />
-          <aside className='flex flex-col'>
-            <div className='flex justify-between'>
-              <h3 className='font-bold text-sm md:text-base mt-2'>Guild</h3>
-              <p className='text-xs mt-2 md:text-sm'>2020</p>
-            </div>
-            <p className='text-xs md:mb-8 md:text-sm'>A crime ...</p>
-          </aside>
-        </div> */}
       </section>
     </>
   )
