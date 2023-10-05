@@ -40,6 +40,12 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: satoshi;
+    src: url(./src/fonts/Satoshi-Black.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
 
 .percentage {
     opacity: 0;

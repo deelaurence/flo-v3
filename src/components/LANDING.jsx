@@ -364,19 +364,22 @@ const LANDING = () => {
   return (
     <>
       <section  className='mt-10 overflow-hidden   px-6 sm:px-16 text-lightShade dark:bg-lightShade dark:text-darkShade '>
-        <div className='flex items-center gap-2 flex-col h-[500px] sm:h-[600px]  sm:flex-row my-20 '>
-          <div className=' gap-2 flex h-[68%]  sm:h-full'>
-              <div className='bg-[rgb(232,213,253)] rounded-xl flex justify-center items-center h-full w-1/2'>
-                <div className=' h-1/2'>
-                  <img src={emoji} className='h-full' alt="" />
+        <div className='flex items-center gap-2 flex-col  sm:h-[600px]  sm:flex-row my-20 '>
+          <div className=' gap-2 flex flex-col sm:flex-row   sm:h-full'>
+              <div className='bg-[rgb(232,213,253)] rounded-xl flex justify-center items-center h-full sm:w-1/2'>
+                <div className='h-[300px] flex justify-center items-center sm:h-1/2'>
+                  <img src={emoji} className='h-[200px] sm:h-full ' alt="" />
                 </div>
               </div>
-              <div className='flex h-full gap-2 w-1/2 flex-col'>
-                <div className='w-full h-1/2 rounded-xl bg-[rgb(215,247,229)] flex justify-center items-center'>
-                  <p className='text-[rgb(21,132,70)] sm:text-3xl font-bold'>Product <br /> Designer.</p>
+              <div className='flex h-full gap-2 sm:w-1/2 flex-col'>
+                <div className='w-full h-[300px] rounded-xl bg-[rgb(215,247,229)] hidden sm:flex justify-center items-center'>
+                  <p className='text-[rgb(21,132,70)] text-4xl sm:text-3xl  font-extrabold pb-4 sm:font-bold'>Product <br /> Designer.</p>
                 </div>
-                <div className='rounded-xl w-full h-1/2 flex flex-col items-center justify-center gap-4 bg-[rgb(250,250,250)]'>
-                  <p className='text-darkShade text-[8px] sm:text-[16px] leading-[12px] sm:leading-normal font-medium h-[60%] w-[80%]'>
+                <div className='rounded-xl w-full px-6 sm:px-0 sm:h-1/2 flex flex-col items-center justify-center gap-4 bg-[rgb(250,250,250)]'>
+                  <h3 className='text-darkShade mt-10 mb-6 font-sans font-black text-3xl sm:hidden'>
+                    I AM FLO, <span className='block font-sans text-yellow-800'>A PRODUCT DESIGNER.</span> 
+                  </h3>
+                  <p className='text-darkShade text-xl sm:text-[16px] mb-6  font-[500] sm:leading-normal sm:font-medium h-[60%] sm:w-[80%]'>
                     I have always been enthralled
                     by the concept of building. The ability
                     to take a blank space and just fill it up.<br/>
@@ -385,24 +388,24 @@ const LANDING = () => {
                     I design to build, take up space, and make my mark.
 
                   </p>
-                  <div className='bg-white flex justify-between h-[20%] text-darkShade font-bold text-sm w-[80%]'>
-                    <p className='sm:text-xl'>About me</p>
+                  <div className='bg-white w-full mb-10 flex justify-between h-[20%] text-darkShade font-bold text-sm sm:w-[80%]'>
+                    <p className='text-2xl sm:text-xl'>About me</p>
                     <p>ar</p>
                   </div>
                 </div>
               </div>
           </div>
-          <div className='h-[30%]  flex gap-2  sm:flex-col sm:h-full '>
-              <div className='w-1/2 sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'>
+          <div className='flex  flex-col gap-2  sm:flex-col sm:h-full '>
+              <div className=' sm:w-full h-full rounded-xl sm:h-[40%] bg-red-200'>
                 <img className='object-cover h-full w-full bg-white' src={kickGif} alt="" />
               </div>
-              <div className='w-1/2 sm:w-full h-full sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
+              <div className=' sm:w-full  sm:h-[60%] gap-2 rounded-xl items-center flex flex-col text-blue-900 bg-[rgb(214,234,255)]'>
 
-                <div className='h-[50%] w-1/3 rounded-b-lg bg-darkShade'>
+                <div className='h-[200px] w-1/2 sm:h-[50%]  sm:w-1/3 rounded-b-lg bg-darkShade'>
                 
                 </div>
-                <div className='flex gap-2 items-center justify-between w-[90%] h-[30%]'>
-                <p className='   text-[7px] sm:text-[14px] sm:font-medium w-[70%]'>
+                <div className='flex px-6 pt-10 sm:pt-0 pb-6 sm:pb-0  sm:px-0 gap-2 items-center justify-between sm:w-[90%]  sm:h-[30%]'>
+                <p className='text-xl  sm:text-[14px] sm:font-medium w-[70%]'>
                   My playground is filled with a variety of
                   elite designs that go on to show my
                   creative depth in user interface design.
