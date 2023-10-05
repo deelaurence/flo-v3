@@ -375,20 +375,20 @@ const LANDING = () => {
                 <div className='w-full h-[300px] rounded-xl bg-[rgb(215,247,229)] hidden sm:flex justify-center items-center'>
                   <p className='text-[rgb(21,132,70)] text-4xl sm:text-3xl  font-extrabold pb-4 sm:font-bold'>Product <br /> Designer.</p>
                 </div>
-                <div className='rounded-xl w-full px-6 sm:px-0 sm:h-1/2 flex flex-col items-center justify-center gap-4 bg-[rgb(250,250,250)]'>
-                  <h3 className='text-darkShade mt-10 mb-6 font-sans font-black text-3xl sm:hidden'>
-                    I AM FLO, <span className='block font-sans text-yellow-800'>A PRODUCT DESIGNER.</span> 
+                <div className='rounded-xl w-full px-6 sm:px-0 sm:h-1/2 flex flex-col items-center justify-center gap-4 bg-orange-200'>
+                  <h3 className='text-darkShade mt-10 mb-6 font-[thunder] font-black text-5xl sm:hidden'>
+                    I AM FLO, <span className='block font-[thunder] font-extrabold '>A PRODUCT DESIGNER.</span> 
                   </h3>
                   <p className='text-darkShade text-xl sm:text-[16px] mb-6  font-[500] sm:leading-normal sm:font-medium h-[60%] sm:w-[80%]'>
                     I have always been enthralled
                     by the concept of building. The ability
-                    to take a blank space and just fill it up.<br/>
+                    to take a blank space and just fill it up.
                     The power to create something and confer upon it 
-                    some form of meaning. <br/>
+                    some form of meaning. 
                     I design to build, take up space, and make my mark.
 
                   </p>
-                  <div className='bg-white w-full mb-10 flex justify-between h-[20%] text-darkShade font-bold text-sm sm:w-[80%]'>
+                  <div className=' w-full mb-10 flex justify-between h-[20%] text-darkShade font-bold text-sm sm:w-[80%]'>
                     <p className='text-2xl sm:text-xl'>About me</p>
                     <p>ar</p>
                   </div>

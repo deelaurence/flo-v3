@@ -46,6 +46,12 @@
     font-weight: 900;
     font-style: normal;
 }
+@font-face {
+    font-family: thunder;
+    src: url(./src/fonts/Thunder-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
 
 .percentage {
     opacity: 0;
