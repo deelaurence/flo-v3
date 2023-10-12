@@ -312,9 +312,11 @@ const Guild = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Have a go!
                         </h3>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        <a
+                        href='https://www.figma.com/proto/8eVJSZ5rdet3WKasWFQ88w?node-id=1207-19336&starting-point-node-id=1207:19336&page-id=141:172&viewport=4432,540,0.37&scaling=contain&locale=en'
+                        className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
+                        </a>
 
                     </div>
 

@@ -381,9 +381,11 @@ const MixedR = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Have a go!
                         </h3>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        <a
+                        href='https://www.figma.com/proto/TsDKZJJ0fRTOlM0tSvDXRi/Flo--Design-System-for-Mixed-Reality-Applications?node-id=128%3A88&scaling=scale-down&page-id=1%3A2&starting-point-node-id=128%3A88'
+                        className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
+                        </a>
 
                     </div>
 

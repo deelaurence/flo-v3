@@ -57,10 +57,18 @@ const Navbar = ({ locationProps }) => {
       setActiveWork(false)
       return
     }
+    if (locationProps.href.includes('work')) {
+      //('playground active');
+     setActiveAbout(false)
+      setActivePlayground(false)
+      setActiveWork(true)
+      return
+    }
+
     else {
       setActiveAbout(false)
       setActivePlayground(false)
-      setActiveWork(true)
+      setActiveWork(false)
       return
     }
   }, [location])
@@ -92,32 +100,10 @@ const Navbar = ({ locationProps }) => {
 
 
   let blendBar = document.querySelector('.blend-bar')
-  // //(blendBar);
-
-
-  // //(locationProps);
-  // const handleNightMode = () => {
-  //   setNight(!night)
-  //   //('niiight');
-  // }
-
-  // if (night) {
-  //   html.classList.add("dark")
-  //   // toggle.src = moon
-
-  // }
-  // if (!night) {
-  //   html.classList.remove("dark")
-  //   // toggle.src = sun
-  // }
+  
 
   const [menu, setMenu] = useState(false)
-  // useEffect(() => {
-  //   if (blendBar) {
-
-  //     blendBar.style.mixBlendMode = "difference"
-  //   }
-  // }, [])
+  
   const hideMenu = () => {
     setMenu(false)
     setTimeout(() => {
@@ -153,14 +139,14 @@ const Navbar = ({ locationProps }) => {
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />
       </div>
-      <div className="sm:hidden flex  gap-1 self-end ">
+      <div className="sm:hidden flex    gap-1 self-end ">
         {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
         <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
-      <div className="hidden sm:flex  gap-10 [&>*]:dark:bg-lightShade [&>*]:dark:text-darkShade self-end ">
+      <div className="hidden sm:flex   gap-10 self-end sm:mx-5 ">
         <div className='relative'>
         <div className={activeWork?'bg-white h-[1px]   w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
-        <p onClick={handleActiveWork} className={activeWork ? 'text-white text-sm font-regular ' : ' text-sm font-regular text-opaque'} ><Link to='/'>Work</Link></p>
+        <p onClick={handleActiveWork} className={activeWork ? 'text-white text-sm font-regular ' : ' text-sm font-regular text-opaque'} ><Link to='/work'>Work</Link></p>
         </div>
         <div className='relative'>
         <div className={activePlayground?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
@@ -170,7 +156,9 @@ const Navbar = ({ locationProps }) => {
         <div className={activeAbout?'bg-white h-[1px] w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
         <p onClick={handleActiveAbout} className={activeAbout ? 'text-sm font-regular text-white ' : ' text-sm font-regular text-opaque'} ><Link to='/about'>About</Link></p>
         </div>
-        <p className={activeResume ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} ><Link to='/resume'>Résumé</Link></p>
+        <a
+        href='https://docs.google.com/document/d/1VYxp4VkwEICpBSnN4Q9bX9eibZe6Pk8qlsn-iwpLNtc/edit'
+         className={activeResume ? 'text-sm font-regular text-lightShade ' : ' text-sm font-regular text-opaque'} >Résumé</a>
       </div>
       </div>
     </nav>

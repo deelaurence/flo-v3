@@ -15,6 +15,7 @@ import Preloader from './components/Preloader'
 import WhoIsFlo from './components/WhoIsFlo';
 import Footer from './components/Footer';
 
+import Work from './components/Work';
 import Playground from './components/Playground';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect, useRef } from 'react';
@@ -22,8 +23,8 @@ import { useEffect, useRef } from 'react';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger'
 function App() {
   // gsap.registerPlugin(S)
-  const [currentLocation, setCurrentLocation] = useState('')
   const [imgLoaded, setImageLoaded] = useState(false)
+  
   
   const pullData = ((data) => {
     //(data);
@@ -48,6 +49,7 @@ function App() {
           <Navbar locationProps={location} />
           <Routes>
             <Route path="/" key={document.location.href} element={<LANDING />} />
+            <Route path="/work" key={document.location.href} element={<Work />} />
             <Route path="/guild" key={document.location.href} element={<Guild />} />
             <Route path="/about" key={document.location.href} element={<WhoIsFlo />} />
             <Route path="/menu" key={document.location.href} element={<Menu />} />

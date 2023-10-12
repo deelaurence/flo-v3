@@ -23,10 +23,16 @@ const Menu = ({ hideMenu, menu, locationProps,location }) => {
       setActiveAbout(false)
       return
     }
-    else {
+     if (locationProps.href.includes('work')){
       setActiveAbout(false)
       setActivePlayground(false)
       setActiveWork(true)
+      return
+    }
+    else {
+      setActiveAbout(false)
+      setActivePlayground(false)
+      setActiveWork(false)
       return
     }
   }, [location])
@@ -72,7 +78,7 @@ const Menu = ({ hideMenu, menu, locationProps,location }) => {
             <p onClick={hideMenu} className='text-lg tracking-[0.5px] text-lightShade dark:bg-lightShade dark:text-darkShade absolute top-32 right-6 ' >close</p>
             <div className={menu ? ' nav-animate dark:bg-lightShade dark:text-darkShade flex text-lightShade transition-[2s] justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl' :
                 'nav1-animate  dark:bg-lightShade dark:text-darkShade  transition-[2s]  flex text-lightShade justify-center w-screen h-[100vh]  mt-20 gap-12 items-center flex-col font-medium text-2xl'}>
-                <Link className='relative' to='/'>
+                <Link className='relative' to='/work'>
                     <div className={activeWork?'bg-white h-[2px] w-full transition-[1.5s] absolute top-[55%]':'bg-white h-[2px] w-full translate-x-full transition-[1.5s] absolute top-[55%]'}></div>
                     <p onClick={handleActiveWork} className={activeWork ? '' : 'text-opaque'}>Work</p>
                 </Link>
@@ -84,10 +90,12 @@ const Menu = ({ hideMenu, menu, locationProps,location }) => {
                      <div className={activeAbout?'bg-white h-[2px] w-full transition-[1.5s] absolute top-[55%]':'bg-white h-[2px] w-full translate-x-full transition-[1.5s] absolute top-[55%]'}></div>
                     <p onClick={handleActiveAbout} className={activeAbout ? '' : 'text-opaque'} >About</p>
                 </Link>
-                <Link className='relative' to="/resume">
+                <div className='relative' to="/resume">
                      <div className={activeResume?'bg-white h-[2px] w-full transition-[1.5s] absolute top-[55%]':'bg-white h-[2px] w-full translate-x-full transition-[1.5s] absolute top-[55%]'}></div>
-                    <p onClick={handleActiveResume} className={activeResume ? '' : 'text-opaque'}>Résumé</p>
-                </Link>
+                    <a
+                    href='https://docs.google.com/document/d/1VYxp4VkwEICpBSnN4Q9bX9eibZe6Pk8qlsn-iwpLNtc/edit'
+                     className={activeResume ? '' : 'text-opaque'}>Résumé</a>
+                </div>
             </div>
         </>
     )

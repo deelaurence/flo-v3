@@ -299,6 +299,8 @@ html {
     /* outline: 1px solid white; */
 }
 
+
+
 .grid-container>div>img,
 .grid-container-femmina>div>img,
 .grid-container-dexchange>div>img,
@@ -396,9 +398,10 @@ section {
 
 .grid-cont {
     display: grid;
+    /* width:97vw; */
     /* transform: scale(.5); */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 2fr .2fr 2fr .5fr 2fr .2fr 2fr .2fr 2fr;
+    grid-auto-rows: 2fr .2fr 2fr .2fr 2fr .2fr 2fr .2fr 2fr;
     grid-template-areas:
         "grid1 . grid2"
         ". . ."
@@ -676,4 +679,19 @@ body {
 .hidden-overflow {
     overflow: hidden !important;
 
+}
+
+.playground-image {
+    animation: playground 16s ease-in-out alternate-reverse infinite;
+}
+@keyframes playground {
+    from {
+        /* width: 50px; */
+        transform: scale(1) translateX(0px);
+    }
+
+    to {
+        transform: scale(3) translateX(0px);
+        /* width: 40px; */
+    }
 }

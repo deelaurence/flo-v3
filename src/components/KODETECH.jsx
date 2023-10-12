@@ -379,16 +379,22 @@ const KODETECH = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Have a go!
                         </h3>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        <a 
+                        href='https://www.figma.com/proto/j7r3xMZPNYO0JHi2gCJeHn/KodeCamp-Ecommerce-team-library?node-id=2574-10632&scaling=scale-down&page-id=2567%3A10628&starting-point-node-id=2574%3A10632&show-proto-sidebar=1'
+                        className=' block text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the users' prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        </a>
+                        <a 
+                        href='https://www.figma.com/proto/j7r3xMZPNYO0JHi2gCJeHn?node-id=3062-14862&starting-point-node-id=3062:14862&scaling=scale-down&page-id=3062:14861&locale=en'
+                        className=' block text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the admin prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
+                        </a>
 
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        <a 
+                        href='https://muubaraq.github.io/kodetech-test/index.html'
+                        className='text-[1rem] block leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Explore live website <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
+                        </a>
                     </div>
 
                     <div className='mt-20 text-lightShade  dark:text-darkShade'>

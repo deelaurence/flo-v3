@@ -100,7 +100,7 @@ const Playground = () => {
             console.log("tab")
         }
         if(window.innerWidth>768){
-            setXvalue(300)
+            setXvalue(400)
             setXvalueEnd(0)
             console.log(xvalue)
             console.log("desktop")
@@ -176,7 +176,7 @@ const Playground = () => {
         },
             {
                 opacity: 1,
-                delay: 5,
+                delay: 4.5,
                 duration: 2,
                 filter: "blur(0px)",
                 // scrollTrigger: {
@@ -251,7 +251,7 @@ const Playground = () => {
                 {/* popup */}
                 {/* popup */}
                 {/* popup */}
-                <section ref={backTextRef} className='z-[0] fixed flex gap-3 top-[30vh] flex-col justify-center items-center w-screen h-[30vh] back-text text-neutral-200 opacity-0 md:opacity-1'>
+                <section ref={backTextRef} className='z-[0] fixed flex gap-3 top-[30vh] flex-col justify-center items-center w-screen h-[30vh] back-text text-neutral-200 opacity-0 sm:opacity-100'>
                     <h3 className='opacity-[.1] font-bold text-3xl text-center'>
                         Archives.
                     </h3>
@@ -267,8 +267,8 @@ const Playground = () => {
                 </section>
 
                 <section ref={playgroundRef} onTouchStart={playgroundStart} onTouchEnd={playgroundEnd} 
-                className='opacity-0 sm:translate-x-56 overflow-scroll  dark:bg-lightShade dark:text-darkShade py-32 px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px]  justify-between text-lightShade'>
-                    <div className='h-72 w-72  grids grid-1 rounded-xl bg-transluscent p-4'>
+                className='opacity-0 sm:translate-x-56 overflow-scroll [&>*]:justify-self-center py-32 px-6 gap-4  grid-cont  playground-cont  md:overflow-visible [&>*]:overflow-visible mt-10  text-[10px]  text-lightShade'>
+                    <div className='h-72 w-72  grids grid-1 rounded-xl   bg-transluscent p-4'>
                         <div className='bg-playground rounded-lg p-2 [&>*]:h-[75%] flex justify-around h-56 w-64'>
                             <img className='self-start' src={bud1} onClick={handleEnlarge} alt="" />
                             <img className='self-center' src={bud2} onClick={handleEnlarge} alt="" />

@@ -378,12 +378,16 @@ const Alertz = ({ locationProps }) => {
                         <h3 className='mb-5'>
                             Have a go!
                         </h3>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        <a 
+                        href=' https://www.figma.com/proto/JuBQpZSS0WxvK7XVnpPKCO?node-id=202-1033&scaling=contain&page-id=201:1001&locale=en'
+                        className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             Pitch Deck <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
-                        <p className='text-[1rem] leading-8 font-[400]  text-[#fafafab9]  dark:text-darkShade'>
+                        </a>
+                        <a
+                        href='https://www.figma.com/proto/JuBQpZSS0WxvK7XVnpPKCO?node-id=1-4&starting-point-node-id=1:3&locale=en'
+                        className='text-[1rem] leading-8 block font-[400]  text-[#fafafab9]  dark:text-darkShade'>
                             View the prototype <span className='text-white font-[700]  dark:text-darkShade' >here</span>
-                        </p>
+                        </a>
 
                     </div>
 

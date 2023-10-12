@@ -4,6 +4,38 @@ import { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const Footer = ({ locationProps }) => {
+  const [currentLocation, useCurrentLocation] = useState('')
+  const [showFooter, setShowFooter]=useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    const handleUrlChange = () => {
+      const url = window.location.href;
+      let urlParts;
+      console.log("url changed")
+      if (url.includes('.app')) {
+        urlParts = url.split('.app');
+      } else if (url.includes('localhost')) {
+        urlParts = url.split(':5173/');
+      } else {
+        urlParts = url.split('.com');
+      }
+
+      const stringAtEnd = urlParts[1];
+      useCurrentLocation(stringAtEnd);
+      console.log("base url is currently at " + stringAtEnd);
+      if(stringAtEnd=="#/"||stringAtEnd==""){
+        setShowFooter(false)
+        console.log("Landing page",stringAtEnd)
+      }
+      else{
+        setShowFooter(true)
+      }
+    };
+
+    handleUrlChange()
+  }, [location]);
+
   gsap.registerPlugin(ScrollTrigger)
   const footerLineRef = useRef(null)
   const contactRef = useRef(null)
@@ -13,9 +45,7 @@ const Footer = ({ locationProps }) => {
   const contact = contactRef.current
   const gotProject = gotProjectRef.current
   const connect = connectRef.current
-  const location = useLocation()
-  const [currentLocation, useCurrentLocation] = useState('')
-
+ 
 
   useEffect(() => {
     useCurrentLocation(locationProps)
@@ -78,7 +108,12 @@ const Footer = ({ locationProps }) => {
     })
 
   }, [currentLocation, location])
+
+  if(!showFooter){
+  return null
+  }
   return (
+    
     <footer
       className="tracking-[0.5px]  pt-24 pb-24 px-6 sm:px-16 bg-darkShade text-lightShade dark:bg-lightShade dark:text-darkShade"
     >
