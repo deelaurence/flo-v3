@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-
+import MusicIcon from './MusicIcon'
 import React from 'react'
 import Menu from './Menu'
 import { useState, useRef, useEffect } from 'react'
@@ -135,6 +135,7 @@ const Navbar = ({ locationProps }) => {
             className="self-end flourish -mb-1 font-regular text-lg">Flourish.</h3>
         </div>
       </Link>
+      <MusicIcon/>
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />

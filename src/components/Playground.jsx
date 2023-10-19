@@ -195,7 +195,7 @@ const Playground = () => {
         {
             scale: 1,
             // opacity: 1,
-            delay: 7.5,
+            delay: 6,
             duration: 1,
             y: -300,
             x: xvalueEnd,

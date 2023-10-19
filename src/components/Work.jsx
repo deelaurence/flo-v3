@@ -360,14 +360,14 @@ const refs = useRef([])
   return (
     <>
     
-        <p className=' text-5xl sm:text-3xl px-6 mb-12  text-gray-300  pb-4 sm:px-16 sm:font-bold mt-44 uppercase font-[thunder]'>MY Works.</p>
+        <p className=' text-4xl font-medium opacity-80 sm:text-3xl px-6 mb-12  text-gray-300  pb-4 sm:px-16 sm:font-bold mt-44 uppercase'>Work.</p>
         <section className='overflow-hidden px-6  w-[100vw] sm:px-16  flex gap-[2%] flex-col [&>*]:text-lightShade [&>*]:w-full md:flex-row md:flex-wrap md:[&>*]:w-[48%] dark:bg-lightShade [&>*]:dark:text-darkShade [&>*]:h-90 ' >
         {landingData.map((datum, index) => {
           return (
             <Link key={datum.name} to={datum.link} className=' w-[49%]'>
               <div
                 ref={(element) => refs3.current[index] = element}
-                className="mb-8 relative opacity-0">
+                className="mb-24 relative opacity-0">
                 <div className='relative min-h-[200px]'>
 
                   {/* <div className={`absolute z-[999] w-full  bg-gray-700 opacity-30 rounded-full rounded-br-full h-full`}></div> */}

@@ -21,6 +21,7 @@ const Footer = ({ locationProps }) => {
         urlParts = url.split('.com/');
       }
 
+
       const stringAtEnd = urlParts[1];
       useCurrentLocation(stringAtEnd);
       console.log("base url is currently at " + stringAtEnd);
@@ -136,10 +137,10 @@ const Footer = ({ locationProps }) => {
               Connect with me.
             </p>
             <div className='flex font-medium gap-4'>
-              <a href="" className=''>Notion</a>
-              <a href="" className=''>Dribbble</a>
-              <a href="" className=''>Twitter</a>
-              <a href="" className=''> LinkedIn</a>
+              <a href="https://flourishralph.notion.site/Flo-a7868c41f82e46bc91a2f2d35a547c1a?pvs=4" className=''>Notion</a>
+              <a href="https://dribbble.com/FlourishRalph" className=''>Dribbble</a>
+              <a href="https://twitter.com/FlourishRalph" className=''>Twitter</a>
+              <a href=" https://www.linkedin.com/in/flourishralph" className=''> LinkedIn</a>
             </div>
           </div>
         </section>
