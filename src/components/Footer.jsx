@@ -14,11 +14,11 @@ const Footer = ({ locationProps }) => {
       let urlParts;
       console.log("url changed")
       if (url.includes('.app')) {
-        urlParts = url.split('.app');
+        urlParts = url.split('.app/');
       } else if (url.includes('localhost')) {
         urlParts = url.split(':5173/');
       } else {
-        urlParts = url.split('.com');
+        urlParts = url.split('.com/');
       }
 
       const stringAtEnd = urlParts[1];
