@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import music from "../assets/music.mp3"
+import music from "../assets/music2.mp3"
 const MusicIcon = () => {
   const [vibe,setVibe]=useState(false)
   const musicRef= React.createRef()
