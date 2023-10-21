@@ -18,7 +18,7 @@ const Footer = ({ locationProps }) => {
       } else if (url.includes('localhost')) {
         urlParts = url.split(':5173/');
       } else {
-        urlParts = url.split('.com/');
+        urlParts = url.split('.xyz/');
       }
 
 

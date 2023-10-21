@@ -387,7 +387,7 @@ const LANDING = () => {
                 </div>
                 {/* About me orange box */}
                 <div className='rounded-xl w-full px-6 sm:px-0 sm:h-auto flex flex-col items-center justify-center  gap-4 sm:gap-2 bg-orange-100'>
-                  <h3 className='text-darkShade mt-10 mb-6 font-[thunder] font-black text-5xl sm:text-3xl  sm:mt-10 sm:mb-0  sm:w-[80%] h-fit overflow-visible'>
+                  <h3 className='text-darkShade mt-10 mb-6 font-[thunder] w-full font-black text-5xl sm:text-3xl  sm:mt-10 sm:mb-0  sm:w-[80%] h-fit overflow-visible'>
                     I'M FLO, <span className='block font-[thunder]  font-extrabold sm:inline'>A PRODUCT DESIGNER.</span> 
                   </h3>
                   <p className='text-darkShade text-lg sm:text-[16px] mb-6  font-[500] sm:leading-normal sm:font-medium h-[60%] sm:h-auto sm:pt-6 sm:w-[80%] overflow-visible'>
