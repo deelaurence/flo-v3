@@ -140,9 +140,9 @@ const Navbar = ({ locationProps }) => {
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />
       </div>
-      <div className="sm:hidden flex gap-6 self-end">
+      <div className="sm:hidden flex items-center gap-6  self-end">
         <MusicIcon/>
-        <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
+        <p onClick={showMenu} className='text-base   font-regular show-menu text-lightShade pb-1' >menu</p>
       </div>
       <div className="hidden sm:flex   gap-10 self-end sm:mx-5 ">
         <MusicIcon/>
