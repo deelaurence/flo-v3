@@ -390,7 +390,7 @@ const LANDING = () => {
                   <h3 className='text-darkShade mt-10 mb-6 font-[thunder] w-full font-black text-5xl sm:text-3xl  sm:mt-10 sm:mb-0  sm:w-[80%] h-fit overflow-visible'>
                     I'M FLO, <span className='block font-[thunder]  font-extrabold sm:inline'>A PRODUCT DESIGNER.</span> 
                   </h3>
-                  <p className='text-darkShade text-lg sm:text-[16px] mb-6  font-[500] sm:leading-normal sm:font-medium h-[60%] sm:h-auto sm:pt-6 sm:w-[80%] overflow-visible'>
+                  <p className='text-darkShade text-lg sm:text-[14px] mb-6  font-[500] sm:leading-normal sm:font-medium h-[60%]  sm:pt-6 sm:w-[80%] overflow-visible'>
                     I have always been enthralled
                     by the concept of building. The ability
                     to take a blank space and just fill it up.

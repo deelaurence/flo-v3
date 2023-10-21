@@ -135,16 +135,17 @@ const Navbar = ({ locationProps }) => {
             className="self-end flourish -mb-1 font-regular text-lg">Flourish.</h3>
         </div>
       </Link>
-      <MusicIcon/>
+      
       <div className={menu ? 'nav-menu fixed z-[99999] left-0 -top-20  bg-darkShade dark:bg-lightShade dark:text-darkShade sm:hidden' :
         'nav-menu fixed left-0 -top-[1000px]  bg-darkShade dark:bg-lightShade dark:text-darkShade  sm:hidden'}>
         <Menu locationProps={locationProps} location={location} menu={menu} hideMenu={hideMenu} />
       </div>
-      <div className="sm:hidden flex    gap-1 self-end ">
-        {/* <img onClick={handleNightMode} className='toggle h-4  self-center mr-4 ' src={sun} alt="" /> */}
+      <div className="sm:hidden flex gap-6 self-end">
+        <MusicIcon/>
         <p onClick={showMenu} className='text-base font-regular show-menu text-lightShade dark:bg-lightShade dark:text-darkShade' >menu</p>
       </div>
       <div className="hidden sm:flex   gap-10 self-end sm:mx-5 ">
+        <MusicIcon/>
         <div className='relative'>
         <div className={activeWork?'bg-white h-[1px]   w-full transition-[1.5s] absolute top-[50%]':'bg-white h-[1px] w-full translate-x-full transition-[1.5s] absolute top-[50%]'}></div>
         <p onClick={handleActiveWork} className={activeWork ? 'text-white text-sm font-regular ' : ' text-sm font-regular text-opaque'} ><Link to='/work'>Work</Link></p>
